@@ -325,9 +325,9 @@ html {
 
 body {
   height: 100%;
-  font-family: "Sofia Sans Semi Condensed", sans-serif;
+  font-family: "Comfortaa", cursive;
   font-weight: 500;
-  color: #320A28;
+  color: #333333;
 }
 
 header {
@@ -338,43 +338,72 @@ header {
 }
 header h1 {
   margin: 0;
-  font-size: 1.2rem;
-  font-weight: 500;
+  font-size: 2rem;
+  letter-spacing: 4px;
+  font-weight: 700;
+  color: #8C2B3B;
+}
+header h3 {
+  margin: 0;
 }
 
 #navWrapper {
-  background-color: #511730;
+  background-color: #8C2B3B;
 }
 #navWrapper ul {
   list-style-type: none;
   padding: 0;
   margin: 0;
   display: flex;
+  flex-direction: column;
 }
 #navWrapper ul li {
   flex: 1;
 }
 #navWrapper li.active {
-  background-color: #320A28;
+  background-color: #333333;
 }
 #navWrapper li.active a {
-  color: #FAF3DD;
+  color: #fff;
 }
 #navWrapper a {
   display: block;
   padding: 0.75rem;
-  color: #FAF3DD;
+  color: #fff;
   font-weight: 300;
   text-align: center;
   text-decoration: none;
 }
 #navWrapper a:hover {
-  background-color: #441027;
+  background-color: #ff00ff;
+}
+
+main {
+  padding: 16px;
+}
+
+.fruitGallery {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: 16px 0;
+}
+
+.fruitGallery figure {
+  margin: 1%;
+  flex-basis: 100%;
+}
+.fruitGallery figure img {
+  width: 100%;
+  height: auto;
+}
+.fruitGallery figure figcaption {
+  text-align: center;
 }
 
 #footerWrapper {
-  background: #320A28;
-  color: #FAF3DD;
+  background: #333333;
+  color: #fff;
 }
 
 footer {
@@ -393,10 +422,22 @@ footer p {
   header h1 {
     font-size: 2rem;
   }
+  #navWrapper ul {
+    flex-direction: row;
+  }
+  .fruitGallery figure {
+    flex-basis: 48%;
+  }
 }
 @media only screen and (min-width: 60rem) {
   header, nav, main, footer {
     max-width: 60rem;
     margin: 0 auto;
+  }
+  main {
+    padding: 0;
+  }
+  .fruitGallery figure {
+    flex-basis: 31%;
   }
 }

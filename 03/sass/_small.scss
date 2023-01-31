@@ -27,39 +27,69 @@ header {
     gap: $gutter;
     h1 {
         margin: 0;
-        font-size: 1.2rem;
-        font-weight: $normalWeight;
+        font-size: 2rem;
+        letter-spacing: 4px;
+        font-weight: $boldWeight;
+        color: $primaryColor;
+    }
+    h3 {
+        margin: 0;
     }
 }
 
 #navWrapper {
-    background-color: $secondaryColor;
+    background-color: $primaryColor;
     ul {
         list-style-type: none;
         padding: 0;
         margin: 0;
         display: flex;
+        flex-direction: column;
         li { flex: 1; }
     }
     li.active {
         background-color: $fontColor;
-        a { color: $nearWhite; }
+        a { color: #fff; }
     }
     a {
         display: block;
         padding: 0.75rem;
-        color: $nearWhite;
+        color: #fff;
         font-weight: $lightWeight;
         text-align: center;
         text-decoration: none;
-        &:hover { background-color: $hoverColor; }
+        &:hover { background-color: #ff00ff; }
+    }
+}
+
+main {
+    padding: $gutter;
+}
+
+// Image gallery
+.fruitGallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: $gutter 0;
+}
+
+.fruitGallery figure {
+    margin: 1%;
+    flex-basis: 100%;
+    img {
+        width: 100%;
+        height: auto;
+    }
+    figcaption {
+        text-align: center;
     }
 }
 
 // Begin the footer
 #footerWrapper {
     background: $fontColor;
-    color: $nearWhite;
+    color: #fff;
 }
 
 footer {

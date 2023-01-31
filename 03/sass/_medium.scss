@@ -4,3 +4,11 @@ header {
         font-size: 2rem;
     }
 }
+
+#navWrapper ul {
+    flex-direction: row;
+}
+
+.fruitGallery figure {
+    flex-basis: 48%;
+}
