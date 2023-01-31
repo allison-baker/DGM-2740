@@ -1,12 +1,24 @@
 header, nav, main, footer {
-    max-width: 60rem;
+    max-width: 70rem;
     margin: 0 auto;
 }
 
-main {
-    padding: 0;
+header {
+    div {
+        margin-top: $gutter;
+    }
+    h1 {
+        font-size: 2rem;
+    }
+}
+
+nav ul li {
+    flex: 0;
+    a {
+        width: 8rem;
+    }
 }
 
 .fruitGallery figure {
-    flex-basis: 31%;
+    flex-basis: 23%;
 }

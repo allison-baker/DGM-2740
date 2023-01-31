@@ -1,14 +1,17 @@
 header {
-    padding: 2rem $gutter;
+    div {
+        margin-top: 20px;
+    }
     h1 {
-        font-size: 2rem;
+        font-size: 1.8rem;
     }
 }
 
-#navWrapper ul {
+nav ul {
     flex-direction: row;
+    li { flex: 1; }
 }
 
 .fruitGallery figure {
-    flex-basis: 48%;
+    flex-basis: 31%;
 }
