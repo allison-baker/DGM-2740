@@ -326,9 +326,19 @@ body {
 }
 
 /*----------- HEADER --------------*/
+div#headerWrapper {
+  background-image: url(../images/header-sm.jpg);
+  height: 140px;
+  background-position: center;
+}
+
 header {
-  padding: 0.5rem 2%;
-  background-color: #ddd;
+  padding: 2rem 2%;
+  color: #fff;
+  display: flex;
+  height: 100%;
+  flex-direction: column;
+  justify-content: flex-end;
 }
 
 header h1 {
@@ -404,6 +414,10 @@ footer {
 @media only screen and (min-width: 35rem) {
   /*----------- BODY --------------*/
   /*----------- HEADER --------------*/
+  div#headerWrapper {
+    background-image: url(../images/header-med.jpg);
+    height: 240px;
+  }
   /*----------- NAVIGATION --------------*/
   nav ul {
     margin-left: 2%;
@@ -423,13 +437,19 @@ footer {
   /*----------- MAIN --------------*/
   /*----------- FOOTER --------------*/
 } /* end of media query */
-@media only screen and (min-width: 64rem) {
+@media only screen and (min-width: 60rem) {
   header, nav, main, footer {
     max-width: 64rem;
     margin: auto;
   }
   /*----------- BODY --------------*/
   /*----------- HEADER --------------*/
+  div#headerWrapper {
+    background-image: url(../images/header-lg.jpg);
+    height: 400px;
+    background-size: cover;
+    background-position: center bottom;
+  }
   /*----------- NAVIGATION --------------*/
   /*----------- MAIN --------------*/
   /*----------- FOOTER --------------*/
