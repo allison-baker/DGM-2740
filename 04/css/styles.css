@@ -326,7 +326,7 @@ body {
 }
 
 #barWrapper {
-  background-color: #000;
+  background-color: #151515;
 }
 
 #topBar {
@@ -364,7 +364,7 @@ header h2 {
 
 /*----------- NAVIGATION --------------*/
 #navWrapper {
-  background-color: #222;
+  background-color: #2C2628;
 }
 
 nav ul {
@@ -378,7 +378,7 @@ nav ul {
 
 nav ul li a {
   display: block;
-  color: #eee;
+  color: #fff;
   padding: 0.5rem 0rem;
   text-decoration: none;
   font-size: 0.9rem;
@@ -386,12 +386,12 @@ nav ul li a {
 }
 
 nav ul li a:hover {
-  background-color: #eee;
-  color: #333;
+  background-color: #fff;
+  color: #2C2628;
 }
 
 nav ul li.active a {
-  background-color: #333;
+  background-color: #845B45;
   color: #fff;
 }
 
@@ -401,15 +401,59 @@ main {
   min-height: 10rem;
 }
 
+main h1 {
+  color: #2C2628;
+}
+
+main #cardDeck {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+main .card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  text-align: center;
+  margin: 0.5rem 0;
+  background-color: #fff;
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.5);
+  border-radius: 10px;
+}
+main .card h3 {
+  background-color: #B67E51;
+  color: #fff;
+  width: 100%;
+  padding: 0.75rem 0;
+  margin: 0;
+  border-radius: 10px 10px 0 0;
+}
+main .card i {
+  padding: 2rem 0 1rem 0;
+}
+main .card p {
+  padding: 0 1rem;
+}
+main .card a {
+  text-decoration: none;
+  display: block;
+  background-color: #4B5D73;
+  color: #fff;
+  width: 100%;
+  padding: 0.75rem 0;
+  border-radius: 0 0 10px 10px;
+}
+
 /*----------- FOOTER --------------*/
 #footerWrapper {
-  background-color: #222;
+  background-color: #151515;
 }
 
 footer {
   padding: 0.5rem 2%;
   text-align: center;
-  color: #eee;
+  color: #fff;
   font-size: 0.8rem;
 }
 
@@ -435,10 +479,18 @@ footer {
     padding: 0.5rem 1rem;
   }
   /*----------- MAIN --------------*/
+  main .card {
+    width: 48%;
+    margin: 1%;
+  }
   /*----------- FOOTER --------------*/
 } /* end of media query */
 @media only screen and (min-width: 60rem) {
-  #topBar, header, nav, main, footer {
+  #topBar,
+  header,
+  nav,
+  main,
+  footer {
     max-width: 64rem;
     margin: auto;
   }
@@ -452,5 +504,9 @@ footer {
   }
   /*----------- NAVIGATION --------------*/
   /*----------- MAIN --------------*/
+  main .card {
+    width: 31%;
+    margin: 1%;
+  }
   /*----------- FOOTER --------------*/
 } /* end of media query */

@@ -1,23 +1,28 @@
-#topBar, header, nav, main, footer {
-        max-width: 64rem;
-        margin:auto;
+#topBar,
+header,
+nav,
+main,
+footer {
+  max-width: 64rem;
+  margin: auto;
 }
 
 /*----------- BODY --------------*/
 
-
 /*----------- HEADER --------------*/
 div#headerWrapper {
-        background-image: url(../images/header-lg.jpg);
-        height: 400px;
-        background-size: cover;
-        background-position: center bottom;
+  background-image: url(../images/header-lg.jpg);
+  height: 400px;
+  background-size: cover;
+  background-position: center bottom;
 }
 
 /*----------- NAVIGATION --------------*/
 
-
 /*----------- MAIN --------------*/
-
+main .card {
+  width: 31%;
+  margin: 1%;
+}
 
 /*----------- FOOTER --------------*/
