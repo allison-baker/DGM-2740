@@ -17,6 +17,17 @@ body {
     font-family: Verdana, sans-serif;
 }
 
+#barWrapper {
+    background-color: red;
+}
+#topBar {
+    color: #fff;
+    padding: 0.5rem 2%;
+    h2 {
+        margin: 0;
+    }
+}
+
 /*----------- HEADER --------------*/
 div#headerWrapper {
     background-image: url(../images/header-sm.jpg);
@@ -35,36 +46,32 @@ header h1 {margin: 0;}
 header h2 {margin: 0; font-weight: normal;}
 
 /*----------- NAVIGATION --------------*/
-nav {
-    background-color: #666;
+#navWrapper {
+    background-color: $gray;
 }
 nav ul {
     list-style-type: none;
     padding: 0;
     margin: 0;
-}
-nav ul li {
-    float: left;
-    width: 25%;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
 }
 nav ul li a {
     display: block;
-    background-color: #444;
-    color: #eee;
-    border-left: 1px solid #777;
-    padding: .5rem 0;
+    color: #fff;
+    padding: .5rem 0rem;
     text-decoration: none;
     font-size: .9rem;
     text-align: center;
 }
-nav ul li:first-child a {border-left: none;}
 
 nav ul li a:hover {
-    background-color: #eee;
-    color: #333;
+    background-color: #fff;
+    color: $gray-l1;
 }
 nav ul li.active a {
-    background-color: #000;
+    background-color: $gray-l1;
     color: #fff;
 }
 
@@ -75,10 +82,14 @@ main {
 }
 
 /*----------- FOOTER --------------*/
+#footerWrapper {
+    background-color: $gray;
+}
 footer {
-    background-color: #ddd;
     padding: .5rem 2%;
     text-align: center;
+    color: #fff;
+    font-size: 0.8rem;
 }
 
 /*----- Clearfix: Force an Element not to collapse -----*/

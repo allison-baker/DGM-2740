@@ -325,6 +325,18 @@ body {
   font-family: Verdana, sans-serif;
 }
 
+#barWrapper {
+  background-color: #000;
+}
+
+#topBar {
+  color: #fff;
+  padding: 0.5rem 2%;
+}
+#topBar h2 {
+  margin: 0;
+}
+
 /*----------- HEADER --------------*/
 div#headerWrapper {
   background-image: url(../images/header-sm.jpg);
@@ -351,34 +363,26 @@ header h2 {
 }
 
 /*----------- NAVIGATION --------------*/
-nav {
-  background-color: #666;
+#navWrapper {
+  background-color: #222;
 }
 
 nav ul {
   list-style-type: none;
   padding: 0;
   margin: 0;
-}
-
-nav ul li {
-  float: left;
-  width: 25%;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
 }
 
 nav ul li a {
   display: block;
-  background-color: #444;
   color: #eee;
-  border-left: 1px solid #777;
-  padding: 0.5rem 0;
+  padding: 0.5rem 0rem;
   text-decoration: none;
   font-size: 0.9rem;
   text-align: center;
-}
-
-nav ul li:first-child a {
-  border-left: none;
 }
 
 nav ul li a:hover {
@@ -387,7 +391,7 @@ nav ul li a:hover {
 }
 
 nav ul li.active a {
-  background-color: #000;
+  background-color: #333;
   color: #fff;
 }
 
@@ -398,10 +402,15 @@ main {
 }
 
 /*----------- FOOTER --------------*/
+#footerWrapper {
+  background-color: #222;
+}
+
 footer {
-  background-color: #ddd;
   padding: 0.5rem 2%;
   text-align: center;
+  color: #eee;
+  font-size: 0.8rem;
 }
 
 /*----- Clearfix: Force an Element not to collapse -----*/
@@ -419,17 +428,8 @@ footer {
     height: 240px;
   }
   /*----------- NAVIGATION --------------*/
-  nav ul {
-    margin-left: 2%;
-  }
   nav ul li {
     width: auto;
-  }
-  nav ul li:first-child a {
-    border-left: 1px solid #777;
-  }
-  nav ul li:last-child a {
-    border-right: 1px solid #777;
   }
   nav ul li a {
     padding: 0.5rem 1rem;
@@ -438,7 +438,7 @@ footer {
   /*----------- FOOTER --------------*/
 } /* end of media query */
 @media only screen and (min-width: 60rem) {
-  header, nav, main, footer {
+  #topBar, header, nav, main, footer {
     max-width: 64rem;
     margin: auto;
   }
