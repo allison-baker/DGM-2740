@@ -322,7 +322,7 @@ html {
 /*----------- BODY --------------*/
 body {
   font-size: 16px;
-  font-family: Verdana, sans-serif;
+  font-family: "Raleway", sans-serif;
 }
 
 #barWrapper {
@@ -335,6 +335,7 @@ body {
 }
 #topBar h2 {
   margin: 0;
+  font-weight: 200;
 }
 
 /*----------- HEADER --------------*/
@@ -345,8 +346,6 @@ div#headerWrapper {
 }
 
 header {
-  padding: 2rem 2%;
-  color: #fff;
   display: flex;
   height: 100%;
   flex-direction: column;
@@ -354,12 +353,11 @@ header {
 }
 
 header h1 {
+  padding: 1rem 2%;
+  color: #fff;
   margin: 0;
-}
-
-header h2 {
-  margin: 0;
-  font-weight: normal;
+  background-color: rgba(0, 0, 0, 0.5);
+  font-weight: 600;
 }
 
 /*----------- NAVIGATION --------------*/
@@ -379,6 +377,7 @@ nav ul {
 nav ul li a {
   display: block;
   color: #fff;
+  font-weight: 400;
   padding: 0.5rem 0rem;
   text-decoration: none;
   font-size: 0.9rem;
@@ -403,9 +402,10 @@ main {
 
 main h1 {
   color: #2C2628;
+  font-weight: 600;
 }
 
-main #cardDeck {
+main .cardDeck {
   display: flex;
   flex-wrap: wrap;
 }
@@ -417,7 +417,6 @@ main .card {
   width: 100%;
   text-align: center;
   margin: 0.5rem 0;
-  background-color: #fff;
   box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.5);
   border-radius: 10px;
 }
@@ -427,19 +426,32 @@ main .card h3 {
   width: 100%;
   padding: 0.75rem 0;
   margin: 0;
+  margin-bottom: 1rem;
   border-radius: 10px 10px 0 0;
 }
+main .card svg {
+  width: 2rem;
+  height: 2rem;
+}
+main .card img {
+  width: 2rem;
+  height: 2rem;
+}
 main .card i {
-  padding: 2rem 0 1rem 0;
+  padding: 1rem 0 1rem 0;
 }
 main .card p {
   padding: 0 1rem;
+  background-color: #fff;
 }
 main .card a {
   text-decoration: none;
   display: block;
   background-color: #4B5D73;
   color: #fff;
+  text-transform: uppercase;
+  font-weight: 600;
+  font-size: 0.8rem;
   width: 100%;
   padding: 0.75rem 0;
   border-radius: 0 0 10px 10px;
@@ -455,6 +467,7 @@ footer {
   text-align: center;
   color: #fff;
   font-size: 0.8rem;
+  font-weight: 600;
 }
 
 /*----- Clearfix: Force an Element not to collapse -----*/
@@ -491,7 +504,7 @@ footer {
   nav,
   main,
   footer {
-    max-width: 64rem;
+    max-width: 60rem;
     margin: auto;
   }
   /*----------- BODY --------------*/

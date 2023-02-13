@@ -8,6 +8,9 @@
     <meta name="author" content="Al Baker" />
 
     <!-- STYLE SHEETS -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@200;400;600&display=swap" rel="stylesheet" />
     <link href="css/styles.css" rel="stylesheet" />
     <script src="https://kit.fontawesome.com/369097350a.js" crossorigin="anonymous"></script>
 
@@ -44,10 +47,10 @@
       <main>
         <h1>Plan a Visit</h1>
 
-        <div id="cardDeck">
+        <div class="cardDeck">
           <div class="card">
             <h3>Reservations</h3>
-            <i class="fa-solid fa-house fa-2xl"></i>
+            <img src="images/home.svg" alt="icon of a house" width="22" height="22"/>
             <p>
               Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
               dolore magna aliqua. Volutpat consequat mauris nunc congue nisi vitae suscipit tellus mauris.
@@ -56,7 +59,7 @@
           </div>
           <div class="card">
             <h3>Fees</h3>
-            <i class="fa-solid fa-money-check-dollar fa-2xl"></i>
+            <img src="images/money.svg" alt="dollar sign icon" width="22" height="22"/>
             <p>
               Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
               dolore magna aliqua. Volutpat consequat mauris nunc congue nisi vitae suscipit tellus mauris.
@@ -65,7 +68,14 @@
           </div>
           <div class="card">
             <h3>Activites</h3>
-            <i class="fa-solid fa-list-ul fa-2xl"></i>
+            <svg version="1.1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 22 22">
+              <line x1="7" y1="3" x2="20" y2="3" stroke="#2C2628" stroke-linecap="round" stroke-width="2" />
+              <line x1="7" y1="11" x2="20" y2="11" stroke="#2C2628" stroke-linecap="round" stroke-width="2" />
+              <line x1="7" y1="19" x2="20" y2="19" stroke="#2C2628" stroke-linecap="round" stroke-width="2" />
+              <circle cx="2" cy="3" r="2" fill="#2C2628" />
+              <circle cx="2" cy="11" r="2" fill="#2C2628" />
+              <circle cx="2" cy="19" r="2" fill="#2C2628" />
+            </svg>
             <p>
               Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
               dolore magna aliqua. Volutpat consequat mauris nunc congue nisi vitae suscipit tellus mauris.
@@ -74,7 +84,12 @@
           </div>
           <div class="card">
             <h3>Hours</h3>
-            <i class="fa-solid fa-clock fa-2xl"></i>
+            <svg version="1.1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 22 22">
+              <circle cx="11" cy="11" r="10" fill="#2C2628">
+                <animate attributeName="r" values="9; 11; 9;" dur="4s" repeatCount="indefinite"/>
+              </circle>
+              <polyline points="11,4 11,11 14,15" stroke="#fff" fill="none" stroke-linecap="round" stroke-width="1.5"/>
+            </svg>
             <p>
               Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
               dolore magna aliqua. Volutpat consequat mauris nunc congue nisi vitae suscipit tellus mauris.
@@ -83,7 +98,7 @@
           </div>
           <div class="card">
             <h3>Regulations</h3>
-            <i class="fa-solid fa-book fa-2xl"></i>
+            <img src="images/book.svg" height="22" width="22"/>
             <p>
               Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
               dolore magna aliqua. Volutpat consequat mauris nunc congue nisi vitae suscipit tellus mauris.
@@ -92,7 +107,7 @@
           </div>
           <div class="card">
             <h3>Other Information</h3>
-            <i class="fa-solid fa-circle-info fa-2xl"></i>
+            <img src="images/info.svg" width="22" height="22"/>
             <p>
               Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
               dolore magna aliqua. Volutpat consequat mauris nunc congue nisi vitae suscipit tellus mauris.
