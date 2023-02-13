@@ -17,10 +17,10 @@ body {
   font-family: 'Raleway', sans-serif;
 }
 
-#barWrapper {
+div#barWrapper {
   background-color: $darkest-gray;
 }
-#topBar {
+section#topBar {
   color: #fff;
   padding: 0.5rem 2%;
   h2 {
@@ -34,50 +34,52 @@ div#headerWrapper {
   background-image: url(../images/header-sm.jpg);
   height: 140px;
   background-position: center;
-}
-header {
   display: flex;
-  height: 100%;
   flex-direction: column;
   justify-content: flex-end;
+}
+div#transparentBanner {
+  background-color:rgba(0, 0, 0, 0.5);
 }
 header h1 {
   padding: 1rem 2%;
   color: #fff;
   margin: 0;
-  background-color:rgba(0, 0, 0, 0.5);
   font-weight: 600;
 }
 
 /*----------- NAVIGATION --------------*/
-#navWrapper {
+div#navWrapper {
   background-color: $purple-gray;
+}
+nav button {
+  background: transparent;
+  border: none;
+  font-size: 1.5rem;
+  padding: 0.5rem 1rem;
+  color: #fff;
 }
 nav ul {
   list-style-type: none;
   padding: 0;
   margin: 0;
-  display: flex;
-  flex-direction: row;
-  justify-content: flex-end;
 }
 nav ul li a {
   display: block;
   color: #fff;
   font-weight: 400;
-  padding: 0.5rem 0rem;
+  padding: 0.5rem 1rem;
   text-decoration: none;
   font-size: 0.9rem;
-  text-align: center;
-}
-
-nav ul li a:hover {
-  background-color: #fff;
-  color: $purple-gray;
+  text-align: left;
+  border-top: 1px solid lighten($purple-gray, 7%);
 }
 nav ul li.active a {
-  background-color: $darker-brown;
+  background-color: lighten($purple-gray, 10%);
   color: #fff;
+}
+nav ul li a:hover {
+  background-color: darken($purple-gray, 7%);
 }
 
 /*----------- MAIN --------------*/
@@ -86,7 +88,7 @@ main {
   min-height: 10rem;
 }
 main h1 {
-  color: $purple-gray;
+  color: $darker-brown;
   font-weight: 600;
 }
 main .cardDeck {
@@ -141,7 +143,7 @@ main .card {
 }
 
 /*----------- FOOTER --------------*/
-#footerWrapper {
+div#footerWrapper {
   background-color: $darkest-gray;
 }
 footer {

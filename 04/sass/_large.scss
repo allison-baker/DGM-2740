@@ -1,4 +1,4 @@
-#topBar,
+section#topBar,
 header,
 nav,
 main,
@@ -10,16 +10,36 @@ footer {
 /*----------- BODY --------------*/
 
 /*----------- HEADER --------------*/
+section#topBar {
+  padding: 0.5rem 2rem;
+}
 div#headerWrapper {
   background-image: url(../images/header-lg.jpg);
   height: 400px;
   background-size: cover;
   background-position: center bottom;
 }
+header h1 {
+  padding: 1rem 2rem;
+}
 
 /*----------- NAVIGATION --------------*/
+nav button {
+  display: none;
+}
+nav ul {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+}
+nav ul li a {
+  border: none;
+}
 
 /*----------- MAIN --------------*/
+main {
+  padding: 0 2rem;
+}
 main .card {
   width: 31%;
   margin: 1%;

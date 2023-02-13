@@ -325,15 +325,15 @@ body {
   font-family: "Raleway", sans-serif;
 }
 
-#barWrapper {
+div#barWrapper {
   background-color: #151515;
 }
 
-#topBar {
+section#topBar {
   color: #fff;
   padding: 0.5rem 2%;
 }
-#topBar h2 {
+section#topBar h2 {
   margin: 0;
   font-weight: 200;
 }
@@ -343,55 +343,59 @@ div#headerWrapper {
   background-image: url(../images/header-sm.jpg);
   height: 140px;
   background-position: center;
-}
-
-header {
   display: flex;
-  height: 100%;
   flex-direction: column;
   justify-content: flex-end;
+}
+
+div#transparentBanner {
+  background-color: rgba(0, 0, 0, 0.5);
 }
 
 header h1 {
   padding: 1rem 2%;
   color: #fff;
   margin: 0;
-  background-color: rgba(0, 0, 0, 0.5);
   font-weight: 600;
 }
 
 /*----------- NAVIGATION --------------*/
-#navWrapper {
+div#navWrapper {
   background-color: #2C2628;
+}
+
+nav button {
+  background: transparent;
+  border: none;
+  font-size: 1.5rem;
+  padding: 0.5rem 1rem;
+  color: #fff;
 }
 
 nav ul {
   list-style-type: none;
   padding: 0;
   margin: 0;
-  display: flex;
-  flex-direction: row;
-  justify-content: flex-end;
 }
 
 nav ul li a {
   display: block;
   color: #fff;
   font-weight: 400;
-  padding: 0.5rem 0rem;
+  padding: 0.5rem 1rem;
   text-decoration: none;
   font-size: 0.9rem;
-  text-align: center;
-}
-
-nav ul li a:hover {
-  background-color: #fff;
-  color: #2C2628;
+  text-align: left;
+  border-top: 1px solid #3f3739;
 }
 
 nav ul li.active a {
-  background-color: #845B45;
+  background-color: #473e41;
   color: #fff;
+}
+
+nav ul li a:hover {
+  background-color: #191517;
 }
 
 /*----------- MAIN --------------*/
@@ -401,7 +405,7 @@ main {
 }
 
 main h1 {
-  color: #2C2628;
+  color: #845B45;
   font-weight: 600;
 }
 
@@ -458,7 +462,7 @@ main .card a {
 }
 
 /*----------- FOOTER --------------*/
-#footerWrapper {
+div#footerWrapper {
   background-color: #151515;
 }
 
@@ -485,12 +489,6 @@ footer {
     height: 240px;
   }
   /*----------- NAVIGATION --------------*/
-  nav ul li {
-    width: auto;
-  }
-  nav ul li a {
-    padding: 0.5rem 1rem;
-  }
   /*----------- MAIN --------------*/
   main .card {
     width: 48%;
@@ -499,7 +497,7 @@ footer {
   /*----------- FOOTER --------------*/
 } /* end of media query */
 @media only screen and (min-width: 60rem) {
-  #topBar,
+  section#topBar,
   header,
   nav,
   main,
@@ -509,14 +507,34 @@ footer {
   }
   /*----------- BODY --------------*/
   /*----------- HEADER --------------*/
+  section#topBar {
+    padding: 0.5rem 2rem;
+  }
   div#headerWrapper {
     background-image: url(../images/header-lg.jpg);
     height: 400px;
     background-size: cover;
     background-position: center bottom;
   }
+  header h1 {
+    padding: 1rem 2rem;
+  }
   /*----------- NAVIGATION --------------*/
+  nav button {
+    display: none;
+  }
+  nav ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+  }
+  nav ul li a {
+    border: none;
+  }
   /*----------- MAIN --------------*/
+  main {
+    padding: 0 2rem;
+  }
   main .card {
     width: 31%;
     margin: 1%;
