@@ -376,6 +376,11 @@ nav ul {
   list-style-type: none;
   padding: 0;
   margin: 0;
+  display: none;
+}
+
+ul.open {
+  display: block;
 }
 
 nav ul li a {
@@ -523,7 +528,7 @@ footer {
   nav button {
     display: none;
   }
-  nav ul {
+  nav ul, nav ul.open {
     display: flex;
     flex-direction: row;
     justify-content: flex-end;

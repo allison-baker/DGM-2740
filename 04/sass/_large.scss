@@ -27,7 +27,7 @@ header h1 {
 nav button {
   display: none;
 }
-nav ul {
+nav ul, nav ul.open {
   display: flex;
   flex-direction: row;
   justify-content: flex-end;
