@@ -57,6 +57,14 @@ nav button {
   padding: 0.5rem 1rem;
   color: $purple;
 }
+nav button {
+  span:first-child { display: block; }
+  span:last-child { display: none; }
+}
+nav button.open {
+  span:first-child { display: none; }
+  span:last-child { display: block; }
+}
 nav ul {
   list-style-type: none;
   padding: 0;

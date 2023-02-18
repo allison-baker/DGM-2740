@@ -371,6 +371,20 @@ nav button {
   color: #230F28;
 }
 
+nav button span:first-child {
+  display: block;
+}
+nav button span:last-child {
+  display: none;
+}
+
+nav button.open span:first-child {
+  display: none;
+}
+nav button.open span:last-child {
+  display: block;
+}
+
 nav ul {
   list-style-type: none;
   padding: 0;
