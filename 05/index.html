@@ -32,7 +32,8 @@
             src="images/logo_0.png"
             alt="coffee cup logo"
             srcset="images/logo_75_tagged.png 1x, images/logo_150_tagged.png 2x, images/logo_225_tagged.png 3x"
-          /> <!-- 1x is a red dot, 2x is a green dot, and 3x is a blue dot. Default/broken has no dot.-->
+          />
+          <!-- 1x is a red dot, 2x is a green dot, and 3x is a blue dot. Default/broken has no dot.-->
         </figure>
         <h1>Al's Coffee Shop</h1>
         <h2>Locally owned and locally brewed</h2>
@@ -51,42 +52,65 @@
     </div>
     <div id="mainWrapper">
       <main>
-        <figure>
+        <picture class="heroImage">
+          <source media="(max-width: 450px)" srcset="images/coffeeshop_450.jpg" />
+          <source media="(max-width: 600px)" srcset="images/coffeeshop_600.jpg" />
+          <source media="(max-width: 750px)" srcset="images/coffeeshop_750.jpg" />
+          <source media="(max-width: 900px)" srcset="images/coffeeshop_900.jpg" />
+          <source media="(max-width: 1050px)" srcset="images/coffeeshop_1050.jpg" />
+          <img src="images/coffeeshop_broken.jpg" alt="photo of an empty table at a coffee shop" />
+        </picture>
+        <!--<figure>
           <img
-            src="images/coffee_shop.jpg"
-            alt="photo of a coffee shop lobby"
+            src="images/coffeeshop_broken.jpg"
+            alt="photo of an empty table at a coffee shop"
             sizes="100%"
             srcset="
-              images/coffee_shop300.jpg 300w,
-              images/coffee_shop600.jpg 600w,
-              images/coffee_shop800.jpg 800w,
-              images/coffee_shop1200.jpg 1200w
+              images/coffeeshop_450.jpg   450w,
+              images/coffeeshop_600.jpg   600w,
+              images/coffeeshop_750.jpg   750w,
+              images/coffeeshop_900.jpg   900w,
+              images/coffeeshop_1050.jpg 1050w
             "
           />
-        </figure>
-        <h2>Our Founder</h2>
-        <p>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
-          magna aliqua. Aliquam malesuada bibendum arcu vitae elementum curabitur vitae nunc sed. Mattis enim ut tellus
-          elementum sagittis vitae et leo. Consectetur adipiscing elit pellentesque habitant morbi tristique senectus.
-          Ornare arcu dui vivamus arcu felis bibendum. Molestie ac feugiat sed lectus. Nunc consequat interdum varius
-          sit amet mattis vulputate enim nulla. Scelerisque fermentum dui faucibus in. Libero id faucibus nisl tincidunt
-          eget nullam non. Ultrices dui sapien eget mi proin. Egestas quis ipsum suspendisse ultrices. Molestie at
-          elementum eu facilisis sed odio.
-        </p>
-        <p>
-          Vestibulum rhoncus est pellentesque elit ullamcorper dignissim. Cras tincidunt lobortis feugiat vivamus at
-          augue eget arcu. In est ante in nibh mauris cursus mattis molestie. Eu nisl nunc mi ipsum faucibus vitae
-          aliquet nec ullamcorper. Habitant morbi tristique senectus et netus. At elementum eu facilisis sed odio morbi
-          quis commodo. Non diam phasellus vestibulum lorem sed risus ultricies. Adipiscing vitae proin sagittis nisl
-          rhoncus mattis rhoncus. Feugiat in fermentum posuere urna nec tincidunt. Sit amet consectetur adipiscing elit
-          pellentesque habitant morbi tristique senectus. Metus dictum at tempor commodo ullamcorper a lacus vestibulum.
-          Nisi scelerisque eu ultrices vitae auctor eu augue ut lectus. Risus quis varius quam quisque id diam. Turpis
-          nunc eget lorem dolor sed. Pretium vulputate sapien nec sagittis aliquam. Eros in cursus turpis massa
-          tincidunt dui ut ornare. Posuere lorem ipsum dolor sit. Eget aliquet nibh praesent tristique magna sit amet
-          purus gravida. Aliquet eget sit amet tellus cras. Nulla malesuada pellentesque elit eget gravida cum sociis
-          natoque penatibus.
-        </p>
+        </figure>-->
+        <div class="clearfix">
+          <h2>Our Founder</h2>
+          <picture class="founderPhoto">
+            <source media="(max-width: 600px)" srcset="images/barista_300.jpg" />
+            <source media="(max-width: 900px)" srcset="images/barista_450.jpg" />
+            <source media="(max-width: 1200px)" srcset="images/barista_600.jpg" />
+            <img src="images/barista_broken.jpg" alt="photo of a woman making a cup of coffee" />
+            <div>Our founder Al</div>
+          </picture>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+            dolore magna aliqua. Purus semper eget duis at tellus. Nam at lectus urna duis. Feugiat sed lectus
+            vestibulum mattis ullamcorper velit. Tellus in hac habitasse platea dictumst. Sem nulla pharetra diam sit
+            amet nisl. In egestas erat imperdiet sed euismod. Id nibh tortor id aliquet lectus proin nibh. Quisque
+            egestas diam in arcu cursus euismod. Ultrices eros in cursus turpis.
+          </p>
+          <p>
+            Ut pharetra sit amet aliquam id diam maecenas ultricies. Libero enim sed faucibus turpis. Feugiat in
+            fermentum posuere urna. Aliquet bibendum enim facilisis gravida neque convallis. Morbi tincidunt ornare
+            massa eget egestas. Sit amet nulla facilisi morbi. Vitae nunc sed velit dignissim sodales ut. Leo duis ut
+            diam quam nulla porttitor massa id neque. Dui sapien eget mi proin sed. Magna fringilla urna porttitor
+            rhoncus dolor purus non enim. Id porta nibh venenatis cras sed felis eget velit. Elit at imperdiet dui
+            accumsan sit amet nulla. Mattis enim ut tellus elementum sagittis vitae et leo duis. Mollis aliquam ut
+            porttitor leo a diam. Nulla pharetra diam sit amet nisl suscipit. Tincidunt augue interdum velit euismod in.
+          </p>
+          <p>
+            Laoreet suspendisse interdum consectetur libero id faucibus nisl. Mi ipsum faucibus vitae aliquet nec
+            ullamcorper sit amet. Etiam tempor orci eu lobortis elementum nibh tellus. Commodo sed egestas egestas
+            fringilla phasellus faucibus scelerisque eleifend. Faucibus turpis in eu mi. Urna molestie at elementum eu
+            facilisis sed. Commodo sed egestas egestas fringilla phasellus faucibus scelerisque eleifend donec.
+            Fermentum leo vel orci porta non pulvinar neque laoreet. Volutpat est velit egestas dui id ornare arcu odio
+            ut. Donec pretium vulputate sapien nec. Enim eu turpis egestas pretium. Amet aliquam id diam maecenas
+            ultricies mi. Diam sit amet nisl suscipit adipiscing bibendum est ultricies integer. Purus ut faucibus
+            pulvinar elementum integer enim neque volutpat ac. Erat pellentesque adipiscing commodo elit at imperdiet
+            dui accumsan sit.
+          </p>
+        </div>
       </main>
     </div>
     <div id="footerWrapper">

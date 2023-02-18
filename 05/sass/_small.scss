@@ -98,16 +98,41 @@ nav ul li:first-child a {
 main {
   padding: 0 2%;
 }
-main figure {
+main picture.heroImage {
+  display: block;
+  width: 100%;
   padding: 0 0 1rem 0;
   img {
     width: 100%;
     height: auto;
   }
 }
+/*main figure {
+  padding: 0 0 1rem 0;
+  img {
+    width: 100%;
+    height: auto;
+  }
+}*/
 main h2 {
   margin: 0;
   padding: 0 0 0.5rem 0;
+}
+main picture.founderPhoto {
+  display: block;
+  float: right;
+  width: 48%;
+  margin: 0 0 0 2%;
+  img {
+    width: 100%;
+    height: auto;
+  }
+  div {
+    text-align: center;
+    font-weight: 300;
+    color: lighten($purple, 10%);
+    font-size: 0.9rem;
+  }
 }
 main p {
   padding: 0.5rem 0;
@@ -116,6 +141,7 @@ main p {
 /* FOOTER STYLING */
 div#footerWrapper {
   background-color: $purple;
+  margin: 1rem 0 0 0;
 }
 footer {
   padding: 1rem 0;

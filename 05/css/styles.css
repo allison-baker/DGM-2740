@@ -420,17 +420,43 @@ main {
   padding: 0 2%;
 }
 
-main figure {
+main picture.heroImage {
+  display: block;
+  width: 100%;
   padding: 0 0 1rem 0;
 }
-main figure img {
+main picture.heroImage img {
   width: 100%;
   height: auto;
 }
 
+/*main figure {
+  padding: 0 0 1rem 0;
+  img {
+    width: 100%;
+    height: auto;
+  }
+}*/
 main h2 {
   margin: 0;
   padding: 0 0 0.5rem 0;
+}
+
+main picture.founderPhoto {
+  display: block;
+  float: right;
+  width: 48%;
+  margin: 0 0 0 2%;
+}
+main picture.founderPhoto img {
+  width: 100%;
+  height: auto;
+}
+main picture.founderPhoto div {
+  text-align: center;
+  font-weight: 300;
+  color: #431d4d;
+  font-size: 0.9rem;
 }
 
 main p {
@@ -440,6 +466,7 @@ main p {
 /* FOOTER STYLING */
 div#footerWrapper {
   background-color: #230F28;
+  margin: 1rem 0 0 0;
 }
 
 footer {
