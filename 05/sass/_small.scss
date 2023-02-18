@@ -4,26 +4,132 @@ html {
   -ms-text-size-adjust: 100%;
 }
 
-/*----------- apply a natural box layout model to all elements --------------*/
+/* BOX LAYOUT AND NO PADDING/MARGIN ON ALL ELEMENTS */
 * {
   -moz-box-sizing: border-box;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
 
 /* BODY STYLING */
+body {
+  font-family: "Montserrat Alternates", sans-serif;
+  font-size: 16px;
+}
 
 /* HEADER STYLING */
+div#headerWrapper {
+  background-color: $light_gray;
+}
+header {
+  padding: 1rem 2%;
+  background-color: $light_gray;
+}
+header figure.logo {
+  float: left;
+  margin: 0 1rem 0 0;
+  img {
+    width: 75px;
+    height: auto;
+  }
+}
+header h1 {
+  font-weight: 600;
+  margin: 0 0 0.5rem 0;
+  color: $purple;
+}
+header h2 {
+  margin: 0;
+  font-weight: 300;
+  font-size: 1.2rem;
+}
 
 /* NAVIGATION STYLING */
+div#navWrapper {
+  background-color: $silver;
+}
+nav button {
+  background: transparent;
+  border: none;
+  font-size: 1.5rem;
+  padding: 0.5rem 1rem;
+  color: $purple;
+}
+nav ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  display: none;
+}
+nav ul.open {
+  display: block;
+}
+nav {
+  padding: 0 2%;
+}
+nav ul li {
+  list-style-type: none;
+}
+nav ul li a {
+  display: block;
+  text-decoration: none;
+  font-weight: 500;
+  padding: 0.5rem 1rem;
+  font-size: 0.9rem;
+  color: $purple;
+  text-align: left;
+  border-top: 1px solid darken($silver, 10%);
+}
+nav ul li a.active {
+  background-color: $brown;
+  color: #fff;
+  font-weight: 700;
+}
+nav ul li a:hover {
+  background-color: darken($silver, 10%);
+}
+nav ul li:first-child a {
+  border-top: none;
+}
 
 /* MAIN STYLING */
+main {
+  padding: 0 2%;
+}
+main figure {
+  padding: 0 0 1rem 0;
+  img {
+    width: 100%;
+    height: auto;
+  }
+}
+main h2 {
+  margin: 0;
+  padding: 0 0 0.5rem 0;
+}
+main p {
+  padding: 0.5rem 0;
+}
 
 /* FOOTER STYLING */
+div#footerWrapper {
+  background-color: $purple;
+}
+footer {
+  padding: 1rem 0;
+}
+footer p {
+  color: #fff;
+  font-size: 0.8rem;
+  font-weight: 300;
+  text-align: center;
+}
 
 /*----- Clearfix: Force an Element not to collapse -----*/
 .clearfix:after {
-    content: "";
-    display: table;
-    clear: both;
-  }  
+  content: "";
+  display: table;
+  clear: both;
+}
