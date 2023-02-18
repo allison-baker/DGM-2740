@@ -308,5 +308,32 @@ template {
   display: none;
 }
 
+/* Prevent adjustments of font size after orientation changes in IE on Windows Phone and in iOS.  */
+html {
+  -webkit-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%;
+}
+
+/*----------- apply a natural box layout model to all elements --------------*/
+* {
+  box-sizing: border-box;
+}
+
+/* BODY STYLING */
+/* HEADER STYLING */
+/* NAVIGATION STYLING */
+/* MAIN STYLING */
+/* FOOTER STYLING */
+/*----- Clearfix: Force an Element not to collapse -----*/
+.clearfix:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
 /* end of media query */
-/* end of media query */
+@media only screen and (min-width: 62rem) {
+  header, nav, main, footer {
+    max-width: 75rem;
+  }
+} /* end of media query */
