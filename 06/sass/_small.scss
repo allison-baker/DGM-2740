@@ -14,8 +14,14 @@ html {
 }
 
 /* BODY STYLING */
+body {
+  font-family:$bodyFont;
+}
 
 /* HEADER STYLING */
+header h1 {
+  font-family: $displayFont;
+}
 
 /* MAIN STYLING */
 

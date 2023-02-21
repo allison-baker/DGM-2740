@@ -308,5 +308,44 @@ template {
   display: none;
 }
 
-/* end of media query */
-/* end of media query */
+/* Prevent adjustments of font size after orientation changes in IE on Windows Phone and in iOS.  */
+html {
+  -webkit-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%;
+}
+
+/* BOX LAYOUT AND NO PADDING/MARGIN ON ALL ELEMENTS */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/* BODY STYLING */
+body {
+  font-family: "Oswald", sans-serif;
+}
+
+/* HEADER STYLING */
+header h1 {
+  font-family: "Pirata One", cursive;
+}
+
+/* MAIN STYLING */
+/* FOOTER STYLING */
+@media only screen and (min-width: 30rem) {
+  /* BODY STYLING */
+  /* HEADER STYLING */
+  /* MAIN STYLING */
+  /* FOOTER STYLING */
+} /* end of media query */
+@media only screen and (min-width: 62rem) {
+  header, nav, main, footer {
+    max-width: 75rem;
+    margin: 0 auto;
+  }
+  /* BODY STYLING */
+  /* HEADER STYLING */
+  /* MAIN STYLING */
+  /* FOOTER STYLING */
+} /* end of media query */
