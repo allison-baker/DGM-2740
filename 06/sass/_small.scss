@@ -4,25 +4,91 @@ html {
   -ms-text-size-adjust: 100%;
 }
 
-/* BOX LAYOUT AND NO PADDING/MARGIN ON ALL ELEMENTS */
+/*----------- apply a natural box layout model to all elements --------------*/
 * {
   -moz-box-sizing: border-box;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
-  margin: 0;
   padding: 0;
+  margin: 0;
 }
 
-/* BODY STYLING */
+/*----------- BODY --------------*/
 body {
-  font-family:$bodyFont;
+  font-size: 16px;
+  font-family: $bodyFont;
 }
 
-/* HEADER STYLING */
+/*----------- HEADER --------------*/
+div#headerWrapper {
+  background-color: #222;
+}
+figure {
+    float: left;
+    margin: 0;
+}
 header h1 {
+  margin: 0;
   font-family: $displayFont;
+  font-size: 3rem;
+  color: #fff;
+  padding: 0 0 0.5rem 0;
+}
+header h2 {
+  margin: 0;
+  font-weight: $regularWeight;
+  color: #fff;
+  padding: 0 0 0.5rem 0;
 }
 
-/* MAIN STYLING */
+/*----------- NAVIGATION --------------*/
+nav ul {
+  list-style-type: none;
+  display: flex;
+  flex-direction: column;
+}
+nav ul li a {
+  display: block;
+  color: #fff;
+  padding: 0.5rem 1rem;
+  text-decoration: none;
+  font-size: 0.9rem;
+  text-align: center;
+  border-top: 1px solid #444;
+}
+nav ul li:first-child a {
+  border-top: none;
+}
+nav ul li.active a {
+  background-color: #c31212;
+  color: #fff;
+}
+nav ul li a:hover {
+  background-color: #fff;
+  color: #222;
+}
 
-/* FOOTER STYLING */
+/*----------- MAIN --------------*/
+main {
+  padding: 0 2%;
+  min-height: 80vh;
+}
+
+/*----------- FOOTER --------------*/
+div#footerWrapper {
+  background-color: #222;
+  padding: 0.75rem 0;
+}
+footer p {
+  color: #fff;
+  text-align: center;
+  font-size: 0.8rem;
+  font-weight: $lightWeight;
+}
+
+/*----- Clearfix: Force an Element not to collapse -----*/
+.clearfix:after {
+  content: "";
+  display: table;
+  clear: both;
+}

@@ -314,38 +314,151 @@ html {
   -ms-text-size-adjust: 100%;
 }
 
-/* BOX LAYOUT AND NO PADDING/MARGIN ON ALL ELEMENTS */
+/*----------- apply a natural box layout model to all elements --------------*/
 * {
   box-sizing: border-box;
-  margin: 0;
   padding: 0;
+  margin: 0;
 }
 
-/* BODY STYLING */
+/*----------- BODY --------------*/
 body {
+  font-size: 16px;
   font-family: "Oswald", sans-serif;
 }
 
-/* HEADER STYLING */
-header h1 {
-  font-family: "Pirata One", cursive;
+/*----------- HEADER --------------*/
+div#headerWrapper {
+  background-color: #222;
 }
 
-/* MAIN STYLING */
-/* FOOTER STYLING */
+figure {
+  float: left;
+  margin: 0;
+}
+
+header h1 {
+  margin: 0;
+  font-family: "Pirata One", cursive;
+  font-size: 3rem;
+  color: #fff;
+  padding: 0 0 0.5rem 0;
+}
+
+header h2 {
+  margin: 0;
+  font-weight: 400;
+  color: #fff;
+  padding: 0 0 0.5rem 0;
+}
+
+/*----------- NAVIGATION --------------*/
+nav ul {
+  list-style-type: none;
+  display: flex;
+  flex-direction: column;
+}
+
+nav ul li a {
+  display: block;
+  color: #fff;
+  padding: 0.5rem 1rem;
+  text-decoration: none;
+  font-size: 0.9rem;
+  text-align: center;
+  border-top: 1px solid #444;
+}
+
+nav ul li:first-child a {
+  border-top: none;
+}
+
+nav ul li.active a {
+  background-color: #c31212;
+  color: #fff;
+}
+
+nav ul li a:hover {
+  background-color: #fff;
+  color: #222;
+}
+
+/*----------- MAIN --------------*/
+main {
+  padding: 0 2%;
+  min-height: 80vh;
+}
+
+/*----------- FOOTER --------------*/
+div#footerWrapper {
+  background-color: #222;
+  padding: 0.75rem 0;
+}
+
+footer p {
+  color: #fff;
+  text-align: center;
+  font-size: 0.8rem;
+  font-weight: 300;
+}
+
+/*----- Clearfix: Force an Element not to collapse -----*/
+.clearfix:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
 @media only screen and (min-width: 30rem) {
-  /* BODY STYLING */
-  /* HEADER STYLING */
-  /* MAIN STYLING */
-  /* FOOTER STYLING */
+  /*----------- BODY --------------*/
+  /*----------- HEADER --------------*/
+  div#headerBox {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  /*----------- NAVIGATION --------------*/
+  nav ul {
+    margin-left: 2%;
+  }
+  nav ul li {
+    width: auto;
+  }
+  nav ul li a {
+    width: 250px;
+  }
+  /*----------- MAIN --------------*/
+  /*----------- FOOTER --------------*/
 } /* end of media query */
 @media only screen and (min-width: 62rem) {
-  header, nav, main, footer {
+  div#headerBox,
+  header,
+  nav,
+  main,
+  footer {
     max-width: 75rem;
-    margin: 0 auto;
+    margin: auto;
   }
-  /* BODY STYLING */
-  /* HEADER STYLING */
-  /* MAIN STYLING */
-  /* FOOTER STYLING */
+  /*----------- BODY --------------*/
+  /*----------- HEADER --------------*/
+  div#headerBox {
+    display: flex;
+    flex-direction: row;
+    padding: 1rem 2%;
+  }
+  /*----------- NAVIGATION --------------*/
+  nav ul {
+    flex-direction: row;
+  }
+  nav ul li a {
+    width: 6rem;
+    border-left: 1px solid #444;
+    padding: 0.75rem 0;
+    border-top: none;
+  }
+  nav ul li:first-child a {
+    border-left: none;
+  }
+  /*----------- MAIN --------------*/
+  /*----------- FOOTER --------------*/
 } /* end of media query */
