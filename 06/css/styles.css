@@ -428,6 +428,11 @@ main div.performers figure figcaption {
   margin-top: 2rem;
 }
 
+main section.gallery figure img {
+  width: 100%;
+  height: auto;
+}
+
 /*----------- FOOTER --------------*/
 div#footerWrapper {
   background-color: #222;
