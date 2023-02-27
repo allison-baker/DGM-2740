@@ -385,8 +385,47 @@ nav ul li a:hover {
 
 /*----------- MAIN --------------*/
 main {
-  padding: 0 2%;
-  min-height: 80vh;
+  padding: 1rem 2%;
+}
+
+main div.performers {
+  display: flex;
+  flex-direction: column;
+}
+main div.performers figure {
+  width: 100%;
+  margin: 1rem 0;
+}
+main div.performers figure img {
+  width: 100%;
+  height: auto;
+}
+main div.performers figure#arcImg img {
+  float: right;
+  shape-outside: circle(100% at 100% 0);
+  -webkit-clip-path: circle(100% at 100% 0);
+          clip-path: circle(100% at 100% 0);
+}
+main div.performers figure#triangleImg img {
+  float: right;
+  shape-outside: polygon(100% 100%, 0 0, 100% 0);
+  -webkit-clip-path: polygon(100% 100%, 0 0, 100% 0);
+          clip-path: polygon(100% 100%, 0 0, 100% 0);
+}
+main div.performers figure#diamondImg img {
+  float: right;
+  shape-outside: polygon(0 50%, 0 0, 100% 0, 100% 50%, 50% 100%);
+  -webkit-clip-path: polygon(0 50%, 0 0, 100% 0, 100% 50%, 50% 100%);
+          clip-path: polygon(0 50%, 0 0, 100% 0, 100% 50%, 50% 100%);
+}
+main div.performers figure#circleImg img {
+  float: right;
+  shape-outside: circle(50% at 50% 0);
+  -webkit-clip-path: circle(50% at 50% 0);
+          clip-path: circle(50% at 50% 0);
+}
+main div.performers figure figcaption {
+  margin-top: 2rem;
 }
 
 /*----------- FOOTER --------------*/
@@ -428,6 +467,14 @@ footer p {
     width: 250px;
   }
   /*----------- MAIN --------------*/
+  main div.performers {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+  main div.performers figure {
+    width: 46%;
+    margin: 1rem 2%;
+  }
   /*----------- FOOTER --------------*/
 } /* end of media query */
 @media only screen and (min-width: 62rem) {
@@ -460,5 +507,9 @@ footer p {
     border-left: none;
   }
   /*----------- MAIN --------------*/
+  main div.performers figure {
+    width: 23%;
+    margin: 1%;
+  }
   /*----------- FOOTER --------------*/
 } /* end of media query */

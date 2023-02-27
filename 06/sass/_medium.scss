@@ -20,6 +20,13 @@ nav ul li a {
 }
 
 /*----------- MAIN --------------*/
-
+main div.performers {
+  flex-direction: row;
+  flex-wrap: wrap;
+  figure {
+    width: 46%;
+    margin: 1rem 2%;
+  }
+}
 
 /*----------- FOOTER --------------*/

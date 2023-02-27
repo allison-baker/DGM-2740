@@ -24,8 +24,8 @@ div#headerWrapper {
   background-color: #222;
 }
 figure {
-    float: left;
-    margin: 0;
+  float: left;
+  margin: 0;
 }
 header h1 {
   margin: 0;
@@ -70,8 +70,42 @@ nav ul li a:hover {
 
 /*----------- MAIN --------------*/
 main {
-  padding: 0 2%;
-  min-height: 80vh;
+  padding: 1rem 2%;
+}
+main div.performers {
+  display: flex;
+  flex-direction: column;
+  figure {
+    width: 100%;
+    margin: 1rem 0;
+  }
+  figure img {
+    width: 100%;
+    height: auto;
+  }
+  figure#arcImg img {
+    float: right;
+    shape-outside: circle(100% at 100% 0);
+    clip-path: circle(100% at 100% 0);
+  }
+  figure#triangleImg img {
+    float: right;
+    shape-outside: polygon(100% 100%, 0 0, 100% 0);
+    clip-path: polygon(100% 100%, 0 0, 100% 0);
+  }
+  figure#diamondImg img {
+    float: right;
+    shape-outside: polygon(0 50%, 0 0, 100% 0, 100% 50%, 50% 100%);
+    clip-path: polygon(0 50%, 0 0, 100% 0, 100% 50%, 50% 100%);
+  }
+  figure#circleImg img {
+    float: right;
+    shape-outside: circle(50% at 50% 0);
+    clip-path: circle(50% at 50% 0);
+  }
+  figure figcaption {
+    margin-top: 2rem;
+  }
 }
 
 /*----------- FOOTER --------------*/
