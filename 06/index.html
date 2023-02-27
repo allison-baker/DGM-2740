@@ -17,28 +17,37 @@
     />
 
     <!-- FAVICON STUFF -->
+    <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png" />
+    <link rel="manifest" href="site.webmanifest" />
 
     <title>Flesh Cage | Members</title>
   </head>
   <body>
     <div id="headerWrapper">
-      <div id="headerBox">
-        <header class="clearfix">
-          <figure id="logo">
-            <img src="" alt="" srcset="" />
+      <header>
+        <section id="logoTitles">
+          <figure>
+            <img
+              src="images/logo225.png"
+              alt="guitar logo"
+              srcset="images/logo75.png 1x, images/logo150.png 2x, images/logo.225.png 3x"
+            />
           </figure>
           <h1>Flesh Cage</h1>
-          <h2>Hard rock like your parents used to listen to</h2>
-        </header>
+          <h2>Your Parents' Hard Rock</h2>
+        </section>
         <nav>
-          <ul>
+          <button onclick="toggleNav()" id="hamburgerButton"><span>&#9776;</span><span>X</span></button>
+          <ul id="primaryNav">
             <li class="active"><a href="#">Members</a></li>
             <li><a href="#">Concerts</a></li>
             <li><a href="#">Book Us</a></li>
             <li><a href="#">Backstory</a></li>
           </ul>
         </nav>
-      </div>
+      </header>
     </div>
     <main class="clearfix">
       <h2>Members</h2>
@@ -197,7 +206,7 @@
             alt="image of a rock concert"
             class="lazy"
             data-src="images/concert10_400.jpg"
-            data-srcset="images/concert10_400.jpg 400w, images/concert1_800.jpg 800w, images/concert10_1200.jpg 1200w"
+            data-srcset="images/concert10_400.jpg 400w, images/concert10_800.jpg 800w, images/concert10_1200.jpg 1200w"
             data-sizes="100w"
             width="1000"
             height="800"

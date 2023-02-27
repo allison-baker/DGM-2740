@@ -2,20 +2,10 @@
 
 
 /*----------- HEADER --------------*/
-div#headerBox {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-}
+
 
 /*----------- NAVIGATION --------------*/
 nav ul {
-  margin-left: 2%;
-}
-nav ul li {
-  width: auto;
-}
-nav ul li a {
   width: 250px;
 }
 

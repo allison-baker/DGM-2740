@@ -334,7 +334,16 @@ div#headerWrapper {
 
 figure {
   float: left;
+  margin: 0.5em 1rem 0 0;
+}
+figure img {
+  width: 75px;
+  height: auto;
+}
+
+header {
   margin: 0;
+  padding: 1rem 2%;
 }
 
 header h1 {
@@ -353,24 +362,59 @@ header h2 {
 }
 
 /*----------- NAVIGATION --------------*/
+nav button {
+  background-color: transparent;
+  color: #fff;
+  position: absolute;
+  top: 0;
+  right: 0;
+  border: none;
+  font-size: 1.5rem;
+  padding: 1rem 2rem;
+}
+
+nav button span:first-child {
+  display: block;
+}
+nav button span:last-child {
+  display: none;
+}
+
+nav button.open span:first-child {
+  display: none;
+}
+nav button.open span:last-child {
+  display: block;
+}
+
 nav ul {
+  background-color: #222;
+  position: absolute;
+  right: 0;
+  width: 100%;
+  display: none;
+}
+
+nav ul.open {
+  display: block;
+}
+
+nav ul li {
   list-style-type: none;
-  display: flex;
-  flex-direction: column;
+  border-bottom: 1px solid #444;
+}
+
+nav ul:last-child {
+  border-bottom: none;
 }
 
 nav ul li a {
   display: block;
+  padding: 0.5rem 2rem;
+  font-weight: 300;
   color: #fff;
-  padding: 0.5rem 1rem;
   text-decoration: none;
-  font-size: 0.9rem;
   text-align: center;
-  border-top: 1px solid #444;
-}
-
-nav ul li:first-child a {
-  border-top: none;
 }
 
 nav ul li.active a {
@@ -428,6 +472,9 @@ main div.performers figure figcaption {
   margin-top: 2rem;
 }
 
+main section.gallery {
+  padding: 1rem 0;
+}
 main section.gallery figure {
   width: 100%;
   height: 0;
@@ -469,19 +516,8 @@ footer p {
 @media only screen and (min-width: 30rem) {
   /*----------- BODY --------------*/
   /*----------- HEADER --------------*/
-  div#headerBox {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-  }
   /*----------- NAVIGATION --------------*/
   nav ul {
-    margin-left: 2%;
-  }
-  nav ul li {
-    width: auto;
-  }
-  nav ul li a {
     width: 250px;
   }
   /*----------- MAIN --------------*/
@@ -496,7 +532,6 @@ footer p {
   /*----------- FOOTER --------------*/
 } /* end of media query */
 @media only screen and (min-width: 62rem) {
-  div#headerBox,
   header,
   nav,
   main,
@@ -506,23 +541,38 @@ footer p {
   }
   /*----------- BODY --------------*/
   /*----------- HEADER --------------*/
-  div#headerBox {
+  header {
     display: flex;
     flex-direction: row;
-    padding: 1rem 2%;
+    align-items: center;
+    justify-content: space-between;
+  }
+  header section {
+    width: 50%;
   }
   /*----------- NAVIGATION --------------*/
+  nav {
+    margin: 0;
+    width: 390px;
+  }
+  nav button {
+    display: none;
+  }
   nav ul {
+    position: relative;
+    display: flex;
     flex-direction: row;
+  }
+  nav ul li {
+    border: none;
+    border-left: 1px solid #444;
+  }
+  nav ul:first-child {
+    border-left: none;
   }
   nav ul li a {
     width: 6rem;
-    border-left: 1px solid #444;
     padding: 0.75rem 0;
-    border-top: none;
-  }
-  nav ul li:first-child a {
-    border-left: none;
   }
   /*----------- MAIN --------------*/
   main div.performers figure {
