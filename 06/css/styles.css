@@ -558,10 +558,11 @@ footer p {
   nav button {
     display: none;
   }
-  nav ul {
+  nav ul, nav ul.open {
     position: relative;
     display: flex;
     flex-direction: row;
+    background-color: transparent;
   }
   nav ul li {
     border: none;
