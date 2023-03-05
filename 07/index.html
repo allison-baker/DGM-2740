@@ -9,74 +9,60 @@
 
     <!-- STYLE SHEETS -->
     <link href="css/styles.css" rel="stylesheet" />
+    <script src="https://kit.fontawesome.com/369097350a.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Lora:wght@400;600&display=swap" rel="stylesheet" />
 
     <!-- FAVICON STUFF -->
+    <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png" />
+    <link rel="manifest" href="site.webmanifest" />
 
-    <title>Document</title>
+    <title>Petersen, Baker, and Johnson | Reliable Law Practice</title>
   </head>
   <body>
     <div id="headerWrapper">
       <header>
-        <img src="" alt="logo" />
-        <h1>Design Thinking</h1>
+        <div id="logoH1" class="clearfix">
+          <figure>
+            <img
+              src="images/logo225.png"
+              srcset="images/logo75.png 1x, images/logo150.png 2x, images/logo225.png 3x"
+              alt="logo of scales of justice"
+            />
+          </figure>
+          <h1>Petersen, Baker, and Johnson</h1>
+        </div>
+        <h2>1-800-555-1234</h2>
       </header>
     </div>
 
-    <div id="navWrapper">
-      <nav>
-        <ul>
-          <li><a href="#">Clients</a></li>
-          <li><a href="#">Services</a></li>
-          <li><a href="#">Best Practices</a></li>
-          <li><a href="#">Our Team</a></li>
-          <li><a href="#">Contact</a></li>
-        </ul>
-      </nav>
-    </div>
+    <nav class="clearfix">
+      <button onclick="toggleNav()" id="hamburgerButton"><span>&#9776;</span><span>X</span></button>
+      <ul id="primaryNav">
+        <li><a href="#">Home</a></li>
+        <li class="active"><a href="#">Attorneys</a></li>
+        <li><a href="#">Practices</a></li>
+      </ul>
+    </nav>
     <!-- end nav wrapper -->
 
     <div id="mainWrapper">
-      <main>
-        <picture class="hero">
-          <img src="" />
-        </picture>
-
-        <h1>Best Practices</h1>
-        <p>
-          Usability testing refers to evaluating a service or product by testing it with web users. Typically, during a
-          testing, participants will try to complete similar tasks while observers watch, listen, and record the screen.
-          The outcome is to identify problems with the design, collect qualitative and quantitative data, and determine
-          how well the participant's like product.
-        </p>
-        <p>
-          Competently myocardinate cross-media infomediaries via end-to-end architectures. Enthusiastically implement
-          end-to-end functionalities vis-a-vis excellent strategic theme areas. Conveniently supply enterprise action
-          items with integrated innovation. Authoritatively cultivate sustainable portals for orthogonal core
-          competencies. Distinctively coordinate team driven portals rather than synergistic processes.
-        </p>
-        <p>
-          Appropriately simplify enterprise information via leveraged total linkage. Progressively grow installed base
-          infrastructures without open-source technologies. Distinctively embrace mission-critical internal or "organic"
-          sources after competitive imperatives. Professionally whiteboard state of the art models through high-payoff
-          expertise. Authoritatively exploit transparent users through virtual channels.
-        </p>
-        <p>
-          Interactively transition user-centric web services without scalable collaboration and idea-sharing. Holisticly
-          restore next-generation data before seamless expertise. Monotonectally grow synergistic synergy without
-          bricks-and-clicks ROI. Uniquely optimize 24/365 convergence after integrated synergy. Distinctively synthesize
-          high-quality methodologies for performance based bandwidth.
-        </p>
-        <p>
-          Intrinsicly simplify transparent sources rather than principle-centered solutions. Phosfluorescently engineer
-          world-class technologies before scalable markets. Dynamically myocardinate.
-        </p>
-      </main>
+      <main></main>
     </div>
 
     <div id="footerWrapper">
-        <footer>
-            <p>&copy; <span id="year"></span> &bull; Al Baker</p>
-        </footer>
+      <footer>
+        <div id="icons">
+          <i class="fa-brands fa-square-facebook fa-xl"></i>
+          <i class="fa-brands fa-square-instagram fa-xl"></i>
+          <i class="fa-brands fa-square-twitter fa-xl"></i>
+          <i class="fa-brands fa-linkedin fa-xl"></i>
+        </div>
+        <p>&copy; <span id="year"></span> &bull; Al Baker</p>
+      </footer>
     </div>
     <script src="js/scripts.js"></script>
   </body>

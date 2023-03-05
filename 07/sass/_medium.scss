@@ -1,9 +1,42 @@
 /* BODY STYLING */
 
 /* HEADER STYLING */
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  div#logoH1 {
+    width: 60%;
+  }
+  h2 {
+    display: block;
+  }
+}
 
 /* NAVIGATION STYLING */
+nav {
+  padding: 0 2%;
+  button {
+    display: none;
+  }
+  ul, ul.open {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+  }
+  li {
+    border-top: none;
+    border-left: 1px solid $primaryColor;
+    width: auto;
+  }
+  li:first-child {
+    border-left: none;
+  }
+  a {
+    padding: 0.75rem 2rem;
+  }
+}
 
 /* MAIN STYLING */
 
-/* FOOTER STYLING
+/* FOOTER STYLING */
