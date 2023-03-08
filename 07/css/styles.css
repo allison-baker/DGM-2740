@@ -556,20 +556,22 @@ main div.flexed div.tip {
   margin: 0.5rem 0;
 }
 main div.flexed div.tip section.tip-info {
-  background-color: #8b8c89;
+  background-color: #a3cef1;
   padding: 1rem;
   border-radius: 5px;
 }
 main div.flexed div.tip section.tip-info h3 {
-  color: #a3cef1;
+  color: #214064;
 }
 main div.flexed div.tip section.tip-info p {
   padding: 0.5rem 0;
-  color: #fff;
+  color: #000;
 }
 main div.flexed div.tip section.tip-info a {
   text-decoration: none;
-  color: #e7ecef;
+  font-weight: 600;
+  font-size: 0.9rem;
+  color: #333;
 }
 
 /* FOOTER STYLING */

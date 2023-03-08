@@ -193,20 +193,22 @@ main div.flexed div.tip {
   display: block;
   margin: 0.5rem 0;
   section.tip-info {
-    background-color: $darkerGray;
+    background-color: $tertiaryColor;
     padding: 1rem;
     border-radius: 5px;
   }
   section.tip-info h3 {
-    color: $tertiaryColor;
+    color: darken($primaryColor, 5%);
   }
   section.tip-info p {
     padding: 0.5rem 0;
-    color: #fff;
+    color: #000;
   }
   section.tip-info a {
     text-decoration: none;
-    color: $lighterGray;
+    font-weight: $boldWeight;
+    font-size: 0.9rem;
+    color: #333;
   }
 }
 
