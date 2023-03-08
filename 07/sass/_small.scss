@@ -17,17 +17,27 @@ html {
 body {
   font-family: $defaultFont;
   font-size: 16px;
+  display: grid;
 }
 
 /* HEADER STYLING */
 div#headerWrapper {
   background-color: $lighterGray;
   border-top: 10px solid $darkerGray;
+  grid-row-start: 1;
 }
 header {
-  padding: 1rem 2%;
+  padding: 1rem 2vw;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  div#logoH1 {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+  }
   div#logoH1 figure {
-    float: left;
     margin: 0 0.5rem 0 0;
   }
   div#logoH1 figure img {
@@ -37,7 +47,6 @@ header {
   div#logoH1 h1 {
     font-size: 1.6rem;
     font-weight: $boldWeight;
-    padding-top: 0.25rem;
   }
   h2 {
     display: none;
@@ -46,55 +55,24 @@ header {
 
 /* NAVIGATION STYLING */
 nav {
+  height: 100vh;
+  grid-row-start: 4;
   background-color: darken($primaryColor, 15%);
-  display: flex;
-  flex-direction: column;
-  align-items: flex-end;
-  button {
-    background-color: transparent;
-    color: #fff;
-    border: none;
-    font-size: 1.5rem;
-    padding: 1rem 2rem;
-  }
-  button {
-    span:first-child {
-      display: block;
-    }
-    span:last-child {
-      display: none;
-    }
-  }
-  button.open {
-    span:first-child {
-      display: none;
-    }
-    span:last-child {
-      display: block;
-    }
-  }
   ul {
-    display: none;
+    border-bottom: 1px solid $primaryColor;
   }
-  ul.open {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    width: 100%;
-  }
-  li {
+  ul li {
     border-top: 1px solid $primaryColor;
     list-style-type: none;
-    width: 100%;
   }
-  li:first-child {
+  ul li:first-child {
     border-top: none;
   }
-  a {
+  ul li a {
     display: block;
-    padding: 0.75rem;
+    padding: 0.75rem 2vw;
     text-decoration: none;
-    text-align: center;
+    text-align: right;
     color: #fff;
     text-transform: uppercase;
     font-size: 0.9rem;
@@ -109,14 +87,132 @@ nav {
     color: #fff;
   }
 }
+div#hamburger a,
+div#closeX a {
+  display: block;
+  padding: 0.8rem 2vw;
+  text-align: right;
+  font-size: 1.5rem;
+  text-decoration: none;
+}
+div#closeX a {
+  margin-right: 2vw;
+  color: #fff;
+  font-family: sans-serif;
+}
 
 /* MAIN STYLING */
 main {
-  padding: 1rem 2%;
+  grid-row-start: 2;
+  padding: 1rem 2vw;
+}
+main div.flexed {
+  display: flex;
+  flex-wrap: wrap;
+}
+main div div.column {
+  padding: 0 $gutter;
+}
+@for $i from 0 through 12 {
+  $w: calc($i / 12) * 100%;
+  .small-#{$i} {
+    flex-basis: $w;
+  }
+}
+main div.flexed {
+  padding: 0 0 1rem 0;
+}
+main div.flexed div.profile section.profile-card {
+  background-color: $secondaryColor;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 0.5rem;
+  border-radius: 5px;
+  h2 {
+    color: #fff;
+    text-align: center;
+    padding: 1rem;
+  }
+  img {
+    width: 100%;
+    height: auto;
+  }
+  button {
+    background-color: $primaryColor;
+    padding: 0.5rem 1rem;
+    border: none;
+    border-radius: 5px;
+    font-size: 0.8rem;
+    text-transform: uppercase;
+    color: #fff;
+    margin: 1rem 0;
+  }
+}
+main div.flexed div.large-button {
+  a {
+    display: block;
+    width: 100%;
+    margin: 0.5rem 0;
+    text-decoration: none;
+  }
+  h3 {
+    text-align: center;
+    background-color: $primaryColor;
+    color: #fff;
+    text-transform: uppercase;
+    padding: 1.5rem 0;
+    border-radius: 5px;
+  }
+}
+main div.flexed div.blog section.blog-post {
+  background-color: $lighterGray;
+  margin: 0.5rem 0;
+  border-radius: 5px;
+  img {
+    width: 100%;
+    height: auto;
+    border-radius: 5px 5px 0 0;
+  }
+  h3 {
+    padding: 0.5rem 1rem 0 1rem;
+    color: $primaryColor;
+  }
+  p {
+    padding: 0.5rem 1rem;
+  }
+  button {
+    background-color: $secondaryColor;
+    width: 100%;
+    padding: 0.5rem;
+    border: none;
+    border-radius: 0 0 5px 5px;
+  }
+}
+main div.flexed div.tip {
+  display: block;
+  margin: 0.5rem 0;
+  section.tip-info {
+    background-color: $darkerGray;
+    padding: 1rem;
+    border-radius: 5px;
+  }
+  section.tip-info h3 {
+    color: $tertiaryColor;
+  }
+  section.tip-info p {
+    padding: 0.5rem 0;
+    color: #fff;
+  }
+  section.tip-info a {
+    text-decoration: none;
+    color: $lighterGray;
+  }
 }
 
 /* FOOTER STYLING */
 #footerWrapper {
+  grid-row-start: 3;
   border-top: 2px solid $primaryColor;
 }
 footer {
@@ -136,11 +232,4 @@ footer div#icons {
 }
 footer p {
   font-size: 0.8rem;
-}
-
-/*----- Clearfix: Force an Element not to collapse -----*/
-.clearfix:after {
-  content: "";
-  display: table;
-  clear: both;
 }

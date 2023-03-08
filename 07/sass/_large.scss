@@ -13,5 +13,9 @@ footer {
 /* NAVIGATION STYLING */
 
 /* MAIN STYLING */
+@for $i from 0 through 12 {
+  $w: calc($i / 12) * 100%;
+  .large-#{$i} {flex-basis: $w;}
+}
 
 /* FOOTER STYLING */

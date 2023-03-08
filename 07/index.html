@@ -25,7 +25,7 @@
   <body>
     <div id="headerWrapper">
       <header>
-        <div id="logoH1" class="clearfix">
+        <div id="logoH1">
           <figure>
             <img
               src="images/logo225.png"
@@ -35,12 +35,15 @@
           </figure>
           <h1>Petersen, Baker, and Johnson</h1>
         </div>
-        <h2>1-800-555-1234</h2>
+        <div id="buttons">
+          <h2><a href="#">1-800-555-1234</a></h2>
+          <div id="hamburger"><a href="#closeX">&#9776;</a></div>
+        </div>
       </header>
     </div>
 
-    <nav class="clearfix">
-      <button onclick="toggleNav()" id="hamburgerButton"><span>&#9776;</span><span>X</span></button>
+    <nav>
+      <div id="closeX"><a href="#hamburger">X</a></div>
       <ul id="primaryNav">
         <li><a href="#">Home</a></li>
         <li class="active"><a href="#">Attorneys</a></li>
@@ -49,17 +52,157 @@
     </nav>
     <!-- end nav wrapper -->
 
-    <div id="mainWrapper">
-      <main></main>
-    </div>
+    <main>
+      <div class="flexed">
+        <div class="small-0 medium-0 large-2"></div>
+        <div class="column small-6 medium-3 large-2 profile">
+          <section class="profile-card">
+            <h2>Alahna Petersen</h2>
+            <img src="images/lana.jpg" alt="image of a woman smiling in nature" width="300" height="300"/>
+            <button class="more">Learn More</button>
+          </section>
+        </div>
+        <div class="column small-6 medium-3 large-2 profile">
+          <section class="profile-card">
+            <h2>Allison Baker</h2>
+            <img src="images/al.jpg" alt="headshot of a person with blue hair" width="300" height="300"/>
+            <button class="more">Learn More</button>
+          </section>
+        </div>
+        <div class="column small-6 medium-3 large-2 profile">
+          <section class="profile-card">
+            <h2>Olivia Johnson</h2>
+            <img src="images/oj.jpg" alt="image of a woman in a car" width="300" height="300"/>
+            <button class="more">Learn More</button>
+          </section>
+        </div>
+        <div class="column small-6 medium-3 large-2 profile">
+          <section class="profile-card">
+            <h2>Skylar McKellar</h2>
+            <img src="images/sky.jpg" alt="photo of a woman standing in a field" width="300" height="300"/>
+            <button class="more">Learn More</button>
+          </section>
+        </div>
+      </div>
+
+      <div class="flexed">
+        <div class="small-1 medium-0 large-1"></div>
+        <div class="column small-10 medium-4 large-3 large-button">
+          <a href="#"><h3>Clients</h3></a>
+        </div>
+        <div class="small-1 medium-0 large-0"></div>
+        <div class="small-1 medium-0 large-0"></div>
+        <div class="column small-10 medium-4 large-4 large-button">
+          <a href="#"><h3>Your Case Review</h3></a>
+        </div>
+        <div class="small-1 medium-0 large-0"></div>
+        <div class="small-1 medium-0 large-0"></div>
+        <div class="column small-10 medium-4 large-3 large-button">
+          <a href="#"><h3>Famous Cases</h3></a>
+        </div>
+      </div>
+
+      <div class="flexed">
+        <div class="column small-12 medium-6 large-3 blog">
+          <section class="blog-post">
+            <img src="images/books.jpg" alt="image of books on a desk" width="500" height="333"/>
+            <h3>Blog Post #1</h3>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quasi, culpa dignissimos eius doloribus eveniet
+              corporis aut. Nisi, aliquid. Et accusantium id recusandae veritatis commodi ut consequatur nostrum amet
+              sapiente provident.
+            </p>
+            <button>Read More</button>
+          </section>
+        </div>
+        <div class="column small-12 medium-6 large-3 blog">
+          <section class="blog-post">
+            <img src="images/hammer.jpg" alt="photo of a judges gavel" width="500" height="333"/>
+            <h3>Blog Post #2</h3>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quasi, culpa dignissimos eius doloribus eveniet
+              corporis aut. Nisi, aliquid. Et accusantium id recusandae veritatis commodi ut consequatur nostrum amet
+              sapiente provident.
+            </p>
+            <button>Read More</button>
+          </section>
+        </div>
+        <div class="column small-12 medium-6 large-3 blog">
+          <section class="blog-post">
+            <img src="images/lawyer.jpg" alt="photo of the torso of a man in a suit" width="500" height="333"/>
+            <h3>Blog Post #3</h3>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quasi, culpa dignissimos eius doloribus eveniet
+              corporis aut. Nisi, aliquid. Et accusantium id recusandae veritatis commodi ut consequatur nostrum amet
+              sapiente provident.
+            </p>
+            <button>Read More</button>
+          </section>
+        </div>
+        <div class="column small-12 medium-6 large-3 blog">
+          <section class="blog-post">
+            <img src="images/library.jpg" alt="image of a law school library" width="500" height="333"/>
+            <h3>Blog Post #4</h3>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quasi, culpa dignissimos eius doloribus eveniet
+              corporis aut. Nisi, aliquid. Et accusantium id recusandae veritatis commodi ut consequatur nostrum amet
+              sapiente provident.
+            </p>
+            <button>Read More</button>
+          </section>
+        </div>
+      </div>
+
+      <div class="flexed">
+        <div class="small-1 medium-0 large-0"></div>
+        <div class="column small-10 medium-12 large-6 tip">
+          <section class="tip-info">
+            <h3>Tip of the Day</h3>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem, modi dolorem temporibus omnis alias
+              delectus ab doloribus blanditiis officia dolorum ducimus enim nisi perspiciatis ex mollitia id placeat!
+              Perferendis, eaque!
+            </p>
+            <a href="#">&#x276C; Learn More &#x276D;</a>
+          </section>
+        </div>
+        <div class="small-1 medium-0 large-0"></div>
+        <div class="small-1 medium-0 large-0"></div>
+        <div class="column small-10 medium-4 large-2 tip">
+          <section class="tip-info">
+            <h3>FAQ #1</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+            <a href="#">&#x276C; Learn More &#x276D;</a>
+          </section>
+        </div>
+        <div class="small-1 medium-0 large-0"></div>
+        <div class="small-1 medium-0 large-0"></div>
+        <div class="column small-10 medium-4 large-2 tip">
+          <section class="tip-info">
+            <h3>FAQ #2</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+            <a href="#">&#x276C; Learn More &#x276D;</a>
+          </section>
+        </div>
+        <div class="small-1 medium-0 large-0"></div>
+        <div class="small-1 medium-0 large-0"></div>
+        <div class="column small-10 medium-4 large-2 tip">
+          <section class="tip-info">
+            <h3>FAQ #3</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+            <a href="#">&#x276C; Learn More &#x276D;</a>
+          </section>
+        </div>
+      </div>
+    </main>
 
     <div id="footerWrapper">
       <footer>
         <div id="icons">
-          <i class="fa-brands fa-square-facebook fa-xl"></i>
-          <i class="fa-brands fa-square-instagram fa-xl"></i>
-          <i class="fa-brands fa-square-twitter fa-xl"></i>
-          <i class="fa-brands fa-linkedin fa-xl"></i>
+          <i class="fa-brands fa-square-facebook fa-2xl"></i>
+          <i class="fa-brands fa-square-instagram fa-2xl"></i>
+          <i class="fa-brands fa-square-twitter fa-2xl"></i>
+          <i class="fa-brands fa-linkedin fa-2xl"></i>
         </div>
         <p>&copy; <span id="year"></span> &bull; Al Baker</p>
       </footer>
