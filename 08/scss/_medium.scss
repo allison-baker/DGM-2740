@@ -5,5 +5,19 @@
 /* NAVIGATION STYLING */
 
 /* MAIN STYLING */
+main {
+  div.parent {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+  div.parent figure:first-child {
+    grid-column: 1 / span 3;
+  }
+}
 
 /* FOOTER STYLING */
+footer div.footerColumns {
+  grid-template-columns: 1fr 1fr;
+  div {
+    padding-left: 2rem;
+  }
+}

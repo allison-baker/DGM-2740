@@ -9,64 +9,105 @@ html {
   -moz-box-sizing: border-box;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
 
 /* BODY STYLING */
 body {
-  font-family: $defaultFont;
+  font-family: $bodyFont;
+  color: $textColor;
   font-size: 16px;
-  font-weight: $lightWeight;
+  font-weight: $regular;
   min-width: 320px;
 }
 
 /* HEADER STYLING */
 header {
-  display: grid;
-  grid-template-columns: 51px auto;
-  align-items: center;
-  padding: 0.5rem 2vw;
-  h1 {
-    font-size: 1.6rem;
-    font-weight: $lightWeight;
-    padding-left: 0.5rem;
-    color: $primaryColor;
-  }
+  padding: 1rem 2vw;
 }
 
 /* NAVIGATION STYLING */
+div#navWrapper {
+  background-color: $accent;
+  padding: 0 2vw;
+  ul {
+    display: flex;
+    flex-direction: row;
+  }
+  ul li {
+    list-style-type: none;
+  }
+  ul li a {
+    display: block;
+    padding: 0.75rem 2rem;
+    text-decoration: none;
+    color: $nearWhite;
+    font-size: 0.9rem;
+  }
+  ul li.active a {
+    background-color: darken($accent, 7%);
+  }
+  ul li a:hover {
+    background-color: darken($accent, 12%);
+  }
+}
 
 /* MAIN STYLING */
 main {
-  p {
-    padding: 0.5rem 2vw;
-    color: #333;
-    line-height: 125%;
+  padding: 1rem 2vw;
+  div.parent {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto;
   }
-  h1 {
-    padding: 1rem 2vw 0.5rem 2vw;
-    font-size: 1.5rem;
-    color: $secondaryColor;
-    font-weight: $lightWeight;
+  div.parent figure:first-child {
+    grid-column: 1 / span 2;
   }
-  .hero {
-    width: 100%;
+  div.parent figure {
+    padding: 0.5rem;
   }
-  .hero img {
+  div.parent figure img {
     width: 100%;
     height: auto;
+  }
+  div.parent figure figcaption {
+    text-align: center;
+    font-size: 0.9rem;
   }
 }
 
 /* FOOTER STYLING */
 #footerWrapper {
-  background-color: #1b1b1b;
+  background-color: $darkGray;
 }
 footer {
-  font-size: 0.85rem;
-  padding: 1rem 0;
-  color: #bbb;
-  text-align: center;
-  a {
-    color: #eee;
+  padding: 1rem 2vw;
+  color: $nearWhite;
+  div.footerColumns {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+  }
+  div.footerColumns div {
+    display: flex;
+    flex-direction: column;
+  }
+  div.footerColumns div h3 {
+    color: $lightGray;
+    padding: 0.5rem 0;
+  }
+  div.footerColumns div a {
+    text-decoration: none;
+    color: $nearWhite;
+    font-size: 0.9rem;
+  }
+  div.footerColumns div a:hover {
+    color: lighten($accent, 35%);
+  }
+  p {
+    text-align: center;
+    font-size: 0.8rem;
+    padding-top: 1.5rem;
   }
 }
