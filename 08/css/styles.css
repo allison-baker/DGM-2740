@@ -340,26 +340,75 @@ header {
 /* NAVIGATION STYLING */
 div#navWrapper {
   background-color: #b33a0a;
-  padding: 0 2vw;
 }
-div#navWrapper ul {
-  display: flex;
-  flex-direction: row;
+
+nav button {
+  width: 44px;
+  height: 44px;
+  background: none;
+  border: none;
+  position: relative;
 }
-div#navWrapper ul li {
+
+nav button span.line {
+  position: absolute;
+  height: 2px;
+  width: 60%;
+  left: 20%;
+  background-color: #fff;
+  transition: all 0.3s ease;
+}
+
+nav button span.top {
+  top: 29%;
+}
+
+nav button span.middle {
+  top: 48%;
+}
+
+nav button span.bottom {
+  top: 67%;
+}
+
+nav button.open .top {
+  transform: rotate(45deg);
+  top: 48%;
+}
+nav button.open .middle,
+nav button.open .bottom {
+  transform: rotate(-45deg);
+  top: 48%;
+}
+
+nav ul {
+  display: none;
+  margin: 0;
+  padding: 0;
+}
+
+nav ul.open {
+  display: block;
+}
+
+nav ul li {
   list-style-type: none;
 }
-div#navWrapper ul li a {
+
+nav ul li a {
   display: block;
   padding: 0.75rem 2rem;
   text-decoration: none;
   color: #FFFCF2;
   font-size: 0.9rem;
+  border-top: 1px solid #e34a0d;
 }
-div#navWrapper ul li.active a {
+
+nav ul li.active a {
   background-color: #912f08;
 }
-div#navWrapper ul li a:hover {
+
+nav ul li a:hover {
   background-color: #792707;
 }
 
@@ -427,6 +476,20 @@ footer p {
   /* BODY STYLING  */
   /* HEADER STYLING */
   /* NAVIGATION STYLING */
+  nav button {
+    display: none;
+  }
+  nav ul, nav ul.open {
+    display: flex;
+    flex-direction: row;
+  }
+  nav ul li a {
+    border-top: none;
+    border-left: 1px solid #e34a0d;
+  }
+  nav ul li:first-child a {
+    border: none;
+  }
   /* MAIN STYLING */
   main div.parent {
     grid-template-columns: 1fr 1fr 1fr;
@@ -443,7 +506,7 @@ footer p {
   }
 }
 @media only screen and (min-width: 64rem) {
-  main, footer {
+  main {
     max-width: 75rem;
     margin: auto;
   }

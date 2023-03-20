@@ -30,27 +30,66 @@ header {
 /* NAVIGATION STYLING */
 div#navWrapper {
   background-color: $accent;
-  padding: 0 2vw;
-  ul {
-    display: flex;
-    flex-direction: row;
+}
+nav button {
+  width: 44px;
+  height: 44px;
+  background: none;
+  border: none;
+  position: relative;
+}
+nav button span.line {
+  position: absolute;
+  height: 2px;
+  width: 60%;
+  left: 20%;
+  background-color: #fff;
+  transition: all .3s ease;
+}
+nav button span.top {
+  top: 29%;
+}
+nav button span.middle {
+  top: 48%;
+}
+nav button span.bottom {
+  top: 67%;
+}
+nav button.open {
+  .top {
+    transform: rotate(45deg);
+    top: 48%;
   }
-  ul li {
-    list-style-type: none;
+  .middle,
+  .bottom {
+    transform: rotate(-45deg);
+    top: 48%;
   }
-  ul li a {
-    display: block;
-    padding: 0.75rem 2rem;
-    text-decoration: none;
-    color: $nearWhite;
-    font-size: 0.9rem;
-  }
-  ul li.active a {
-    background-color: darken($accent, 7%);
-  }
-  ul li a:hover {
-    background-color: darken($accent, 12%);
-  }
+}
+nav ul {
+  display: none;
+  margin: 0;
+  padding: 0;
+}
+nav ul.open {
+  display: block;
+}
+nav ul li {
+  list-style-type: none;
+}
+nav ul li a {
+  display: block;
+  padding: 0.75rem 2rem;
+  text-decoration: none;
+  color: $nearWhite;
+  font-size: 0.9rem;
+  border-top: 1px solid lighten($accent, 10%);
+}
+nav ul li.active a {
+  background-color: darken($accent, 7%);
+}
+nav ul li a:hover {
+  background-color: darken($accent, 12%);
 }
 
 /* MAIN STYLING */
