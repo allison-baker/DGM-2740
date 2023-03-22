@@ -336,6 +336,10 @@ body {
 header {
   padding: 1rem 2vw;
 }
+header img {
+  width: 75px;
+  height: auto;
+}
 
 /* NAVIGATION STYLING */
 div#navWrapper {
