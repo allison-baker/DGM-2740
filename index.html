@@ -19,11 +19,20 @@
     <title>Al Baker | DGM 2740</title>
   </head>
   <body>
-    <header>
-      <h1>Welcome!</h1>
-      <h2>I know this page is ugly, it's just a placeholder...</h2>
-    </header>
+    <div id="headerWrapper">
+      <header>
+        <img
+          src="images/personal_logo225.png"
+          srcset="images/personal_logo75.png 1x, images/personal_logo150.png 2x, images/personal_logo225.png 3x"
+          alt="logo with a blue background, red chevrons, and white text reading Al"
+        />
+        <h1>DGM 2740</h1>
+      </header>
+    </div>
+
     <main>
+      <h2>Welcome!</h2>
+      <p>Click the links below to view the assignments I coded for this class.</p>
       <ul>
         <li><a href="01/index.html" target="_blank">SASS Start File</a></li>
         <li><a href="03/index.html" target="_blank">Fruit Stand</a></li>
@@ -41,10 +50,13 @@
         <li><a href="#" target="_blank">Capstone Project</a></li>
       </ul>
     </main>
-    <footer>
-      <p>&copy; <span id="year"></span> &bull; Al Baker</p>
-      <p>All websites linked here were coded by me for my DGM 2740 class at Utah Valley University.</p>
-    </footer>
+
+    <div id="footerWrapper">
+      <footer>
+        <p>&copy; <span id="year"></span> &bull; Al Baker</p>
+        <p>All websites linked here were coded by me for my DGM 2740 class at Utah Valley University.</p>
+      </footer>
+    </div>
     <script src="js/scripts.js"></script>
   </body>
 </html>

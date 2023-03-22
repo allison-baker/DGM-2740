@@ -16,14 +16,61 @@ html {
 /* BODY STYLING */
 
 /* HEADER STYLING */
+div#headerWrapper {
+  background-color: $darkRed;
+}
 header {
+  padding: 1rem 2vw;
+  display: flex;
   h1 {
-    color: red;
+    color: #fff;
+  }
+  img {
+    width: 75px;
+    height: auto;
   }
 }
 
 /* NAVIGATION STYLING */
 
 /* MAIN STYLING */
+main {
+  padding: 1rem 2vw;
+  p {
+    padding: 0.5rem 0;
+  }
+  ul {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+  }
+  ul li {
+    list-style-type: none;
+  }
+  ul li a {
+    text-decoration: none;
+    display: block;
+    padding: 1rem 0;
+    background-color: $medBlue;
+    margin: 0.5rem;
+    color: #fff;
+    text-align: center;
+    border-radius: 5px;
+  }
+  ul li a:hover {
+    background-color: $lightBlue;
+  }
+}
 
 /* FOOTER STYLING */
+div#footerWrapper {
+  background-color: $darkRed;
+  footer {
+    padding: 1rem 0;
+  }
+  footer p {
+    text-align: center;
+    color: #fff;
+    padding: 0.25rem 0;
+    font-size: 0.8rem;
+  }
+}
