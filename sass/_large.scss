@@ -1,6 +1,8 @@
-header, main, footer {
-    max-width: 75rem;
-    margin: 0 auto;
+header,
+main,
+footer {
+  max-width: 75rem;
+  margin: 0 auto;
 }
 
 /* BODY STYLING */
@@ -10,5 +12,9 @@ header, main, footer {
 /* NAVIGATION STYLING */
 
 /* MAIN STYLING */
+main ul {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+}
 
 /* FOOTER STYLING */
