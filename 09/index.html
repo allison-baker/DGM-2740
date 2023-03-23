@@ -8,27 +8,82 @@
     <meta name="author" content="Al Baker" />
 
     <!-- STYLE SHEETS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Maven+Pro:wght@400;700&family=Source+Sans+Pro:wght@200;400;700&display=swap"
+      rel="stylesheet"
+    />
     <link href="css/styles.css" rel="stylesheet" />
 
     <!-- FAVICON STUFF -->
+    <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png" />
+    <link rel="manifest" href="site.webmanifest" />
 
-    <title>City of Orem</title>
+    <title>City of Albuquerque</title>
   </head>
   <body>
     <div id="headerWrapper">
       <header>
-        <img src="" srcset="" alt="" />
-        <h1>Welcome to the City of Orem!</h1>
+        <h1>Visit Albuquerque!</h1>
+        <h2>Change Your Perspective</h2>
       </header>
     </div>
+    <div id="navWrapper">
+      <nav>
+        <ul id="primaryNav">
+          <li class="active"><a href="#">Visit</a></li>
+          <li><a href="#">Departments</a></li>
+          <li><a href="#">Services</a></li>
+          <li><a href="#">Pay Bills</a></li>
+          <li><a href="#">Meetings</a></li>
+          <li><a href="#">Help</a></li>
+        </ul>
+      </nav>
+    </div>
     <main>
-      <h1>Orem City</h1>
+      <!-- Slider main container -->
+      <div class="swiper">
+        <!-- Additional required wrapper -->
+        <div class="swiper-wrapper">
+          <!-- Slides -->
+          <div class="swiper-slide">
+            <picture>
+              <source srcset="images/abq1_small.jpg" media="(max-width: 35rem)" />
+              <source srcset="images/abq1.jpg" media="(min-width: 35rem)" />
+              <img src="images/abq1.jpg" alt="panorama of Albuqerque" />
+            </picture>
+          </div>
+          <div class="swiper-slide">
+            <picture>
+              <source srcset="images/abq2_small.jpg" media="(max-width: 35rem)" />
+              <source srcset="images/abq2.jpg" media="(min-width: 35rem)" />
+              <img src="images/abq2.jpg" alt="photo of Old Town Albuquerque" />
+            </picture>
+          </div>
+          <div class="swiper-slide">
+            <picture>
+              <source srcset="images/abq3_small.jpg" media="(max-width: 35rem)" />
+              <source srcset="images/abq3.jpg" media="(min-width: 35rem)" />
+              <img src="images/abq3.jpg" alt="panorama of Albuqerque" />
+            </picture>
+          </div>
+        </div>
+        <!-- If we need pagination -->
+        <div class="swiper-pagination"></div>
+      </div>
+
+      <h2>Plan Your Visit</h2>
     </main>
     <div id="footerWrapper">
       <footer>
         <p>&copy; <span id="year"></span> &bull; Al Baker</p>
       </footer>
     </div>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
     <script src="js/scripts.js"></script>
   </body>
 </html>

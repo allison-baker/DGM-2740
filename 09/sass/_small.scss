@@ -14,11 +14,82 @@ html {
 }
 
 /* BODY STYLING */
+body {
+  font-size: 16px;
+  font-family: $bodyFont;
+  font-weight: regular;
+}
 
 /* HEADER STYLING */
+header {
+  padding: 0.5rem 2vw;
+  h1 {
+    padding: 0;
+    margin: 0;
+    font-family: $displayFont;
+    color: $redBrown;
+    font-size: 2.5rem;
+  }
+  h2 {
+    margin: 0.5rem 0;
+    color: $purple;
+    font-family: $bodyFont;
+    font-size: 1.4rem;
+  }
+}
 
 /* NAVIGATION STYLING */
+div#navWrapper {
+  background-color: $teal;
+}
+nav {
+  ul li {
+    list-style-type: none;
+  }
+  ul li a {
+    display: block;
+    padding: 0.75rem 2rem;
+    font-size: 0.9rem;
+    color: #fff;
+    text-decoration: none;
+  }
+  ul li.active a {
+    background-color: darken($teal, 5%);
+  }
+  ul li a:hover {
+    background-color: lighten($teal, 5%);
+  }
+}
 
 /* MAIN STYLING */
+main {
+  padding: 0 2vw;
+  .swiper {
+    width: 100%;
+    height: auto;
+  }
+  .swiper img {
+    width: 100%;
+    height: auto;
+  }
+  h2 {
+    font-family: $displayFont;
+    color: $darkOrange;
+    padding: 1rem 0;
+    font-size: 1.75rem;
+  }
+}
 
 /* FOOTER STYLING */
+div#footerWrapper {
+  background-color: $teal;
+}
+footer {
+  padding: 1rem 0;
+  p {
+    text-align: center;
+    font-size: 0.8rem;
+    color: #fff;
+    padding: 0;
+  }
+}
