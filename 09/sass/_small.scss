@@ -97,39 +97,41 @@ main {
     font-size: 1.75rem;
   }
   div.cards {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding: 1rem 1.5vw;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+    grid-gap: 1rem;
+    padding: 1rem 2vw;
   }
   div.cards div {
     background-repeat: no-repeat;
     background-size: cover;
     background-blend-mode: overlay;
-    width: 250px;
-    height: 372px;
-    margin: 0.75rem 0.5vw;
+    width: 80%;
+    height: auto;
+    margin: 0 auto;
+    aspect-ratio: 1 / 1;
   }
   div.cards div:nth-child(1) {
-    background-image: url(../images/card1.jpg), linear-gradient(rgba(255, 255, 255, 0.6), rgba(255, 255, 255, 0.6));
+    background-image: url(../images/hotel.jpg), linear-gradient(rgba(255, 255, 255, 0.6), rgba(255, 255, 255, 0.6));
   }
   div.cards div:nth-child(1) a {
     background-color: lighten($lightOrange, 25%);
   }
   div.cards div:nth-child(2) {
-    background-image: url(../images/card2.jpg), linear-gradient(rgba(255, 255, 255, 0.6), rgba(255, 255, 255, 0.6));
+    background-image: url(../images/river.jpg), linear-gradient(rgba(255, 255, 255, 0.6), rgba(255, 255, 255, 0.6));
   }
   div.cards div:nth-child(2) a {
-    background-color: lighten($teal, 50%);
+    background-color: lighten($lightBlue, 10%);
   }
   div.cards div:nth-child(3) {
-    background-image: url(../images/card3.jpg), linear-gradient(rgba(255, 255, 255, 0.6), rgba(255, 255, 255, 0.6));
+    background-image: url(../images/attractions.jpg), linear-gradient(rgba(255, 255, 255, 0.6), rgba(255, 255, 255, 0.6));
   }
   div.cards div:nth-child(3) a {
     background-color: lighten($purple, 40%);
   }
   div.cards div:nth-child(4) {
-    background-image: url(../images/card4.jpg), linear-gradient(rgba(255, 255, 255, 0.6), rgba(255, 255, 255, 0.6));
+    background-image: url(../images/dining.jpeg), linear-gradient(rgba(255, 255, 255, 0.6), rgba(255, 255, 255, 0.6));
   }
   div.cards div:nth-child(4) a {
     background-color: lighten($redBrown, 40%);
@@ -139,7 +141,7 @@ main {
     height: 100%;
     width: 100%;
     text-decoration: none;
-    padding: 2rem 2vw;
+    padding: 20% 2vw;
     transition: all 0.5s ease-in;
     text-align: center;
   }
@@ -148,7 +150,7 @@ main {
     text-shadow: 0 0 4px #fff;
   }
   div.cards div a img {
-    width: 100px;
+    width: 50%;
     height: auto;
     margin-bottom: 1rem;
   }

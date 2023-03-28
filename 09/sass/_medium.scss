@@ -13,11 +13,9 @@ nav {
 
 /* MAIN STYLING */
 main div.cards {
-  flex-direction: row;
-  flex-wrap: wrap;
-  justify-content: space-around;
+  grid-template-columns: 1fr 1fr;
   div {
-    width: 46%;
+    width: 100%;
   }
 }
 

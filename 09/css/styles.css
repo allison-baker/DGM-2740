@@ -406,39 +406,41 @@ main h2 {
   font-size: 1.75rem;
 }
 main div.cards {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  padding: 1rem 1.5vw;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: auto;
+  grid-gap: 1rem;
+  padding: 1rem 2vw;
 }
 main div.cards div {
   background-repeat: no-repeat;
   background-size: cover;
   background-blend-mode: overlay;
-  width: 250px;
-  height: 372px;
-  margin: 0.75rem 0.5vw;
+  width: 80%;
+  height: auto;
+  margin: 0 auto;
+  aspect-ratio: 1/1;
 }
 main div.cards div:nth-child(1) {
-  background-image: url(../images/card1.jpg), linear-gradient(rgba(255, 255, 255, 0.6), rgba(255, 255, 255, 0.6));
+  background-image: url(../images/hotel.jpg), linear-gradient(rgba(255, 255, 255, 0.6), rgba(255, 255, 255, 0.6));
 }
 main div.cards div:nth-child(1) a {
   background-color: #f0ccb8;
 }
 main div.cards div:nth-child(2) {
-  background-image: url(../images/card2.jpg), linear-gradient(rgba(255, 255, 255, 0.6), rgba(255, 255, 255, 0.6));
+  background-image: url(../images/river.jpg), linear-gradient(rgba(255, 255, 255, 0.6), rgba(255, 255, 255, 0.6));
 }
 main div.cards div:nth-child(2) a {
-  background-color: #92f4fe;
+  background-color: #c5dcdc;
 }
 main div.cards div:nth-child(3) {
-  background-image: url(../images/card3.jpg), linear-gradient(rgba(255, 255, 255, 0.6), rgba(255, 255, 255, 0.6));
+  background-image: url(../images/attractions.jpg), linear-gradient(rgba(255, 255, 255, 0.6), rgba(255, 255, 255, 0.6));
 }
 main div.cards div:nth-child(3) a {
   background-color: #d3c7c8;
 }
 main div.cards div:nth-child(4) {
-  background-image: url(../images/card4.jpg), linear-gradient(rgba(255, 255, 255, 0.6), rgba(255, 255, 255, 0.6));
+  background-image: url(../images/dining.jpeg), linear-gradient(rgba(255, 255, 255, 0.6), rgba(255, 255, 255, 0.6));
 }
 main div.cards div:nth-child(4) a {
   background-color: #e1bdb5;
@@ -448,7 +450,7 @@ main div.cards div a {
   height: 100%;
   width: 100%;
   text-decoration: none;
-  padding: 2rem 2vw;
+  padding: 20% 2vw;
   transition: all 0.5s ease-in;
   text-align: center;
 }
@@ -457,7 +459,7 @@ main div.cards div a:hover {
   text-shadow: 0 0 4px #fff;
 }
 main div.cards div a img {
-  width: 100px;
+  width: 50%;
   height: auto;
   margin-bottom: 1rem;
 }
@@ -490,12 +492,10 @@ footer p {
   }
   /* MAIN STYLING */
   main div.cards {
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: space-around;
+    grid-template-columns: 1fr 1fr;
   }
   main div.cards div {
-    width: 46%;
+    width: 100%;
   }
   /* FOOTER STYLING */
 }
@@ -516,12 +516,7 @@ footer p {
     background-color: #fff;
   }
   main div.cards {
-    flex-wrap: nowrap;
-  }
-  main div.cards div {
-    width: 250px;
-    height: 300px;
-    margin: 0 0.5vw;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
   }
   /* FOOTER STYLING */
 }
