@@ -338,7 +338,7 @@ header {
   background-blend-mode: overlay;
   background-position: center;
   background-size: cover;
-  background-repeat: none;
+  background-repeat: no-repeat;
 }
 header h1 {
   padding: 0;
