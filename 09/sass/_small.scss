@@ -45,25 +45,7 @@ header {
 }
 
 /* NAVIGATION STYLING */
-nav {
-  background-color: $teal;
-  ul li {
-    list-style-type: none;
-  }
-  ul li a {
-    display: block;
-    padding: 0.75rem 2rem;
-    font-size: 0.9rem;
-    color: #fff;
-    text-decoration: none;
-  }
-  ul li.active a {
-    background-color: darken($teal, 5%);
-  }
-  ul li a:hover {
-    background-color: lighten($teal, 5%);
-  }
-}
+/* On the _mobilemenu.scss file */
 
 /* MAIN STYLING */
 main {

@@ -1,3 +1,4 @@
+@charset "UTF-8";
 /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
 /* Document
    ========================================================================== */
@@ -355,26 +356,7 @@ header h2 {
 }
 
 /* NAVIGATION STYLING */
-nav {
-  background-color: #018390;
-}
-nav ul li {
-  list-style-type: none;
-}
-nav ul li a {
-  display: block;
-  padding: 0.75rem 2rem;
-  font-size: 0.9rem;
-  color: #fff;
-  text-decoration: none;
-}
-nav ul li.active a {
-  background-color: #016c77;
-}
-nav ul li a:hover {
-  background-color: #019aa9;
-}
-
+/* On the _mobilemenu.scss file */
 /* MAIN STYLING */
 main .swiper-wrapper {
   margin-bottom: 1.8rem;
@@ -479,16 +461,148 @@ footer p {
   padding: 0;
 }
 
+/*Adjust the media query max-width value on line 5 to match your breakpoint between the small and medium screens OR between the medium and large screens*/
+@media only screen and (max-width: 34.9375rem) {
+  nav {
+    background-color: #018390;
+  }
+  /* Navigation Button */
+  nav button {
+    width: 100%;
+    padding: 0.4rem 2vw;
+    text-align: left;
+    background: transparent;
+    border: none;
+    font-size: 1.6rem;
+    color: #fff;
+  }
+  /* Navigation Bar */
+  #primaryNav {
+    height: 0;
+    overflow: hidden;
+    margin: 0;
+    padding: 0;
+    z-index: 998;
+  }
+  #primaryNav li.active a {
+    background-color: #016c77;
+  }
+  #primaryNav li a {
+    display: block;
+    width: 100%;
+    padding: 0.75rem 2vw;
+    font-size: 0.9rem;
+    color: #fff;
+    text-decoration: none;
+    border-top: 1px solid #019aa9;
+  }
+  #primaryNav li a:hover {
+    background-color: #019aa9;
+  }
+  /* Toggle the navigation bar to expand down  */
+  #primaryNav.open {
+    height: auto;
+  }
+  #hamburgerButton span:first-child {
+    display: block;
+  }
+  #hamburgerButton span:last-child {
+    display: none;
+  }
+  #hamburgerButton.open span:first-child {
+    display: none;
+  }
+  #hamburgerButton.open span:last-child {
+    display: block;
+  }
+  /* Submenus – optional .parent class indicates dropdowns */
+  #primaryNav > li:hover > a {
+    background: #019aa9;
+  }
+  #primaryNav li.parent > a:after {
+    font-size: 0.75rem;
+    content: "▼";
+    color: #02c8dc;
+    float: right;
+  }
+  #primaryNav li.parent > a:hover {
+    background: #01555d;
+  }
+  /*hide the sub menu items by default*/
+  #primaryNav li ul {
+    display: none;
+    background: #01555d;
+    padding: 0;
+  }
+  #primaryNav li ul a {
+    border-top: solid 1px #003e44;
+    font-size: 14px;
+    padding: 10px 5%;
+    font-weight: 200;
+  }
+  #primaryNav li:hover ul {
+    display: block;
+  }
+} /* End Mobile Styles */
 @media only screen and (min-width: 35rem) {
   /* BODY STYLING */
   /* HEADER STYLING */
   /* NAVIGATION STYLING */
   nav {
+    background-color: #018390;
     padding: 0 2vw;
+    /* Top level navigation */
+    /* Second level navigation */
   }
-  nav ul {
+  nav button {
+    display: none;
+  }
+  nav ul#primaryNav {
     display: flex;
     flex-direction: row;
+  }
+  nav ul#primaryNav li {
+    list-style-type: none;
+  }
+  nav ul#primaryNav li a {
+    display: block;
+    padding: 0.75rem 2rem;
+    font-size: 0.9rem;
+    color: #fff;
+    text-decoration: none;
+    border-right: 1px solid #019aa9;
+    transition: background 0.3s linear;
+  }
+  nav ul#primaryNav li:last-child a {
+    border-right: none;
+  }
+  nav ul#primaryNav li.active a {
+    background-color: #016c77;
+  }
+  nav ul#primaryNav li a:hover {
+    background-color: #019aa9;
+  }
+  nav ul#primaryNav li ul {
+    display: flex;
+    flex-direction: column;
+    background-color: #01555d;
+    position: absolute;
+    left: -999rem;
+  }
+  nav ul#primaryNav li:hover ul {
+    left: auto;
+    margin: 0;
+    z-index: 99;
+  }
+  nav ul#primaryNav li ul a {
+    border-top: 1px solid #003e44;
+    border-right: none;
+  }
+  nav ul#primaryNav li.parent > a:after {
+    content: "▼";
+    font-size: 0.6rem;
+    color: #02c8dc;
+    float: right;
   }
   /* MAIN STYLING */
   main div.cards {
@@ -511,6 +625,9 @@ footer p {
   }
   /* HEADER STYLING */
   /* NAVIGATION STYLING */
+  nav ul#primaryNav li a {
+    padding: 0.5rem 1.2rem;
+  }
   /* MAIN STYLING */
   main {
     background-color: #fff;
