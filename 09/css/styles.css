@@ -603,6 +603,7 @@ footer p {
     font-size: 0.6rem;
     color: #02c8dc;
     float: right;
+    margin: 0.15rem 0 0 0.5rem;
   }
   /* MAIN STYLING */
   main div.cards {
