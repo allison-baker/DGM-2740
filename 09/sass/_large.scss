@@ -15,6 +15,14 @@ body {
 /* MAIN STYLING */
 main {
   background-color: #fff;
+  div.cards {
+    flex-wrap: nowrap;
+  }
+  div.cards div {
+    width: 250px;
+    height: 300px;
+    margin: 0 0.5vw;
+  }
 }
 
 /* FOOTER STYLING */

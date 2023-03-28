@@ -67,6 +67,9 @@ nav {
 
 /* MAIN STYLING */
 main {
+  .swiper-wrapper {
+    margin-bottom: 1.8rem;
+  }
   .swiper {
     width: 100%;
     height: auto;
@@ -74,12 +77,83 @@ main {
   .swiper img {
     width: 100%;
     height: auto;
+    display: block;
+  }
+  .swiper p {
+    background-color: rgba(0, 0, 0, 0.6);
+    color: #fff;
+    text-align: center;
+    margin: 0;
+    transform: translateY(-100%);
+    padding: 0.5rem 2vw;
+    position: absolute;
+    width: 100%;
+    font-weight: $bold;
   }
   h2 {
     font-family: $displayFont;
     color: $darkOrange;
     padding: 1rem 0 1rem 2vw;
     font-size: 1.75rem;
+  }
+  div.cards {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 1rem 1.5vw;
+  }
+  div.cards div {
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-blend-mode: overlay;
+    width: 250px;
+    height: 372px;
+    margin: 0.75rem 0.5vw;
+  }
+  div.cards div:nth-child(1) {
+    background-image: url(../images/card1.jpg), linear-gradient(rgba(255, 255, 255, 0.6), rgba(255, 255, 255, 0.6));
+  }
+  div.cards div:nth-child(1) a {
+    background-color: lighten($lightOrange, 25%);
+  }
+  div.cards div:nth-child(2) {
+    background-image: url(../images/card2.jpg), linear-gradient(rgba(255, 255, 255, 0.6), rgba(255, 255, 255, 0.6));
+  }
+  div.cards div:nth-child(2) a {
+    background-color: lighten($teal, 50%);
+  }
+  div.cards div:nth-child(3) {
+    background-image: url(../images/card3.jpg), linear-gradient(rgba(255, 255, 255, 0.6), rgba(255, 255, 255, 0.6));
+  }
+  div.cards div:nth-child(3) a {
+    background-color: lighten($purple, 40%);
+  }
+  div.cards div:nth-child(4) {
+    background-image: url(../images/card4.jpg), linear-gradient(rgba(255, 255, 255, 0.6), rgba(255, 255, 255, 0.6));
+  }
+  div.cards div:nth-child(4) a {
+    background-color: lighten($redBrown, 40%);
+  }
+  div.cards div a {
+    display: block;
+    height: 100%;
+    width: 100%;
+    text-decoration: none;
+    padding: 2rem 2vw;
+    transition: all 0.5s ease-in;
+    text-align: center;
+  }
+  div.cards div a:hover {
+    background: none;
+    text-shadow: 0 0 4px #fff;
+  }
+  div.cards div a img {
+    width: 100px;
+    height: auto;
+    margin-bottom: 1rem;
+  }
+  div.cards div a h3 {
+    color: #222;
   }
 }
 

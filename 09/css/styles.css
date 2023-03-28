@@ -376,6 +376,9 @@ nav ul li a:hover {
 }
 
 /* MAIN STYLING */
+main .swiper-wrapper {
+  margin-bottom: 1.8rem;
+}
 main .swiper {
   width: 100%;
   height: auto;
@@ -383,12 +386,83 @@ main .swiper {
 main .swiper img {
   width: 100%;
   height: auto;
+  display: block;
+}
+main .swiper p {
+  background-color: rgba(0, 0, 0, 0.6);
+  color: #fff;
+  text-align: center;
+  margin: 0;
+  transform: translateY(-100%);
+  padding: 0.5rem 2vw;
+  position: absolute;
+  width: 100%;
+  font-weight: 700;
 }
 main h2 {
   font-family: "Maven Pro", sans-serif;
   color: #C76C19;
   padding: 1rem 0 1rem 2vw;
   font-size: 1.75rem;
+}
+main div.cards {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 1rem 1.5vw;
+}
+main div.cards div {
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-blend-mode: overlay;
+  width: 250px;
+  height: 372px;
+  margin: 0.75rem 0.5vw;
+}
+main div.cards div:nth-child(1) {
+  background-image: url(../images/card1.jpg), linear-gradient(rgba(255, 255, 255, 0.6), rgba(255, 255, 255, 0.6));
+}
+main div.cards div:nth-child(1) a {
+  background-color: #f0ccb8;
+}
+main div.cards div:nth-child(2) {
+  background-image: url(../images/card2.jpg), linear-gradient(rgba(255, 255, 255, 0.6), rgba(255, 255, 255, 0.6));
+}
+main div.cards div:nth-child(2) a {
+  background-color: #92f4fe;
+}
+main div.cards div:nth-child(3) {
+  background-image: url(../images/card3.jpg), linear-gradient(rgba(255, 255, 255, 0.6), rgba(255, 255, 255, 0.6));
+}
+main div.cards div:nth-child(3) a {
+  background-color: #d3c7c8;
+}
+main div.cards div:nth-child(4) {
+  background-image: url(../images/card4.jpg), linear-gradient(rgba(255, 255, 255, 0.6), rgba(255, 255, 255, 0.6));
+}
+main div.cards div:nth-child(4) a {
+  background-color: #e1bdb5;
+}
+main div.cards div a {
+  display: block;
+  height: 100%;
+  width: 100%;
+  text-decoration: none;
+  padding: 2rem 2vw;
+  transition: all 0.5s ease-in;
+  text-align: center;
+}
+main div.cards div a:hover {
+  background: none;
+  text-shadow: 0 0 4px #fff;
+}
+main div.cards div a img {
+  width: 100px;
+  height: auto;
+  margin-bottom: 1rem;
+}
+main div.cards div a h3 {
+  color: #222;
 }
 
 /* FOOTER STYLING */
@@ -415,6 +489,14 @@ footer p {
     flex-direction: row;
   }
   /* MAIN STYLING */
+  main div.cards {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+  main div.cards div {
+    width: 46%;
+  }
   /* FOOTER STYLING */
 }
 @media only screen and (min-width: 64rem) {
@@ -432,6 +514,14 @@ footer p {
   /* MAIN STYLING */
   main {
     background-color: #fff;
+  }
+  main div.cards {
+    flex-wrap: nowrap;
+  }
+  main div.cards div {
+    width: 250px;
+    height: 300px;
+    margin: 0 0.5vw;
   }
   /* FOOTER STYLING */
 }
