@@ -29,7 +29,84 @@
       </nav>
     </div>
     <main>
-      <h2>Order Form</h2>
+      <h2>Order</h2>
+
+      <form method="get" action="thanks.html">
+        <fieldset>
+          <legend>Customer Information</legend>
+
+          <label class="top"
+            >Full Name*
+            <input type="text" name="fname" required />
+          </label>
+          <label class="top"
+            >Phone*
+            <input type="tel" name="phone" placeholder="1234567890" required />
+          </label>
+          <label class="top"
+            >Email*
+            <input type="email" name="email" placeholder="example@gmail.com" required />
+          </label>
+        </fieldset>
+
+        <fieldset>
+          <legend>Swag Information</legend>
+
+          <label class="top"
+            >Date Needed
+            <input type="date" name="date" />
+          </label>
+          <label class="top"
+            >Business Name
+            <input type="text" name="bname" />
+          </label>
+          <label class="top"
+            >Business URL
+            <input type="url" name="url" />
+          </label>
+
+          <label class="dropdown"
+            >Color
+            <select name="color">
+              <option value="default">-- Select Color --</option>
+              <option value="red">Burgundy</option>
+              <option value="orange">Texas Orange</option>
+              <option value="yellow">Mustard Yellow</option>
+              <option value="green">Forest Green</option>
+              <option value="blue">Navy Blue</option>
+              <option value="purple">Royal Purple</option>
+            </select>
+          </label>
+
+          <label class="top"
+            >Quantity
+            <input type="number" name="quantity" />
+          </label>
+
+          <div>Material</div>
+          <label class="side"><input type="radio" name="material" value="aluminum" />Aluminum</label>
+          <label class="side"><input type="radio" name="material" value="plastic" />Plastic</label>
+        </fieldset>
+
+        <fieldset>
+          <legend>Payment Information</legend>
+
+          <label class="top"
+            >Name on Card*
+            <input type="text" name="cname" required />
+          </label>
+          <label class="top"
+            >Card Number*
+            <input type="tel" name="card" required />
+          </label>
+          <label class="top"
+            >Expiration Date*
+            <input type="month" name="expiration" required />
+          </label>
+        </fieldset>
+
+        <input type="submit" value="Order My Swag" class="submitBtn" />
+      </form>
     </main>
     <div id="footerWrapper">
       <footer>
