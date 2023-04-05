@@ -117,11 +117,15 @@ nav {
 main {
   padding: 1rem 2vw;
   background-color: #fff;
+  min-height: 73vh;
   h2 {
     font-family: $displayFont;
     font-size: 2rem;
     letter-spacing: 0.2rem;
     color: $purple;
+  }
+  p {
+    padding: 1rem 0;
   }
 }
 
