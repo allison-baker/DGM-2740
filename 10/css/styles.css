@@ -390,7 +390,7 @@ header button.open span:last-child {
 
 /* NAVIGATION STYLING */
 nav {
-  background-color: #1c9d7e;
+  background-color: #227373;
   width: 250px;
   position: absolute;
   top: 0;
@@ -420,16 +420,16 @@ nav ul li a {
   color: #fff;
   font-weight: 700;
   font-size: 0.9rem;
-  border-bottom: 1px solid #167e66;
+  border-bottom: 1px solid #1a5858;
 }
 nav ul li:last-child a {
   border-bottom: none;
 }
 nav ul li.active a {
-  background-color: #167e66;
+  background-color: #1a5858;
 }
 nav ul li a:hover {
-  background-color: #21bb97;
+  background-color: #2a8f8f;
 }
 
 /* MAIN STYLING */
@@ -447,14 +447,14 @@ main h2 {
 /* FORM STYLING */
 form fieldset {
   margin: 2rem 0;
-  border: 1px solid #21bb97;
+  border: 1px solid #2a8f8f;
   border-radius: 5px;
   padding: 0.5rem 2%;
 }
 form fieldset legend {
   padding: 0 0.5rem;
   font-weight: 700;
-  color: #1c9c65;
+  color: #0a4e31;
 }
 form fieldset label.top, form fieldset div {
   display: block;
@@ -466,7 +466,7 @@ form fieldset label.top input, form fieldset label.top select {
   font-size: 1rem;
   background-color: rgba(0, 0, 0, 0.075);
   border: none;
-  border-bottom: 2px solid #1c9c65;
+  border-bottom: 2px solid #0a4e31;
   border-radius: 5px;
   padding: 0.75rem;
   margin-top: 0.25rem;
@@ -483,17 +483,17 @@ form fieldset label.top input:required {
   border-width: 4px;
 }
 form fieldset label.top input:required valid {
-  border-color: #1c9c65;
+  border-color: #0a4e31;
   border-width: 2px;
 }
 
 form input.submitBtn {
-  border: 2px solid #1c9c65;
+  border: 2px solid #0a4e31;
   border-radius: 5px;
   background: none;
   margin: 0 2%;
   padding: 0.75rem 0;
-  color: #147149;
+  color: #042115;
   font-weight: 700;
   width: 96%;
   margin-bottom: 1rem;
@@ -554,7 +554,7 @@ footer p {
     transform: translateX(0);
     width: auto;
     padding: 0 2vw;
-    background-color: #1c9d7e;
+    background-color: #227373;
   }
   nav h1 {
     display: none;
@@ -566,7 +566,7 @@ footer p {
   nav ul li a {
     padding: 0.75rem 1rem;
     border-bottom: none;
-    border-right: 1px solid #167e66;
+    border-right: 1px solid #1a5858;
   }
   nav ul li:last-child a {
     border-right: none;
