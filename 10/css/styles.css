@@ -486,7 +486,7 @@ form fieldset label.top input:required {
   border-color: #ee4266;
   border-width: 4px;
 }
-form fieldset label.top input:required valid {
+form fieldset label.top input:required:valid {
   border-color: #0a4e31;
   border-width: 2px;
 }
