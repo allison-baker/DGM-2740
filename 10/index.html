@@ -20,101 +20,108 @@
     <title>Swag Shop | Order Form</title>
   </head>
   <body>
-    <header>
-      <h1>Swag Shop</h1>
-    </header>
-    <nav>
-      <ul>
-        <li><a href="#">Home</a></li>
-        <li><a href="#">Products</a></li>
-        <li><a href="#">Deals</a></li>
-        <li class="active"><a href="#">Order</a></li>
-        <li><a href="#">Customer Reviews</a></li>
-      </ul>
-    </nav>
-    <main>
-      <h2>Order</h2>
+    <div id="pageWrapper">
+      <div id="content">
+        <header>
+          <img />
+          <h1>Swag Shop</h1>
+          <button id="hamburgerBtn"><span>&#9776;</span><span>X</span></button>
+        </header>
+        <nav>
+          <h2>Swag Shop</h2>
+          <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Products</a></li>
+            <li><a href="#">Deals</a></li>
+            <li class="active"><a href="#">Order</a></li>
+            <li><a href="#">Customer Reviews</a></li>
+          </ul>
+        </nav>
+        <main>
+          <h2>Order</h2>
 
-      <form method="get" action="thanks.html">
-        <fieldset>
-          <legend>Customer Information</legend>
+          <form method="get" action="thanks.html">
+            <fieldset>
+              <legend>Customer Information</legend>
 
-          <label class="top"
-            >Full Name*
-            <input type="text" name="fname" required />
-          </label>
-          <label class="top"
-            >Phone*
-            <input type="tel" name="phone" placeholder="1234567890" required />
-          </label>
-          <label class="top"
-            >Email*
-            <input type="email" name="email" placeholder="example@gmail.com" required />
-          </label>
-        </fieldset>
+              <label class="top"
+                >Full Name*
+                <input type="text" name="fname" required />
+              </label>
+              <label class="top"
+                >Phone*
+                <input type="tel" name="phone" placeholder="1234567890" required />
+              </label>
+              <label class="top"
+                >Email*
+                <input type="email" name="email" placeholder="example@gmail.com" required />
+              </label>
+            </fieldset>
 
-        <fieldset>
-          <legend>Swag Information</legend>
+            <fieldset>
+              <legend>Swag Information</legend>
 
-          <label class="top"
-            >Date Needed
-            <input type="date" name="date" />
-          </label>
-          <label class="top"
-            >Business Name
-            <input type="text" name="bname" />
-          </label>
-          <label class="top"
-            >Business URL
-            <input type="url" name="url" />
-          </label>
+              <label class="top"
+                >Date Needed
+                <input type="date" name="date" />
+              </label>
+              <label class="top"
+                >Business Name
+                <input type="text" name="bname" />
+              </label>
+              <label class="top"
+                >Business URL
+                <input type="url" name="url" />
+              </label>
 
-          <label class="top"
-            >Color
-            <select name="color">
-              <option value="default">-- Select Color --</option>
-              <option value="red">Burgundy</option>
-              <option value="orange">Texas Orange</option>
-              <option value="yellow">Mustard Yellow</option>
-              <option value="green">Forest Green</option>
-              <option value="blue">Navy Blue</option>
-              <option value="purple">Royal Purple</option>
-            </select>
-          </label>
+              <label class="top"
+                >Color
+                <select name="color">
+                  <option value="default">-- Select Color --</option>
+                  <option value="red">Burgundy</option>
+                  <option value="orange">Texas Orange</option>
+                  <option value="yellow">Mustard Yellow</option>
+                  <option value="green">Forest Green</option>
+                  <option value="blue">Navy Blue</option>
+                  <option value="purple">Royal Purple</option>
+                </select>
+              </label>
 
-          <label class="top"
-            >Quantity
-            <input type="number" name="quantity" />
-          </label>
+              <label class="top"
+                >Quantity
+                <input type="number" name="quantity" />
+              </label>
 
-          <div>Material</div>
-          <label class="side"><input type="radio" name="material" value="aluminum" /> Aluminum</label>
-          <label class="side"><input type="radio" name="material" value="plastic" /> Plastic</label>
-        </fieldset>
+              <div>Material</div>
+              <label class="side"><input type="radio" name="material" value="aluminum" /> Aluminum</label>
+              <label class="side"><input type="radio" name="material" value="plastic" /> Plastic</label>
+            </fieldset>
 
-        <fieldset>
-          <legend>Payment Information</legend>
+            <fieldset>
+              <legend>Payment Information</legend>
 
-          <label class="top"
-            >Name on Card*
-            <input type="text" name="cname" required />
-          </label>
-          <label class="top"
-            >Card Number*
-            <input type="tel" name="card" required />
-          </label>
-          <label class="top"
-            >Expiration Date*
-            <input type="month" name="expiration" required />
-          </label>
-        </fieldset>
+              <label class="top"
+                >Name on Card*
+                <input type="text" name="cname" required />
+              </label>
+              <label class="top"
+                >Card Number*
+                <input type="tel" name="card" required />
+              </label>
+              <label class="top"
+                >Expiration Date*
+                <input type="month" name="expiration" required />
+              </label>
+            </fieldset>
 
-        <input type="submit" value="Order My Swag" class="submitBtn" />
-      </form>
-    </main>
-    <footer>
-      <p>&copy; <span id="year"></span> &bull; Al Baker</p>
-    </footer>
+            <input type="submit" value="Order My Swag" class="submitBtn" />
+          </form>
+        </main>
+        <footer>
+          <p>&copy; <span id="year"></span> &bull; Al Baker</p>
+        </footer>
+      </div> <!-- close content -->
+    </div> <!-- close page wrapper -->
     <script src="js/scripts.js"></script>
   </body>
 </html>

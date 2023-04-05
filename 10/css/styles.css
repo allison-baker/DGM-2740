@@ -331,39 +331,100 @@ body {
   background-color: rgba(0, 0, 0, 0.05);
 }
 
+div#pageWrapper {
+  position: relative;
+  overflow-x: hidden;
+}
+
+div.move > div#content {
+  transform: translateX(-200px);
+}
+
+div#content {
+  transition: transform 500ms ease;
+}
+
 /* HEADER STYLING */
 header {
   background-color: #540d6e;
-  padding: 0.75rem 2vw;
+  padding: 1rem 2vw;
+  display: grid;
+  grid-template-columns: 76px auto 45px;
+  align-items: center;
 }
 header h1 {
   font-family: "Bangers", cursive;
   letter-spacing: 0.2rem;
   font-size: 2.5rem;
   color: #fff;
+  margin: 0;
+  padding: 0;
+}
+header button {
+  width: 44px;
+  height: 44px;
+  margin: 0;
+  align-self: start;
+  background: none;
+  border: none;
+  font-size: 1.5rem;
+  text-align: right;
+  color: #fff;
+}
+header button span:first-child {
+  display: block;
+}
+header button span:last-child {
+  display: none;
+}
+header button.open span:first-child {
+  display: none;
+}
+header button.open span:last-child {
+  display: block;
 }
 
 /* NAVIGATION STYLING */
 nav {
-  background-color: #2eb798;
+  background-color: #1c9d7e;
+  width: 200px;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  transform: translateX(100%);
+}
+nav h2 {
+  font-family: "Bangers", cursive;
+  font-size: 2rem;
+  letter-spacing: 0.2rem;
+  color: #333;
+  background-color: #ffd23f;
+  padding: 1.5rem 2%;
+  display: block;
+  text-align: center;
 }
 nav ul li {
   list-style-type: none;
 }
 nav ul li a {
   display: block;
-  padding: 0.75rem 1rem;
-  text-align: center;
+  padding: 1rem 0.5rem;
+  text-align: right;
   text-decoration: none;
   color: #fff;
   font-weight: 700;
   font-size: 0.9rem;
+  border-bottom: 1px solid #167e66;
+}
+nav ul li:last-child a {
+  border-bottom: none;
 }
 nav ul li.active a {
-  background-color: #279b80;
+  background-color: #167e66;
 }
 nav ul li a:hover {
-  background-color: #3bceac;
+  background-color: #21bb97;
 }
 
 /* MAIN STYLING */
@@ -381,14 +442,14 @@ main h2 {
 /* FORM STYLING */
 form fieldset {
   margin: 2rem 0;
-  border: 1px solid #3bceac;
+  border: 1px solid #21bb97;
   border-radius: 5px;
   padding: 0.5rem 2%;
 }
 form fieldset legend {
   padding: 0 0.5rem;
   font-weight: 700;
-  color: #0ead69;
+  color: #1c9c65;
 }
 form fieldset label.top, form fieldset div {
   display: block;
@@ -400,7 +461,7 @@ form fieldset label.top input, form fieldset label.top select {
   font-size: 1rem;
   background-color: rgba(0, 0, 0, 0.075);
   border: none;
-  border-bottom: 2px solid #0ead69;
+  border-bottom: 2px solid #1c9c65;
   border-radius: 5px;
   padding: 0.75rem;
   margin-top: 0.25rem;
@@ -417,19 +478,20 @@ form fieldset label.top input:required {
   border-width: 4px;
 }
 form fieldset label.top input:required valid {
-  border-color: #0ead69;
+  border-color: #1c9c65;
   border-width: 2px;
 }
 
 form input.submitBtn {
-  border: 2px solid #0ead69;
+  border: 2px solid #1c9c65;
   border-radius: 5px;
   background: none;
   margin: 0 2%;
   padding: 0.75rem 0;
-  color: #0a7e4c;
+  color: #147149;
   font-weight: 700;
   width: 96%;
+  margin-bottom: 1rem;
 }
 
 form input.submitBtn:hover {
@@ -450,10 +512,17 @@ footer p {
 
 @media only screen and (min-width: 35rem) {
   /* BODY STYLING */
+  div.move > div#content {
+    transform: translateX(-500px);
+  }
   /* HEADER STYLING */
   /* NAVIGATION STYLING */
+  nav {
+    width: 500px;
+  }
   /* MAIN STYLING */
-  form label.top input, form label.top select {
+  form label.top input,
+  form label.top select {
     max-width: 25rem;
   }
   form input.submitBtn {
@@ -462,13 +531,41 @@ footer p {
   /* FOOTER STYLING */
 }
 @media only screen and (min-width: 64rem) {
-  header, nav, main, footer {
+  header,
+  nav,
+  main,
+  footer {
     max-width: 64rem;
     margin: 0 auto;
   }
   /* BODY STYLING */
   /* HEADER STYLING */
+  header button {
+    display: none;
+  }
   /* NAVIGATION STYLING */
+  nav {
+    position: static;
+    transform: translateX(0);
+    width: auto;
+    padding: 0 2vw;
+    background-color: #1c9d7e;
+  }
+  nav h2 {
+    display: none;
+  }
+  nav ul {
+    display: flex;
+    flex-direction: row;
+  }
+  nav ul li a {
+    padding: 0.75rem 1rem;
+    border-bottom: none;
+    border-right: 1px solid #167e66;
+  }
+  nav ul li:last-child a {
+    border-right: none;
+  }
   /* MAIN STYLING */
   form fieldset label.side {
     padding: 0.25rem 0;

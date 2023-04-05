@@ -1,17 +1,24 @@
 /* BODY STYLING */
+div.move > div#content {
+  transform: translateX(-500px);
+}
 
 /* HEADER STYLING */
 
 /* NAVIGATION STYLING */
+nav {
+  width: 500px;
+}
 
 /* MAIN STYLING */
 form {
-    label.top input, label.top select {
-        max-width: 25rem;
-    }
-    input.submitBtn {
-        max-width: 25rem;
-    }
+  label.top input,
+  label.top select {
+    max-width: 25rem;
+  }
+  input.submitBtn {
+    max-width: 25rem;
+  }
 }
 
 /* FOOTER STYLING */

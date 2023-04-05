@@ -1,17 +1,45 @@
-header, nav, main, footer {
-    max-width: 64rem;
-    margin: 0 auto;
+header,
+nav,
+main,
+footer {
+  max-width: 64rem;
+  margin: 0 auto;
 }
 
 /* BODY STYLING */
 
 /* HEADER STYLING */
+header button {
+  display: none;
+}
 
 /* NAVIGATION STYLING */
+nav {
+  position: static;
+  transform: translateX(0);
+  width: auto;
+  padding: 0 2vw;
+  background-color: darken($teal, 7%);
+  h2 {
+    display: none;
+  }
+  ul {
+    display: flex;
+    flex-direction: row;
+  }
+  ul li a {
+    padding: 0.75rem 1rem;
+    border-bottom: none;
+    border-right: 1px solid darken($teal, 14%);
+  }
+  ul li:last-child a {
+    border-right: none;
+  }
+}
 
 /* MAIN STYLING */
 form fieldset label.side {
-    padding: 0.25rem 0;
+  padding: 0.25rem 0;
 }
 
 /* FOOTER STYLING */
