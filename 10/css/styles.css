@@ -337,7 +337,7 @@ div#pageWrapper {
 }
 
 div.move > div#content {
-  transform: translateX(-200px);
+  transform: translateX(-250px);
 }
 
 div#content {
@@ -352,12 +352,16 @@ header {
   grid-template-columns: 76px auto 45px;
   align-items: center;
 }
+header img {
+  width: 75px;
+  height: auto;
+}
 header h1 {
   font-family: "Bangers", cursive;
   letter-spacing: 0.2rem;
   font-size: 2.5rem;
   color: #fff;
-  margin: 0;
+  margin: 0 0 0 1rem;
   padding: 0;
 }
 header button {
@@ -387,20 +391,21 @@ header button.open span:last-child {
 /* NAVIGATION STYLING */
 nav {
   background-color: #1c9d7e;
-  width: 200px;
+  width: 250px;
   position: absolute;
   top: 0;
   right: 0;
   bottom: 0;
   transform: translateX(100%);
 }
-nav h2 {
+nav h1 {
   font-family: "Bangers", cursive;
-  font-size: 2rem;
+  font-size: 2.5rem;
   letter-spacing: 0.2rem;
   color: #333;
   background-color: #ffd23f;
-  padding: 1.5rem 2%;
+  padding: 1.9rem 2%;
+  margin: 0;
   display: block;
   text-align: center;
 }
@@ -513,12 +518,12 @@ footer p {
 @media only screen and (min-width: 35rem) {
   /* BODY STYLING */
   div.move > div#content {
-    transform: translateX(-500px);
+    transform: translateX(-400px);
   }
   /* HEADER STYLING */
   /* NAVIGATION STYLING */
   nav {
-    width: 500px;
+    width: 400px;
   }
   /* MAIN STYLING */
   form label.top input,
@@ -551,7 +556,7 @@ footer p {
     padding: 0 2vw;
     background-color: #1c9d7e;
   }
-  nav h2 {
+  nav h1 {
     display: none;
   }
   nav ul {

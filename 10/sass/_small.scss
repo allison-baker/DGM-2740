@@ -25,7 +25,7 @@ div#pageWrapper {
   overflow-x: hidden;
 }
 div.move > div#content {
-  transform: translateX(-200px);
+  transform: translateX(-250px);
 }
 div#content {
   transition: transform 500ms ease;
@@ -38,12 +38,16 @@ header {
   display: grid;
   grid-template-columns: 76px auto 45px;
   align-items: center;
+  img {
+    width: 75px;
+    height: auto;
+  }
   h1 {
     font-family: $displayFont;
     letter-spacing: 0.2rem;
     font-size: 2.5rem;
     color: #fff;
-    margin: 0;
+    margin: 0 0 0 1rem;
     padding: 0;
   }
   button {
@@ -68,19 +72,20 @@ header {
 /* NAVIGATION STYLING */
 nav {
   background-color: darken($teal, 7%);
-  width: 200px;
+  width: 250px;
   position: absolute;
   top: 0;
   right: 0;
   bottom: 0;
   transform: translateX(100%);
-  h2 {
+  h1 {
     font-family: $displayFont;
-    font-size: 2rem;
+    font-size: 2.5rem;
     letter-spacing: 0.2rem;
     color: #333;
     background-color: $yellow;
-    padding: 1.5rem 2%;
+    padding: 1.9rem 2%;
+    margin: 0;
     display: block;
     text-align: center;
   }

@@ -17,18 +17,27 @@
     <link href="css/styles.css" rel="stylesheet" />
 
     <!-- FAVICON STUFF -->
+    <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png" />
+    <link rel="manifest" href="site.webmanifest" />
+
     <title>Swag Shop | Order Form</title>
   </head>
   <body>
     <div id="pageWrapper">
       <div id="content">
         <header>
-          <img />
+          <img
+            src="images/logo225.png"
+            srcset="images/logo75.png 1x, images/logo150.png 2x, images/logo225.png 3x"
+            alt="shopping cart logo"
+          />
           <h1>Swag Shop</h1>
           <button id="hamburgerBtn"><span>&#9776;</span><span>X</span></button>
         </header>
         <nav>
-          <h2>Swag Shop</h2>
+          <h1>Swag Shop</h1>
           <ul>
             <li><a href="#">Home</a></li>
             <li><a href="#">Products</a></li>
@@ -120,8 +129,10 @@
         <footer>
           <p>&copy; <span id="year"></span> &bull; Al Baker</p>
         </footer>
-      </div> <!-- close content -->
-    </div> <!-- close page wrapper -->
+      </div>
+      <!-- close content -->
+    </div>
+    <!-- close page wrapper -->
     <script src="js/scripts.js"></script>
   </body>
 </html>
