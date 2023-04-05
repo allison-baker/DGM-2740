@@ -8,26 +8,30 @@
     <meta name="author" content="Al Baker" />
 
     <!-- STYLE SHEETS -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bangers&family=Poppins:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
     <link href="css/styles.css" rel="stylesheet" />
 
     <!-- FAVICON STUFF -->
     <title>Swag Shop | Order Form</title>
   </head>
   <body>
-    <div id="headerWrapper">
-      <header>
-        <h1>Swag Shop</h1>
-      </header>
-    </div>
-    <div id="navWrapper">
-      <nav>
-        <ul>
-          <li><a href="#">One</a></li>
-          <li><a href="#">Two</a></li>
-          <li><a href="#">Three</a></li>
-        </ul>
-      </nav>
-    </div>
+    <header>
+      <h1>Swag Shop</h1>
+    </header>
+    <nav>
+      <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">Products</a></li>
+        <li><a href="#">Deals</a></li>
+        <li class="active"><a href="#">Order</a></li>
+        <li><a href="#">Customer Reviews</a></li>
+      </ul>
+    </nav>
     <main>
       <h2>Order</h2>
 
@@ -65,7 +69,7 @@
             <input type="url" name="url" />
           </label>
 
-          <label class="dropdown"
+          <label class="top"
             >Color
             <select name="color">
               <option value="default">-- Select Color --</option>
@@ -84,8 +88,8 @@
           </label>
 
           <div>Material</div>
-          <label class="side"><input type="radio" name="material" value="aluminum" />Aluminum</label>
-          <label class="side"><input type="radio" name="material" value="plastic" />Plastic</label>
+          <label class="side"><input type="radio" name="material" value="aluminum" /> Aluminum</label>
+          <label class="side"><input type="radio" name="material" value="plastic" /> Plastic</label>
         </fieldset>
 
         <fieldset>
@@ -108,11 +112,9 @@
         <input type="submit" value="Order My Swag" class="submitBtn" />
       </form>
     </main>
-    <div id="footerWrapper">
-      <footer>
-        <p>&copy; <span id="year"></span> &bull; Al Baker</p>
-      </footer>
-    </div>
+    <footer>
+      <p>&copy; <span id="year"></span> &bull; Al Baker</p>
+    </footer>
     <script src="js/scripts.js"></script>
   </body>
 </html>

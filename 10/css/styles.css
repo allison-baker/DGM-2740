@@ -326,23 +326,152 @@ html {
 /* BODY STYLING */
 body {
   font-size: 16px;
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  background-color: rgba(0, 0, 0, 0.05);
 }
 
 /* HEADER STYLING */
+header {
+  background-color: #540d6e;
+  padding: 0.75rem 2vw;
+}
+header h1 {
+  font-family: "Bangers", cursive;
+  letter-spacing: 0.2rem;
+  font-size: 2.5rem;
+  color: #fff;
+}
+
 /* NAVIGATION STYLING */
+nav {
+  background-color: #2eb798;
+}
+nav ul li {
+  list-style-type: none;
+}
+nav ul li a {
+  display: block;
+  padding: 0.75rem 1rem;
+  text-align: center;
+  text-decoration: none;
+  color: #fff;
+  font-weight: 700;
+  font-size: 0.9rem;
+}
+nav ul li.active a {
+  background-color: #279b80;
+}
+nav ul li a:hover {
+  background-color: #3bceac;
+}
+
 /* MAIN STYLING */
+main {
+  padding: 1rem 2vw;
+  background-color: #fff;
+}
+main h2 {
+  font-family: "Bangers", cursive;
+  font-size: 2rem;
+  letter-spacing: 0.2rem;
+  color: #540d6e;
+}
+
+/* FORM STYLING */
+form fieldset {
+  margin: 2rem 0;
+  border: 1px solid #3bceac;
+  border-radius: 5px;
+  padding: 0.5rem 2%;
+}
+form fieldset legend {
+  padding: 0 0.5rem;
+  font-weight: 700;
+  color: #0ead69;
+}
+form fieldset label.top, form fieldset div {
+  display: block;
+  margin-bottom: 1rem;
+  font-size: 0.9rem;
+}
+form fieldset label.top input, form fieldset label.top select {
+  display: block;
+  font-size: 1rem;
+  background-color: rgba(0, 0, 0, 0.075);
+  border: none;
+  border-bottom: 2px solid #0ead69;
+  border-radius: 5px;
+  padding: 0.75rem;
+  margin-top: 0.25rem;
+  color: #333;
+  width: 100%;
+}
+form fieldset label.side {
+  display: block;
+  padding: 0.5rem;
+  color: #333;
+}
+form fieldset label.top input:required {
+  border-color: #ee4266;
+  border-width: 4px;
+}
+form fieldset label.top input:required valid {
+  border-color: #0ead69;
+  border-width: 2px;
+}
+
+form input.submitBtn {
+  border: 2px solid #0ead69;
+  border-radius: 5px;
+  background: none;
+  margin: 0 2%;
+  padding: 0.75rem 0;
+  color: #0a7e4c;
+  font-weight: 700;
+  width: 96%;
+}
+
+form input.submitBtn:hover {
+  color: #540d6e;
+  border-color: #540d6e;
+}
+
 /* FOOTER STYLING */
+footer {
+  padding: 1rem 0;
+  background-color: #540d6e;
+}
+footer p {
+  text-align: center;
+  font-size: 0.8rem;
+  color: #fff;
+}
+
 @media only screen and (min-width: 35rem) {
   /* BODY STYLING */
   /* HEADER STYLING */
   /* NAVIGATION STYLING */
   /* MAIN STYLING */
+  form label.top input, form label.top select {
+    max-width: 25rem;
+  }
+  form input.submitBtn {
+    max-width: 25rem;
+  }
   /* FOOTER STYLING */
 }
 @media only screen and (min-width: 64rem) {
+  header, nav, main, footer {
+    max-width: 64rem;
+    margin: 0 auto;
+  }
   /* BODY STYLING */
   /* HEADER STYLING */
   /* NAVIGATION STYLING */
   /* MAIN STYLING */
+  form fieldset label.side {
+    padding: 0.25rem 0;
+  }
   /* FOOTER STYLING */
 }

@@ -5,5 +5,13 @@
 /* NAVIGATION STYLING */
 
 /* MAIN STYLING */
+form {
+    label.top input, label.top select {
+        max-width: 25rem;
+    }
+    input.submitBtn {
+        max-width: 25rem;
+    }
+}
 
 /* FOOTER STYLING */

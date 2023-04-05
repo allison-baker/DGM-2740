@@ -16,12 +16,122 @@ html {
 /* BODY STYLING */
 body {
   font-size: 16px;
+  font-family: $bodyFont;
+  font-weight: $regular;
+  background-color: rgba(0, 0, 0, 0.05);
 }
 
 /* HEADER STYLING */
+header {
+  background-color: $purple;
+  padding: 0.75rem 2vw;
+  h1 {
+    font-family: $displayFont;
+    letter-spacing: 0.2rem;
+    font-size: 2.5rem;
+    color: #fff;
+  }
+}
 
 /* NAVIGATION STYLING */
+nav {
+  background-color: darken($teal, 7%);
+  ul li {
+    list-style-type: none;
+  }
+  ul li a {
+    display: block;
+    padding: 0.75rem 1rem;
+    text-align: center;
+    text-decoration: none;
+    color: #fff;
+    font-weight: $bold;
+    font-size: 0.9rem;
+  }
+  ul li.active a {
+    background-color: darken($teal, 14%);
+  }
+  ul li a:hover {
+    background-color: $teal;
+  }
+}
 
 /* MAIN STYLING */
+main {
+  padding: 1rem 2vw;
+  background-color: #fff;
+  h2 {
+    font-family: $displayFont;
+    font-size: 2rem;
+    letter-spacing: 0.2rem;
+    color: $purple;
+  }
+}
+
+/* FORM STYLING */
+form fieldset {
+  margin: 2rem 0;
+  border: 1px solid $teal;
+  border-radius: 5px;
+  padding: 0.5rem 2%;
+  legend {
+    padding: 0 0.5rem;
+    font-weight: $bold;
+    color: $green;
+  }
+  label.top, div {
+    display: block;
+    margin-bottom: 1rem;
+    font-size: 0.9rem;
+  }
+  label.top input, label.top select {
+    display: block;
+    font-size: 1rem;
+    background-color: rgba(0, 0, 0, 0.075);
+    border: none;
+    border-bottom: 2px solid $green;
+    border-radius: 5px;
+    padding: 0.75rem;
+    margin-top: 0.25rem;
+    color: #333;
+    width: 100%;
+  }
+  label.side {
+    display: block;
+    padding: 0.5rem;
+    color: #333;
+  }
+  label.top input:required {
+    border-color: $pink;
+    border-width: 4px;
+  }
+  label.top input:required valid {
+    border-color: $green;
+    border-width: 2px;
+  }
+}
+form input.submitBtn {
+  border: 2px solid $green;
+  border-radius: 5px;
+  background:none;
+  margin: 0 2%;
+  padding: 0.75rem 0;
+  color: darken($green, 10%);
+  font-weight: $bold;
+  width: 96%;
+}
+form input.submitBtn:hover {
+  color: $purple;
+  border-color: $purple;
+}
 
 /* FOOTER STYLING */
+footer {
+  padding: 1rem 0;
+  background-color: $purple;
+  p {
+    text-align: center;
+    font-size: 0.8rem;
+    color: #fff;
+  }
+}
