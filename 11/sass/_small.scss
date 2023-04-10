@@ -14,11 +14,102 @@ html {
 }
 
 /*BODY STYLING */
+body {
+  font-family: $bodyFont;
+  font-size: 16px;
+  font-weight: $regular;
+  background-color: $gray;
+}
+div#pageWrapper {
+  display: grid;
+  grid-template-areas:
+    "hamburger"
+    "header"
+    "content"
+    "footer"
+    "navigation";
+  grid-template-columns: 100%;
+}
+div#hamburgerButton {
+  grid-area: hamburger;
+  background-color: $navy;
+  a {
+    font-size: 1.5rem;
+    display: block;
+    padding: 0.75rem;
+    text-decoration: none;
+    color: #fff;
+  }
+}
 
 /* HEADER STYLING */
+div#headerWrapper {
+  background-color: #fff;
+  grid-area: header;
+}
+header {
+  padding: 1rem 2vw;
+  h1 {
+    font-family: $displayFont;
+  }
+}
 
-/* NAVIGATION STYLING *
+/* NAVIGATION STYLING */
+div#navWrapper {
+  background-color: $navy;
+  grid-area: navigation;
+}
+nav {
+  height: 100vh;
+  div a {
+    font-size: 1.5rem;
+    display: block;
+    padding: 0.75rem;
+    text-decoration: none;
+    color: #fff;
+  }
+  ul li {
+    list-style-type: none;
+  }
+  ul li a {
+    display: block;
+    text-decoration: none;
+    padding: 1rem 2vw;
+    color: #fff;
+    font-size: 0.9rem;
+  }
+  ul li.active a {
+    background-color: darken($navy, 5%);
+  }
+  ul li a:hover {
+    background-color: lighten($navy, 5%);
+  }
+}
 
 /* MAIN STYLING */
+main {
+  grid-area: content;
+  background-color: #fff;
+  padding: 1rem 2vw;
+  h1 {
+    font-family: $displayFont;
+  }
+  div.tablet {
+    margin: 1rem 0;
+  }
+  div.tablet h2 {
+    margin-bottom: 0.5rem;
+  }
+}
 
 /* FOOTER STYLING */
+div#footerWrapper {
+  background-color: $navy;
+  grid-area: footer;
+}
+footer p {
+  color: #fff;
+  text-align: center;
+  font-size: 0.8rem;
+  padding: 1rem 0;
+}

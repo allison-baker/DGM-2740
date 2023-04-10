@@ -1,9 +1,20 @@
-header, nav, main, footer {
-    max-width: 75rem;
-    margin: 0 auto;
+header,
+nav,
+main,
+footer {
+  max-width: 75rem;
+  margin: 0 auto;
 }
 
 /* BODY STYLING */
+div#pageWrapper {
+  grid-template-areas:
+    "header"
+    "navigation"
+    "content"
+    "footer";
+  grid-template-columns: 100%;
+}
 
 /* HEADER STYLING */
 

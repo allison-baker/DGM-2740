@@ -324,24 +324,133 @@ html {
 }
 
 /*BODY STYLING */
+body {
+  font-family: "Lato", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  background-color: #E5E5E5;
+}
+
+div#pageWrapper {
+  display: grid;
+  grid-template-areas: "hamburger" "header" "content" "footer" "navigation";
+  grid-template-columns: 100%;
+}
+
+div#hamburgerButton {
+  grid-area: hamburger;
+  background-color: #14213D;
+}
+div#hamburgerButton a {
+  font-size: 1.5rem;
+  display: block;
+  padding: 0.75rem;
+  text-decoration: none;
+  color: #fff;
+}
+
 /* HEADER STYLING */
-/* NAVIGATION STYLING *
+div#headerWrapper {
+  background-color: #fff;
+  grid-area: header;
+}
+
+header {
+  padding: 1rem 2vw;
+}
+header h1 {
+  font-family: "Share Tech Mono", monospace;
+}
+
+/* NAVIGATION STYLING */
+div#navWrapper {
+  background-color: #14213D;
+  grid-area: navigation;
+}
+
+nav {
+  height: 100vh;
+}
+nav div a {
+  font-size: 1.5rem;
+  display: block;
+  padding: 0.75rem;
+  text-decoration: none;
+  color: #fff;
+}
+nav ul li {
+  list-style-type: none;
+}
+nav ul li a {
+  display: block;
+  text-decoration: none;
+  padding: 1rem 2vw;
+  color: #fff;
+  font-size: 0.9rem;
+}
+nav ul li.active a {
+  background-color: #0e172a;
+}
+nav ul li a:hover {
+  background-color: #1a2b50;
+}
 
 /* MAIN STYLING */
+main {
+  grid-area: content;
+  background-color: #fff;
+  padding: 1rem 2vw;
+}
+main h1 {
+  font-family: "Share Tech Mono", monospace;
+}
+main div.tablet {
+  margin: 1rem 0;
+}
+main div.tablet h2 {
+  margin-bottom: 0.5rem;
+}
+
 /* FOOTER STYLING */
+div#footerWrapper {
+  background-color: #14213D;
+  grid-area: footer;
+}
+
+footer p {
+  color: #fff;
+  text-align: center;
+  font-size: 0.8rem;
+  padding: 1rem 0;
+}
+
 @media only screen and (min-width: 35rem) {
   /* BODY STYLING */
+  div#pageWrapper {
+    grid-template-areas: "header header" "navigation content" "footer footer";
+    grid-template-columns: 50%;
+  }
+  div#hamburgerButton {
+    display: none;
+  }
   /* HEADER STYLING */
   /* NAVIGATION STYLING */
   /* MAIN STYLING */
   /* FOOTER STYING */
 }
 @media only screen and (min-width: 64rem) {
-  header, nav, main, footer {
+  header,
+  nav,
+  main,
+  footer {
     max-width: 75rem;
     margin: 0 auto;
   }
   /* BODY STYLING */
+  div#pageWrapper {
+    grid-template-areas: "header" "navigation" "content" "footer";
+    grid-template-columns: 100%;
+  }
   /* HEADER STYLING */
   /* NAVIGATION STYLING */
   /* MAIN STYLING */
