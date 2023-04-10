@@ -4,7 +4,7 @@ div#pageWrapper {
     "header header"
     "navigation content"
     "footer footer";
-  grid-template-columns: 50%;
+  grid-template-columns: 150px auto;
 }
 div#hamburgerButton {
   display: none;
@@ -13,7 +13,29 @@ div#hamburgerButton {
 /* HEADER STYLING */
 
 /* NAVIGATION STYLING */
+div#links {
+  display: none;
+}
+nav {
+  height: auto;
+}
 
 /* MAIN STYLING */
+main article.tablet {
+  margin: 2rem 0;
+  min-height: 200px;
+}
+main article.tablet.right img {
+  float: right;
+  width: 200px;
+  height: auto;
+  margin-left: 1rem;
+}
+main article.tablet.left img {
+  float: left;
+  width: 200px;
+  height: auto;
+  margin-right: 1rem;
+}
 
 /* FOOTER STYING */

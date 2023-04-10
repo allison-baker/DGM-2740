@@ -1,8 +1,5 @@
-header,
-nav,
-main,
-footer {
-  max-width: 75rem;
+header, nav, main, footer {
+  max-width: 64rem;
   margin: 0 auto;
 }
 
@@ -19,6 +16,23 @@ div#pageWrapper {
 /* HEADER STYLING */
 
 /* NAVIGATION STYLING */
+nav {
+  padding: 0 2vw;
+  ul {
+    display: flex;
+    flex-direction: row;
+  }
+  ul li {
+    border-top: none;
+    border-right: 1px solid lighten($navy, 7%);
+  }
+  ul li:last-child {
+    border-right: none;
+  }
+  ul li a {
+    padding: 0.75rem 1.5rem;
+  }
+}
 
 /* MAIN STYLING */
 
