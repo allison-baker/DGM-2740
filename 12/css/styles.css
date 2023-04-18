@@ -328,6 +328,7 @@ body {
   font-size: 16px;
   font-family: "Anuphan", sans-serif;
   font-weight: 400;
+  background-color: #FEFAE0;
 }
 
 div#pageWrapper {
@@ -353,15 +354,24 @@ header h1 {
 nav {
   grid-area: nav;
   background-color: #424a27;
+  padding: 0;
 }
 nav ul {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+  margin: 0;
 }
 nav ul li {
   list-style-type: none;
   flex-basis: 33.3%;
+  border-right: 1px solid #424a27;
+}
+nav ul li:last-child {
+  border-right: none;
+}
+nav ul li.active a {
+  background-color: #4b542c;
 }
 nav ul li a {
   display: flex;
@@ -375,6 +385,9 @@ nav ul li a {
   font-size: 0.9rem;
   text-transform: uppercase;
 }
+nav ul li a:hover {
+  background-color: #758444;
+}
 nav ul li a i {
   padding-bottom: 0.5rem;
   font-size: 2rem;
@@ -384,6 +397,8 @@ nav ul li a i {
 main {
   grid-area: content;
   padding: 1rem 2vw;
+  background-color: #fff;
+  min-height: 75vh;
 }
 main h2 {
   color: #BC6C25;
@@ -451,19 +466,7 @@ footer p {
   /* HEADER STYLING */
   /* NAVIGATION STYLING */
   nav ul {
-    margin-left: 2%;
-  }
-  nav ul li {
-    width: auto;
-  }
-  nav ul li:first-child a {
-    border-left: 1px solid #777;
-  }
-  nav ul li:last-child a {
-    border-right: 1px solid #777;
-  }
-  nav ul li a {
-    padding: 0.5rem 1rem;
+    margin: 0;
   }
   /* MAIN STYLING */
   main div#inventoryWrapper {
@@ -472,13 +475,25 @@ footer p {
   /* FOOTER STYLING */
 }
 @media only screen and (min-width: 64rem) {
-  header, nav, main, footer {
+  header,
+  nav,
+  main,
+  footer {
     max-width: 64rem;
     margin: 0 auto;
   }
   /* BODY STYLING */
   /* HEADER STYLING */
+  header {
+    width: 100%;
+  }
   /* NAVIGATION STYLING */
+  nav {
+    width: 100%;
+  }
   /* MAIN STYLING */
   /* FOOTER STYLING */
+  footer {
+    width: 100%;
+  }
 }

@@ -1,14 +1,26 @@
-header, nav, main, footer {
-    max-width: 64rem;
-    margin: 0 auto;
+header,
+nav,
+main,
+footer {
+  max-width: 64rem;
+  margin: 0 auto;
 }
 
 /* BODY STYLING */
 
 /* HEADER STYLING */
+header {
+  width: 100%;
+}
 
 /* NAVIGATION STYLING */
+nav {
+  width: 100%;
+}
 
 /* MAIN STYLING */
 
 /* FOOTER STYLING */
+footer {
+  width: 100%;
+}

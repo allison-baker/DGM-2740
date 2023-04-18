@@ -18,6 +18,7 @@ body {
   font-size: 16px;
   font-family: $bodyFont;
   font-weight: $regular;
+  background-color: $cream;
 }
 div#pageWrapper {
   display: grid;
@@ -46,14 +47,23 @@ header {
 nav {
   grid-area: nav;
   background-color: darken($lightGreen, 10%);
+  padding: 0;
   ul {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    margin: 0;
   }
   ul li {
     list-style-type: none;
     flex-basis: 33.3%;
+    border-right: 1px solid darken($lightGreen, 10%);
+  }
+  ul li:last-child {
+    border-right: none;
+  }
+  ul li.active a {
+    background-color: darken($lightGreen, 7%);
   }
   ul li a {
     display: flex;
@@ -67,6 +77,9 @@ nav {
     font-size: 0.9rem;
     text-transform: uppercase;
   }
+  ul li a:hover {
+    background-color: lighten($lightGreen, 7%);
+  }
   ul li a i {
     padding-bottom: 0.5rem;
     font-size: 2rem;
@@ -77,6 +90,8 @@ nav {
 main {
   grid-area: content;
   padding: 1rem 2vw;
+  background-color: #fff;
+  min-height: 75vh;
   h2 {
     color: $darkOrange;
   }
