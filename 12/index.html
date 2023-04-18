@@ -9,38 +9,66 @@
 
     <!-- STYLE SHEETS -->
     <link href="css/styles.css" rel="stylesheet" />
+    <link href="https://unpkg.com/ionicons@4.5.10-0/dist/css/ionicons.min.css" rel="stylesheet" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Anuphan:wght@200;400;600&family=Berkshire+Swash&display=swap"
+      rel="stylesheet"
+    />
 
     <!-- FAVICON STUFF -->
 
     <title>Westwind Hotel and Suites | Locations</title>
   </head>
   <body>
-    <div id="headerWrapper">
+    <div id="pageWrapper">
       <header>
         <h1>Westwind Hotel and Suites</h1>
       </header>
-    </div>
 
-    <div id="navWrapper">
       <nav>
         <ul>
-          <li><a href="#">Attractions</a></li>
-          <li><a href="#">Rooms</a></li>
-          <li class="active"><a href="#">Locations</a></li>
+          <li>
+            <a href="#"><i class="icon ion-md-bicycle"></i><span>Attractions</span></a>
+          </li>
+          <li>
+            <a href="#"><i class="icon ion-md-bed"></i><span>Rooms</span></a>
+          </li>
+          <li class="active">
+            <a href="#"><i class="icon ion-md-pin"></i><span>Locations</span></a>
+          </li>
         </ul>
       </nav>
-    </div>
 
-    <main>
-      <h2>Locations</h2>
-    </main>
+      <main>
+        <h2>Locations</h2>
+        <div id="inventoryWrapper">
+          <section>
+            <figure>
+              <img src="images/hotel1.jpg"/>
+              <figcaption>Hotel Name Here</figcaption>
+            </figure>
+            <div>
+              <span>
+                <i class="icon ion-md-car"></i>
+                <p>1234 Address Line One</p>
+                <p>City State Zip</p>
+              </span>
+              <span>
+                <i class="icon ion-md-call"></i>
+                <p>1-800-555-1234</p>
+              </span>
+            </div>
+          </section>
+        </div>
+      </main>
 
-    <div id="footerWrapper">
       <footer>
         <p>&copy; <span id="year"></span> &bull; Al Baker</p>
       </footer>
     </div>
-
+    <!-- end page wrapper -->
     <script src="js/scripts.js"></script>
   </body>
 </html>

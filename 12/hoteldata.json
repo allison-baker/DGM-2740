@@ -1,0 +1,25 @@
+[   {
+    "name":"The Lux Hotel",
+    "photo":"images/hotel1.jpg",
+    "address":["354 Washington Ave","Miami Beach, FL 33139"],
+    "phone":"1-800-111-1234"
+    },
+    {
+    "name":"Lakeview Hotel",
+    "photo":"images/hotel2.jpg",
+    "address":["5780 Shanty Creek Rd","Bellaire, MI 49615"],
+    "phone":"1-800-222-1234"
+    },
+    {
+    "name":"Mountain Lodge",
+    "photo":"images/hotel3.jpg",
+    "address":["3135 Big Pine Canyon Rd","Sundance, UT 84604"],
+    "phone":"1-800-333-1234"
+    },
+    {
+    "name":"Beverly Hills Hotel",
+    "photo":"images/hotel4.jpg",
+    "address":["9641 Sunset Blvd","Beverly Hills, CA 90210"],
+    "phone":"1-800-444-1234"
+    }
+]
