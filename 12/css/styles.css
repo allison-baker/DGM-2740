@@ -355,6 +355,10 @@ nav {
   grid-area: nav;
   background-color: #424a27;
   padding: 0;
+  position: fixed;
+  width: 100%;
+  bottom: 0;
+  z-index: 99;
 }
 nav ul {
   display: flex;
@@ -447,6 +451,7 @@ footer {
   grid-area: footer;
   padding: 1rem 0;
   background-color: #283618;
+  margin-bottom: 5.8rem;
 }
 footer p {
   color: #FEFAE0;
@@ -489,11 +494,13 @@ footer p {
   }
   /* NAVIGATION STYLING */
   nav {
-    width: 100%;
+    left: 50%;
+    margin-left: -32rem;
   }
   /* MAIN STYLING */
   /* FOOTER STYLING */
   footer {
     width: 100%;
+    margin-bottom: 5.8rem;
   }
 }

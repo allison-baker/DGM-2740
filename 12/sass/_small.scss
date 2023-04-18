@@ -48,6 +48,10 @@ nav {
   grid-area: nav;
   background-color: darken($lightGreen, 10%);
   padding: 0;
+  position: fixed;
+  width: 100%;
+  bottom: 0;
+  z-index: 99;
   ul {
     display: flex;
     flex-direction: row;
@@ -140,6 +144,7 @@ footer {
   grid-area: footer;
   padding: 1rem 0;
   background-color: $darkGreen;
+  margin-bottom: 5.8rem;
   p {
     color: $cream;
     font-size: 0.8rem;

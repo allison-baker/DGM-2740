@@ -45,8 +45,10 @@ function populateDOM(hotels) {
     // create p tags for address and populate with info
     let addressOne = document.createElement("p");
     let addressTwo = document.createElement("p");
+    let addressThree = document.createElement("p");
     addressOne.textContent = hotels[i].address[0];
     addressTwo.textContent = hotels[i].address[1];
+    addressThree.textContent = hotels[i].address[2];
 
     // create p tag for phone number and populate
     let phoneNum = document.createElement("p");
@@ -56,6 +58,7 @@ function populateDOM(hotels) {
     address.appendChild(carIcon);
     address.appendChild(addressOne);
     address.appendChild(addressTwo);
+    address.appendChild(addressThree);
     phone.appendChild(phoneIcon);
     phone.appendChild(phoneNum);
 
