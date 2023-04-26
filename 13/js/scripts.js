@@ -28,6 +28,7 @@ function populateDOM(weatherInfo) {
     day.textContent = weekdays[y];
     temp.textContent = `${weatherInfo.list[i].main.temp}°`;
     icon.src = `//openweathermap.org/img/w/${weatherInfo.list[i].weather[0].icon}.png`;
+    icon.alt = "weather icon";
 
     section.appendChild(day);
     section.appendChild(temp);
