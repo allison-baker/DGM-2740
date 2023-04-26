@@ -326,27 +326,90 @@ html {
 /* BODY STYLING */
 body {
   font-size: 16px;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 400;
 }
 
 /* HEADER STYLING */
+header {
+  padding: 3rem 2vw;
+  background-color: #070425;
+}
+header h1 {
+  text-align: center;
+  font-size: 3rem;
+  margin: 0;
+  color: #fff;
+  font-weight: 400;
+}
+
 /* NAVIGATION STYLING */
 /* MAIN STYLING */
+main {
+  padding: 2rem 2vw;
+}
+main h2 {
+  text-align: center;
+  color: #B07156;
+  font-size: 2rem;
+  font-weight: 400;
+}
+main div#cards {
+  display: flex;
+  flex-direction: column;
+  max-width: 75rem;
+  margin: 1rem auto;
+}
+main div#cards section.forecast {
+  background-color: #cbe2e6;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 1rem;
+}
+main div#cards section.forecast h3 {
+  background-color: #394b83;
+  padding: 1rem;
+  color: #fff;
+  text-transform: uppercase;
+  width: 100%;
+  text-align: center;
+}
+main div#cards section.forecast p {
+  margin: 1rem;
+  font-size: 2.5rem;
+  color: #070425;
+}
+main div#cards section.forecast i {
+  font-size: 2.5rem;
+  color: #B07156;
+  padding-bottom: 1rem;
+}
+
 /* FOOTER STYLING */
 @media only screen and (min-width: 35rem) {
   /* BODY STYLING */
   /* HEADER STYLING */
   /* NAVIGATION STYLING */
   /* MAIN STYLING */
+  main div#cards {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+  main div#cards section.forecast {
+    flex-basis: 29%;
+    margin: 2%;
+  }
   /* FOOTER STYLING */
 }
 @media only screen and (min-width: 64rem) {
-  header, nav, main, footer {
-    max-width: 75rem;
-    margin: 0 auto;
-  }
   /* BODY STYLING */
   /* HEADER STYLING */
   /* NAVIGATION STYLING */
   /* MAIN STYLING */
+  main div#cards section.forecast {
+    flex-basis: 16%;
+  }
   /* FOOTER STYLING */
 }
