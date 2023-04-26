@@ -50,30 +50,32 @@ main {
     max-width: 75rem;
     margin: 1rem auto;
   }
-  div#cards section.forecast {
+  div#cards section {
     background-color: $lightest;
     display: flex;
     flex-direction: column;
     align-items: center;
     margin: 1rem;
+    border-radius: 10px;
   }
-  div#cards section.forecast h3 {
+  div#cards section h3 {
     background-color: $medium;
     padding: 1rem;
     color: #fff;
     text-transform: uppercase;
     width: 100%;
     text-align: center;
+    border-radius: 10px 10px 0 0;
   }
-  div#cards section.forecast p {
-    margin: 1rem;
+  div#cards section p {
+    margin: 1.5rem 0 0.5rem 0;
     font-size: 2.5rem;
     color: $darkest;
   }
-  div#cards section.forecast i {
-    font-size: 2.5rem;
-    color: $accent;
-    padding-bottom: 1rem;
+  div#cards section img {
+    padding-bottom: 0.5rem;
+    width: 6rem;
+    height: auto;
   }
 }
 

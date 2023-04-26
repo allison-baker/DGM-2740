@@ -360,30 +360,32 @@ main div#cards {
   max-width: 75rem;
   margin: 1rem auto;
 }
-main div#cards section.forecast {
+main div#cards section {
   background-color: #cbe2e6;
   display: flex;
   flex-direction: column;
   align-items: center;
   margin: 1rem;
+  border-radius: 10px;
 }
-main div#cards section.forecast h3 {
+main div#cards section h3 {
   background-color: #394b83;
   padding: 1rem;
   color: #fff;
   text-transform: uppercase;
   width: 100%;
   text-align: center;
+  border-radius: 10px 10px 0 0;
 }
-main div#cards section.forecast p {
-  margin: 1rem;
+main div#cards section p {
+  margin: 1.5rem 0 0.5rem 0;
   font-size: 2.5rem;
   color: #070425;
 }
-main div#cards section.forecast i {
-  font-size: 2.5rem;
-  color: #B07156;
-  padding-bottom: 1rem;
+main div#cards section img {
+  padding-bottom: 0.5rem;
+  width: 6rem;
+  height: auto;
 }
 
 /* FOOTER STYLING */
@@ -397,7 +399,7 @@ main div#cards section.forecast i {
     flex-wrap: wrap;
     justify-content: space-around;
   }
-  main div#cards section.forecast {
+  main div#cards section {
     flex-basis: 29%;
     margin: 2%;
   }
@@ -408,7 +410,7 @@ main div#cards section.forecast i {
   /* HEADER STYLING */
   /* NAVIGATION STYLING */
   /* MAIN STYLING */
-  main div#cards section.forecast {
+  main div#cards section {
     flex-basis: 16%;
   }
   /* FOOTER STYLING */
