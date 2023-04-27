@@ -11,8 +11,20 @@ footer {
 /* HEADER STYLING */
 
 /* NAVIGATION STYLING */
+nav ul li a,
+nav ul.open li a {
+  padding: 0.5rem 2vw;
+}
 
 /* MAIN STYLING */
+main div#imgWrapper {
+  padding: 0 2vw 0.875rem 2vw;
+}
+main div#about section#about-cards {
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  padding: 0.9rem 0;
+}
+
 main div#clients {
   grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
 }

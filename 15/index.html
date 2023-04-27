@@ -12,9 +12,10 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,wght@0,300;0,400;0,700;1,400&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,wght@0,300;0,400;0,500;0,700;1,400&display=swap"
       rel="stylesheet"
     />
+    <link href="https://unpkg.com/ionicons@4.5.10-0/dist/css/ionicons.min.css" rel="stylesheet" />
 
     <!-- FAVICON STUFF -->
     <title>Blue River Studios</title>
@@ -22,29 +23,46 @@
   <body>
     <header>
       <img src="images/Logo.png" alt="blue logo of a river" width="62" height="62" />
-      <h1>BlueRiver</h1>
-      <h2>Studios</h2>
+      <div id="headings">
+        <h1>BlueRiver</h1>
+        <h2>Studios</h2>
+      </div>
     </header>
 
     <nav>
-      <ul>
-        <li><a href="#">Home</a></li>
-        <li><a href="#">Portfolio</a></li>
-        <li><a href="#">Contact</a></li>
+      <button id="toggleBtn" onclick="toggleNav()" class="open">
+        <span id="hamburgerBtn">&#9776;</span><span id="close">X</span>
+      </button>
+      <ul id="primaryNav" class="open">
+        <li class="active">
+          <a href="#"><i class="icon ion-md-home"></i><span>Home</span></a>
+        </li>
+        <li>
+          <a href="#"><i class="icon ion-md-folder-open"></i><span>Portfolio</span></a>
+        </li>
+        <li>
+          <a href="#"><i class="icon ion-md-call"></i><span>Contact</span></a>
+        </li>
       </ul>
     </nav>
 
     <main>
-      <img class="boxed" />
+      <div id="imgWrapper" class="boxed">
+        <img
+          src="images/Banner.jpg"
+          width="941"
+          height="385"
+          alt="image of a woman drawing on a board with images of technology"
+        />
+      </div>
 
       <div id="bannerWrapper">
         <div class="boxed">
           <section>
-            <h3>Expect the Best</h3>
+            <h2>Expect the Best</h2>
             <p id="small-italic">
-              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Et rem totam error. In modi molestiae,
-              voluptates, itaque soluta alias quisquam doloremque perspiciatis nisi pariatur eaque reprehenderit
-              veritatis, sapiente aliquid? Delectus!
+              Lorem, ipsum dolor sit amet, consectetur adipiscing elit. Duis auctor rhoncus est sed lobortis. Nam
+              aliquam nisi magna, nec accumsan metus euismod vel. Praesent at vestibulum nibh, eu tristique risus.
             </p>
             <ul>
               <li>Mobile First Design</li>
@@ -54,12 +72,101 @@
             </ul>
           </section>
           <section>
-            <h3 class="formula">Our Formula</h3>
+            <h2 class="formula">Our Formula</h2>
             <p class="formula">development</p>
             <p class="formula">+ deployment</p>
             <p class="formula">+ design</p>
-            <h3 class="formula">Success</h3>
+            <h2 class="formula">Success</h2>
           </section>
+        </div>
+      </div>
+
+      <div id="about" class="boxed">
+        <h1 id="about-title">More About Us</h1>
+        <section id="about-cards">
+          <article>
+            <img src="images/persistance.jpg" width="220" height="220" alt="man on a laptop" />
+            <h2>Our Persistance</h2>
+            <p>
+              Sed, cursus, in nunc adipiscing phasellus in turpis etiam! Nec, placerat! Tortor, et et vel, nunc? Proin
+              quis tincidunt scelerisque porttitor? Dapibus. Ultricies! Velit magna urna. Porta quis odio natoque arcu
+              pulvinar aenean, ut pellentesque! Nec proin montes! Pid elit lacus.sagittis dignissim vut.
+            </p>
+          </article>
+          <article>
+            <img src="images/process.jpg" width="220" height="220" alt="man on a laptop" />
+            <h2>Our Process</h2>
+            <p>
+              In nunc adipiscing phasellus in turpis etiam! Nec, placerat! Tortor, et et vel, nunc? Proin quis tincidunt
+              scelerisque porttitor? Dapibus. Ultricies! Velit magna urna. Porta quis odio natoque arcu pulvinar aenean,
+              ut pellentesque! Nec proin montes! Pid elit lacus. Amet non facilisis massa.
+            </p>
+          </article>
+          <article>
+            <img src="images/people.jpg" width="220" height="220" alt="man on a laptop" />
+            <h2>Our People</h2>
+            <p>
+              Adipiscing phasellus in turpis etiam! Nec, placerat! Tortor, montes magna. Augue et pulvinar proin
+              dapibus! Urna nec, pid purus, augue velit. Nunc, eu lorem et! Augue hac, diam phasellus, augue turpis
+              velit, ac? Augue sagittis dignissim vut.
+            </p>
+          </article>
+          <article>
+            <img src="images/payoff.jpg" width="220" height="220" alt="man on a laptop" />
+            <h2>Our Payoff</h2>
+            <p>
+              Elit! Sed, cursus, in nunc adipiscing phasellus in turpis etiam! Nec, placerat! Tortor, et et vel, nunc?
+              Proin quis tincidunt scelerisque porttitor? Dapibus! Urna nec, pid purus, augue velit. Nunc, eu lorem et!
+              Augue hac, diam phasellus, augue turpis velit, ac? Augue sagittis dignissim vut.
+            </p>
+          </article>
+        </section>
+      </div>
+
+      <div id="articleWrapper" class="boxed">
+        <div id="bottom-articles">
+          <article id="infrastructure">
+            <img
+              src="images/infrastructure.jpg"
+              width="301"
+              height="183"
+              alt="graphic of towers extending into a yellow background"
+            />
+            <h2>Infrastructure</h2>
+            <p>
+              Urna pid? Cras, eros risus mattis ridiculus tortor eu rhoncus porta lundium rhoncus massa porttitor, amet
+              diam sociis dictumst elementum mid pulvinar. Lectus odio, nec turpis, et sagittis amet amet!
+            </p>
+          </article>
+          <article id="technology">
+            <img
+              src="images/technology.jpg"
+              width="301"
+              height="183"
+              alt="graphic of globe with the words 'CSM Technology'"
+            />
+            <h2>Technology</h2>
+            <p>
+              Elementum mid pulvinar. Lectus odio, nec turpis, et sagittis amet amet Urna pid? Cras, eros risus mattis
+              ridiculus tortor eu rhoncus porta lundium rhoncus massa porttitor, amet diam sociis dictumst !
+            </p>
+          </article>
+          <article id="support">
+            <h2>Live 24/7 Technical Support</h2>
+            <p>
+              Placerat dignissim lorem eu duis, quis aenean! Sagittis ridiculus aenean cras eu a, augue, sed sed rhoncus
+              dictumst a? Scelerisque. Dapibus in etiam, natoque porta nunc in. Hac duis, et et, tincidunt lorem et.
+              Amet sed aliquam egestas etiam, nec. Aliquet, quis enim, quis, in odio rhoncus, parturient pid risus nunc,
+              lundium dapibus odio. Aenean eu pid sociis risus! Pellentesque montes elementum eros! Integer magna.
+            </p>
+          </article>
+          <article id="pricing">
+            <img src="images/pricing.jpg" width="302" height="439" alt="graphic of a graph" />
+            <div id="pricing-description">
+              <button>See Pricing</button>
+              <p>Company Growth 2012 - 2016</p>
+            </div>
+          </article>
         </div>
       </div>
 
@@ -78,5 +185,7 @@
         <p>Call at 1-800-555-1234</p>
       </footer>
     </div>
+
+    <script src="js/scripts.js"></script>
   </body>
 </html>

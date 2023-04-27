@@ -3,14 +3,36 @@
 /* HEADER STYLING */
 
 /* NAVIGATION STYLING */
+nav button {
+  display: none;
+}
+nav ul, nav ul.open {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  li a {
+    padding: 0.75rem 2vw;
+  }
+}
 
 /* MAIN STYLING */
+main div#imgWrapper {
+  padding: 0 0 0.875rem 0;
+}
 main div#bannerWrapper div.boxed {
   display: grid;
   grid-template-columns: 66% auto;
 }
-main div#clients img {
+main div#about section#about-cards {
+  grid-template-columns: 1fr 1fr;
+  padding: 0.9rem;
+  article {
+    width: 100%;
+  }
+}
 
+main div#clients {
+  grid-template-columns: 1fr 1fr 1fr;
 }
 
 /* FOOTER STYLING */
