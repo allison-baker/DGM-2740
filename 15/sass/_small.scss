@@ -46,7 +46,7 @@ header {
     font-weight: $lightWeight;
     letter-spacing: 0.75rem;
     font-size: 1rem;
-    color: $gray;
+    color: darken($gray, 20%);
   }
 }
 
@@ -90,7 +90,7 @@ nav {
     display: block;
     padding: 0.85rem 2vw;
     text-decoration: none;
-    color: darken($gray, 10%);
+    color: darken($gray, 20%);
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -189,7 +189,7 @@ main div#about {
       margin: 1.25rem 0 0.5rem 0;
     }
     p {
-      color: $gray;
+      color: darken($gray, 20%);
     }
   }
 }
@@ -213,6 +213,9 @@ main div#articleWrapper div#bottom-articles {
     color: $blue;
     margin: 1.25rem 0 0.5rem 0;
     font-weight: $mediumWeight;
+  }
+  article p {
+    color: darken($gray, 20%);
   }
   article#pricing div#pricing-description {
     position: absolute;
