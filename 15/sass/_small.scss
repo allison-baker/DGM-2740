@@ -201,11 +201,10 @@ main div#articleWrapper {
 }
 main div#articleWrapper div#bottom-articles {
   display: grid;
-  grid-template-areas:
-    "infrastructure"
-    "technology"
-    "support"
-    "pricing";
+  grid-template-columns: 1fr;
+  grid-gap: 0.9rem;
+  width: 70%;
+  margin: 0 auto;
   article img {
     width: 100%;
     height: auto;
@@ -215,17 +214,24 @@ main div#articleWrapper div#bottom-articles {
     margin: 1.25rem 0 0.5rem 0;
     font-weight: $mediumWeight;
   }
-  article#infrastructure {
-    grid-area: infrastructure;
-  }
-  article#technology {
-    grid-area: technology;
-  }
-  article#support {
-    grid-area: support;
-  }
-  article#pricing {
-    grid-area: pricing;
+  article#pricing div#pricing-description {
+    position: absolute;
+    transform: translateY(-100%);
+    text-align: center;
+    padding: 1rem;
+    width: 50%;
+    button {
+      background-color: $blue;
+      border: none;
+      color: #fff;
+      padding: 0.5rem 1rem;
+      border-radius: 10px;
+      margin-bottom: 0.5rem;
+    }
+    p {
+      font-size: 0.8rem;
+      font-weight: $heavyWeight;
+    }
   }
 }
 main div#clients {

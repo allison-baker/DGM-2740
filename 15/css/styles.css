@@ -513,7 +513,10 @@ main div#articleWrapper {
 
 main div#articleWrapper div#bottom-articles {
   display: grid;
-  grid-template-areas: "infrastructure" "technology" "support" "pricing";
+  grid-template-columns: 1fr;
+  grid-gap: 0.9rem;
+  width: 70%;
+  margin: 0 auto;
 }
 main div#articleWrapper div#bottom-articles article img {
   width: 100%;
@@ -524,17 +527,24 @@ main div#articleWrapper div#bottom-articles article h2 {
   margin: 1.25rem 0 0.5rem 0;
   font-weight: 500;
 }
-main div#articleWrapper div#bottom-articles article#infrastructure {
-  grid-area: infrastructure;
+main div#articleWrapper div#bottom-articles article#pricing div#pricing-description {
+  position: absolute;
+  transform: translateY(-100%);
+  text-align: center;
+  padding: 1rem;
+  width: 50%;
 }
-main div#articleWrapper div#bottom-articles article#technology {
-  grid-area: technology;
+main div#articleWrapper div#bottom-articles article#pricing div#pricing-description button {
+  background-color: #0480b1;
+  border: none;
+  color: #fff;
+  padding: 0.5rem 1rem;
+  border-radius: 10px;
+  margin-bottom: 0.5rem;
 }
-main div#articleWrapper div#bottom-articles article#support {
-  grid-area: support;
-}
-main div#articleWrapper div#bottom-articles article#pricing {
-  grid-area: pricing;
+main div#articleWrapper div#bottom-articles article#pricing div#pricing-description p {
+  font-size: 0.8rem;
+  font-weight: 700;
 }
 
 main div#clients {
@@ -568,12 +578,14 @@ div#footerWrapper footer p {
   nav button {
     display: none;
   }
-  nav ul, nav ul.open {
+  nav ul,
+  nav ul.open {
     display: flex;
     flex-direction: row;
     justify-content: flex-end;
   }
-  nav ul li a, nav ul.open li a {
+  nav ul li a,
+  nav ul.open li a {
     padding: 0.75rem 2vw;
   }
   /* MAIN STYLING */
@@ -590,6 +602,27 @@ div#footerWrapper footer p {
   }
   main div#about section#about-cards article {
     width: 100%;
+  }
+  main div#articleWrapper div#bottom-articles {
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto;
+    width: 100%;
+  }
+  main div#articleWrapper div#bottom-articles article#infrastructure {
+    grid-column: 1/span 1;
+    grid-row: 1/span 1;
+  }
+  main div#articleWrapper div#bottom-articles article#technology {
+    grid-column: 1/span 1;
+    grid-row: 2/span 1;
+  }
+  main div#articleWrapper div#bottom-articles article#pricing {
+    grid-column: 2/span 1;
+    grid-row: 1/span 2;
+  }
+  main div#articleWrapper div#bottom-articles article#support {
+    grid-column: 1/span 2;
+    grid-row: 3/span 1;
   }
   main div#clients {
     grid-template-columns: 1fr 1fr 1fr;
@@ -618,6 +651,24 @@ div#footerWrapper footer p {
   main div#about section#about-cards {
     grid-template-columns: 1fr 1fr 1fr 1fr;
     padding: 0.9rem 0;
+  }
+  main div#articleWrapper div#bottom-articles {
+    grid-template-areas: "infrastructure technology pricing" "support support pricing";
+  }
+  main div#articleWrapper div#bottom-articles article#infrastructure {
+    grid-area: infrastructure;
+  }
+  main div#articleWrapper div#bottom-articles article#technology {
+    grid-area: technology;
+  }
+  main div#articleWrapper div#bottom-articles article#support {
+    grid-area: support;
+  }
+  main div#articleWrapper div#bottom-articles article#pricing {
+    grid-area: pricing;
+  }
+  main div#articleWrapper div#bottom-articles article#pricing div#pricing-description {
+    width: 20%;
   }
   main div#clients {
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;

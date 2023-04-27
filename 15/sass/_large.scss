@@ -24,7 +24,26 @@ main div#about section#about-cards {
   grid-template-columns: 1fr 1fr 1fr 1fr;
   padding: 0.9rem 0;
 }
-
+main div#articleWrapper div#bottom-articles {
+  grid-template-areas:
+    "infrastructure technology pricing"
+    "support support pricing";
+  article#infrastructure {
+    grid-area: infrastructure;
+  }
+  article#technology {
+    grid-area: technology;
+  }
+  article#support {
+    grid-area: support;
+  }
+  article#pricing {
+    grid-area: pricing;
+    div#pricing-description {
+      width: 20%;
+    }
+  }
+}
 main div#clients {
   grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
 }
