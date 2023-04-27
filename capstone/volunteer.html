@@ -63,7 +63,33 @@
       </p>
 
       <h2>Warehouse Sign Up</h2>
-      <form method="get" action="thanks.html"></form>
+      <form method="get" action="thanks.html">
+        <fieldset>
+          <legend>Personal Information</legend>
+
+          <label class="top">First Name<input type="text" name="fname" required /></label>
+          <label class="top">Last Name<input type="text" name="lname" required /></label>
+          <label class="top">Phone<input type="tel" name="phone" placeholder="1234567890" /></label>
+          <label class="top">Email<input type="email" name="email" placeholder="example@email.com" /></label>
+
+          <div>Preferred Method of Contact</div>
+          <label class="side"><input type="radio" name="contact" value="Phone" />Phone</label>
+          <label class="side"><input type="radio" name="contact" value="Email" />Email</label>
+        </fieldset>
+        <fieldset>
+          <legend>Volunteering Information</legend>
+
+          <div>Preferred Shift</div>
+          <label class="side"><input type="checkbox" name="shift" value="Morning" />Morning</label>
+          <label class="side"><input type="checkbox" name="shift" value="Afternoon" />Afternoon</label>
+          <label class="side"><input type="checkbox" name="shift" value="Evening" />Evening</label>
+
+          <label class="top">Group Name (If Applicable)<input type="text" name="group" /></label>
+          <label class="top">Number of Volunteers<input type="number" name="size" /></label>
+        </fieldset>
+
+        <input type="submit" value="Volunteer" class="submitBtn" />
+      </form>
 
       <p>
         2022 Volunteer Sessions will begin in mid-September this year. Please check back as we get further along in the
