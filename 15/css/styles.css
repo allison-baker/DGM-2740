@@ -506,6 +506,35 @@ main div#about section#about-cards article p {
 
 main div#articleWrapper {
   padding: 0 2vw;
+  border-top: 1px solid #a8a8b2;
+  padding: 0.9rem;
+  background: radial-gradient(circle closest-corner at 50% 25%, #dedede, #fafafa);
+}
+
+main div#articleWrapper div#bottom-articles {
+  display: grid;
+  grid-template-areas: "infrastructure" "technology" "support" "pricing";
+}
+main div#articleWrapper div#bottom-articles article img {
+  width: 100%;
+  height: auto;
+}
+main div#articleWrapper div#bottom-articles article h2 {
+  color: #0480b1;
+  margin: 1.25rem 0 0.5rem 0;
+  font-weight: 500;
+}
+main div#articleWrapper div#bottom-articles article#infrastructure {
+  grid-area: infrastructure;
+}
+main div#articleWrapper div#bottom-articles article#technology {
+  grid-area: technology;
+}
+main div#articleWrapper div#bottom-articles article#support {
+  grid-area: support;
+}
+main div#articleWrapper div#bottom-articles article#pricing {
+  grid-area: pricing;
 }
 
 main div#clients {

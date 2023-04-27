@@ -195,8 +195,39 @@ main div#about {
 }
 main div#articleWrapper {
   padding: 0 2vw;
+  border-top: 1px solid $gray;
+  padding: 0.9rem;
+  background: radial-gradient(circle closest-corner at 50% 25%, $gradient, $background);
 }
-
+main div#articleWrapper div#bottom-articles {
+  display: grid;
+  grid-template-areas:
+    "infrastructure"
+    "technology"
+    "support"
+    "pricing";
+  article img {
+    width: 100%;
+    height: auto;
+  }
+  article h2 {
+    color: $blue;
+    margin: 1.25rem 0 0.5rem 0;
+    font-weight: $mediumWeight;
+  }
+  article#infrastructure {
+    grid-area: infrastructure;
+  }
+  article#technology {
+    grid-area: technology;
+  }
+  article#support {
+    grid-area: support;
+  }
+  article#pricing {
+    grid-area: pricing;
+  }
+}
 main div#clients {
   display: grid;
   grid-template-columns: 1fr 1fr;
