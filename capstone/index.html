@@ -11,7 +11,11 @@
     <link href="css/styles.css" rel="stylesheet" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap" rel="stylesheet" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&family=Sedgwick+Ave&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
 
     <!-- FAVICON STUFF -->
 
@@ -20,13 +24,18 @@
   <body>
     <div id="headerWrapper">
       <header>
+        <img
+          src="images/logo225.png"
+          srcset="images/logo75.png 1x, images/logo150.png 2x, images/logo225.png 3x"
+          alt="gear icon logo"
+        />
         <h1>FB4K Utah</h1>
       </header>
     </div>
 
     <div id="navWrapper">
       <nav>
-        <button id="hamburgerBtn"><span>&#9776;</span><span>X</span></button>
+        <button onclick="toggleNav()" id="hamburgerBtn"><span>&#9776;</span><span>X</span></button>
         <ul id="primaryNav">
           <li class="active"><a href="index.html">Home</a></li>
           <li><a href="donate.html">Donate</a></li>
@@ -35,10 +44,45 @@
         </ul>
       </nav>
     </div>
-
+    <!-- Slider main container -->
+    <div class="swiper">
+      <!-- Additional required wrapper -->
+      <div class="swiper-wrapper">
+        <!-- Slides -->
+        <div class="swiper-slide">
+          <picture>
+            <source srcset="images/home_slider_1_small.jpg" media="(max-width: 35rem)" />
+            <source srcset="images/home_slider_1_wide.jpg" media="(min-width: 35rem)" />
+            <img src="images/home_slider_1_wide.jpg" alt="two girls riding tricycles" width="1024" height="576" />
+          </picture>
+          <h1>Free Bikes 4 Kidz Utah</h1>
+        </div>
+        <div class="swiper-slide">
+          <picture>
+            <source srcset="images/home_slider_2_small.jpg" media="(max-width: 35rem)" />
+            <source srcset="images/home_slider_2_wide.jpg" media="(min-width: 35rem)" />
+            <img
+              src="images/home_slider_2_wide.jpg"
+              alt="young boy biking through a puddle"
+              width="1024"
+              height="576"
+            />
+          </picture>
+          <h1>Free Bikes 4 Kidz Utah</h1>
+        </div>
+        <div class="swiper-slide">
+          <picture>
+            <source srcset="images/home_slider_3_small.jpg" media="(max-width: 35rem)" />
+            <source srcset="images/home_slider_3_wide.jpg" media="(min-width: 35rem)" />
+            <img src="images/home_slider_3_wide.jpg" alt="row of bikes locked on a rack" width="1024" height="576" />
+          </picture>
+          <h1>Free Bikes 4 Kidz Utah</h1>
+        </div>
+      </div>
+      <!-- If we need pagination -->
+      <div class="swiper-pagination"></div>
+    </div>
     <main>
-      <h1>Free Bikes 4 Kidz</h1>
-
       <h2>Our Mission</h2>
       <p>
         Free Bikes 4 Kidz is a non-profit organization geared toward helping all kids ride into a happier, healthier
@@ -47,27 +91,47 @@
       </p>
 
       <div id="cards-box">
-        <article>
-          <h3>Donate</h3>
-        </article>
-        <article>
-          <h3>Volunteer</h3>
-        </article>
-        <article>
-          <h3>Apply</h3>
-        </article>
-        <article>
-          <h3>About</h3>
-        </article>
+        <a href="donate.html">
+          <article>
+            <img src="images/donate_card_home.jpg" alt="young girl riding a tricycle" width="560" height="420" />
+            <h3>Donate</h3>
+          </article>
+        </a>
+        
+        <a href="volunteer.html">
+          <article>
+            <img
+              src="images/volunteer_card_home.jpg"
+              alt="two young boys sitting on a curb next to their bikes"
+              width="560"
+              height="420"
+            />
+            <h3>Volunteer</h3>
+          </article>
+        </a>
+        
+        <a href="#">
+          <article>
+            <img src="images/apply_card_home.jpg" alt="young child riding a bike up a hill" width="560" height="420" />
+            <h3>Apply</h3>
+          </article>
+        </a>
+        
+        <a href="about.html">
+          <article>
+            <img src="images/about_card_home.jpg" alt="young boy riding a bike" width="560" height="420" />
+            <h3>About</h3>
+          </article>
+        </a>
       </div>
-
-      <h2>Follow Us on Social Media</h2>
-      <div id="socials-box"></div>
     </main>
     <div id="footerWrapper">
       <footer>
         <p>&copy; <span id="year"></span> Free Bikes 4 Kidz Utah</p>
       </footer>
     </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+    <script src="js/scripts.js"></script>
   </body>
 </html>

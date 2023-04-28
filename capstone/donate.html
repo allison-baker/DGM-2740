@@ -4,29 +4,38 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="description" content="Free Bikes 4 Kids Utah Donate page" />
+    <meta name="description" content="Free Bikes 4 Kidz Utah Home page" />
     <meta name="author" content="Al Baker" />
 
     <!-- STYLE SHEETS -->
     <link href="css/styles.css" rel="stylesheet" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap" rel="stylesheet" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&family=Sedgwick+Ave&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
 
     <!-- FAVICON STUFF -->
 
-    <title>FB4K Utah | Donate</title>
+    <title>FB4K Utah</title>
   </head>
   <body>
     <div id="headerWrapper">
       <header>
+        <img
+          src="images/logo225.png"
+          srcset="images/logo75.png 1x, images/logo150.png 2x, images/logo225.png 3x"
+          alt="gear icon logo"
+        />
         <h1>FB4K Utah</h1>
       </header>
     </div>
 
     <div id="navWrapper">
       <nav>
-        <button id="hamburgerBtn"><span>&#9776;</span><span>X</span></button>
+        <button onclick="toggleNav()" id="hamburgerBtn"><span>&#9776;</span><span>X</span></button>
         <ul id="primaryNav">
           <li><a href="index.html">Home</a></li>
           <li class="active"><a href="donate.html">Donate</a></li>
@@ -36,9 +45,10 @@
       </nav>
     </div>
 
+    <div class="hero">
+      <h1 id="donate">Donate</h1>
+    </div>
     <main>
-      <h1>Donate</h1>
-
       <h2>Help Grease the Wheels</h2>
       <p>
         You can get involved by donating a bike or contributing financially. We are also always looking for volunteers.
@@ -46,29 +56,29 @@
       </p>
 
       <div id="donate-box">
-        <article>
+        <img id="time-image" src="images/time_card.jpg" alt="photo of a hand holding a clock icon" width="560" height="448" />
+        <article id="time-text">
           <h3>Donate Time</h3>
-
           <p>
             We appreciate all the help we receive from members of our community, including the precious time put in by
             our volunteers.
           </p>
           <button class="donate-button">Donate Time</button>
         </article>
-        <article>
+        <img id="bikes-image" src="images/bikes_card.jpg" alt="photo of bike handlebars" width="560" height="448" />
+        <article id="bikes-text">
           <h3>Donate Bikes</h3>
-
           <p>
             We'll take your donations of kids and adult bikes, but we find ourselves especially in need of smaller
             bikes, even tricycles.
           </p>
           <button class="donate-button">Donate Bikes</button>
         </article>
-        <article>
+        <img id="money-image" src="images/money_card.jpg" alt="image of a hand removing cash from a wallet" width="560" height="448" />
+        <article id="money-text">
           <h3>Donate Money</h3>
-
           <p>
-            $30 will provide a bike, a helmet, and the opportunity for a child to experience the joy and freedom of
+            $30 will provide a bike, a helmet, and the opportunity for a child to experience the joy of
             riding and owning their own bike.
           </p>
           <button class="donate-button">Donate Money</button>
@@ -90,5 +100,7 @@
         <p>&copy; <span id="year"></span> Free Bikes 4 Kidz Utah</p>
       </footer>
     </div>
+
+    <script src="js/scripts.js"></script>
   </body>
 </html>

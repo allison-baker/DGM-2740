@@ -1,14 +1,37 @@
-header, nav, main, footer {
-    max-width: 64rem;
-    margin: 0 auto;
+header,
+nav,
+div.swiper,
+div.hero,
+main,
+footer {
+  max-width: 64rem;
+  margin: 0 auto;
 }
 
 /* BODY STYLING */
 
 /* HEADER STYLING */
+div#headerWrapper header {
+  padding: 1rem 0;
+}
 
 /* NAVIGATION STYLING */
+div#navWrapper nav {
+  padding: 0;
+}
 
 /* MAIN STYLING */
+main div#cards-box {
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+main div#donate-box {
+  width: 100%;
+  grid-template-areas:
+    "timeImg bikesImg moneyImg"
+    "timeTxt bikesTxt moneyTxt";
+  article h3 {
+    padding: 0 0 0.75rem 0;
+  }
+}
 
 /* FOOTER STYLING */

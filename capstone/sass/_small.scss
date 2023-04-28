@@ -18,12 +18,215 @@ body {
   font-family: $bodyFont;
   font-weight: $normalWeight;
   font-size: 16px;
+  background-color: lighten($gunmetal, 60%);
 }
 
 /* HEADER STYLING */
+div#headerWrapper {
+  background-color: $gunmetal;
+  header {
+    padding: 1rem 2vw;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+  }
+  header img {
+    width: 75px;
+    height: auto;
+  }
+  header h1 {
+    font-family: $displayFont;
+    color: #fff;
+    letter-spacing: 0.25rem;
+    margin: 0 0 0 1rem;
+  }
+}
 
 /* NAVIGATION STYLING */
+div#navWrapper {
+  background-color: lighten($gunmetal, 10%);
+  nav {
+    button {
+      background: none;
+      border: none;
+      color: #fff;
+      font-size: 1.5rem;
+      padding: 2.2rem 2vw 1.5rem 3vw;
+      position: absolute;
+      top: 0;
+      right: 0;
+      span:first-child {
+        display: block;
+      }
+      span:last-child {
+        display: none;
+      }
+    }
+    button.open {
+      span:first-child {
+        display: none;
+      }
+      span:last-child {
+        display: block;
+      }
+    }
+    ul {
+      display: none;
+    }
+    ul.open {
+      display: block;
+    }
+    ul li {
+      list-style-type: none;
+      border-top: 1px solid $gunmetal;
+    }
+    ul li:first-child {
+      border-top: none;
+    }
+    ul li a {
+      display: block;
+      padding: 1rem 2vw;
+      color: #fff;
+      text-decoration: none;
+      font-size: 0.9rem;
+    }
+    ul li.active a {
+      background-color: lighten($gunmetal, 17%);
+      font-weight: $boldWeight;
+    }
+    ul li a:hover {
+      background-color: lighten($gunmetal, 3%);
+    }
+  }
+}
 
 /* MAIN STYLING */
+.swiper-wrapper {
+  margin-bottom: 1.8rem;
+}
+.swiper {
+  width: 100%;
+  height: auto;
+  background-color: #fff;
+}
+.swiper img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+.swiper h1 {
+  background-color: rgba(0, 0, 0, 0.6);
+  color: #fff;
+  text-align: center;
+  margin: 0;
+  transform: translateY(-100%);
+  padding: 1rem 2vw;
+  position: absolute;
+  width: 100%;
+  font-weight: $boldWeight;
+  font-family: $displayFont;
+}
+h1#donate {
+  background: url("../images/donate_hero.jpg"), rgba(0, 0, 0, 0.5);
+  background-position: center;
+  background-repeat: none;
+  background-size: cover;
+  background-blend-mode: overlay;
+  color: #fff;
+  margin: 0;
+  padding: 10vh 0 10vh 2vw;
+}
+main {
+  padding: 0 2vw;
+  background-color: #fff;
+  h2 {
+    padding: 1rem 0;
+    color: darken($pink, 10%);
+  }
+  h3 {
+    color: darken($coral, 15%);
+    padding-bottom: 0.5rem;
+  }
+  p {
+    padding-bottom: 1rem;
+  }
+  button {
+    color: #fff;
+    font-weight: $boldWeight;
+    background-color: darken($teal, 10%);
+    border: none;
+    border-radius: 10px;
+    padding: 0.75rem 1.5rem;
+    font-size: 0.9rem;
+    text-transform: uppercase;
+    margin-bottom: 1rem;
+  }
+  div#cards-box {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: 1rem;
+    padding-bottom: 1rem;
+  }
+  div#cards-box a {
+    text-decoration: none;
+    background-color: none;
+  }
+  div#cards-box a article {
+    border-radius: 10px;
+  }
+  div#cards-box a article img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px 10px 0 0;
+    margin: 0;
+  }
+  div#cards-box a article h3 {
+    text-align: center;
+    padding: 0.75rem 0;
+    margin: 0;
+    font-weight: $boldWeight;
+    text-transform: uppercase;
+    color: #fff;
+    border-radius: 0 0 10px 10px;
+  }
+  div#cards-box a:nth-child(1) article {
+    background-color: $teal;
+  }
+  div#cards-box a:nth-child(2) article {
+    background-color: $pink;
+  }
+  div#cards-box a:nth-child(3) article {
+    background-color: $coral;
+  }
+  div#cards-box a:nth-child(4) article {
+    background-color: $gunmetal;
+  }
+  div#donate-box {
+    width: 80%;
+    margin: 0 auto;
+    img {
+      width: 100%;
+      height: auto;
+      margin-top: 0.5rem;
+    }
+    article h3 {
+      padding: 0.75rem 0;
+    }
+    article button {
+      width: 100%;
+    }
+  }
+}
 
 /* FOOTER STYLING */
+div#footerWrapper {
+  background-color: $gunmetal;
+  footer {
+    padding: 1rem;
+    p {
+      color: #fff;
+      text-align: center;
+      font-size: 0.8rem;
+    }
+  }
+}

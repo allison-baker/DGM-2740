@@ -328,27 +328,306 @@ body {
   font-family: "Lato", sans-serif;
   font-weight: 400;
   font-size: 16px;
+  background-color: #cad0d5;
 }
 
 /* HEADER STYLING */
+div#headerWrapper {
+  background-color: #30373D;
+}
+div#headerWrapper header {
+  padding: 1rem 2vw;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+div#headerWrapper header img {
+  width: 75px;
+  height: auto;
+}
+div#headerWrapper header h1 {
+  font-family: "Sedgwick Ave", cursive;
+  color: #fff;
+  letter-spacing: 0.25rem;
+  margin: 0 0 0 1rem;
+}
+
 /* NAVIGATION STYLING */
+div#navWrapper {
+  background-color: #46515a;
+}
+div#navWrapper nav button {
+  background: none;
+  border: none;
+  color: #fff;
+  font-size: 1.5rem;
+  padding: 2.2rem 2vw 1.5rem 3vw;
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+div#navWrapper nav button span:first-child {
+  display: block;
+}
+div#navWrapper nav button span:last-child {
+  display: none;
+}
+div#navWrapper nav button.open span:first-child {
+  display: none;
+}
+div#navWrapper nav button.open span:last-child {
+  display: block;
+}
+div#navWrapper nav ul {
+  display: none;
+}
+div#navWrapper nav ul.open {
+  display: block;
+}
+div#navWrapper nav ul li {
+  list-style-type: none;
+  border-top: 1px solid #30373D;
+}
+div#navWrapper nav ul li:first-child {
+  border-top: none;
+}
+div#navWrapper nav ul li a {
+  display: block;
+  padding: 1rem 2vw;
+  color: #fff;
+  text-decoration: none;
+  font-size: 0.9rem;
+}
+div#navWrapper nav ul li.active a {
+  background-color: #56636e;
+  font-weight: 700;
+}
+div#navWrapper nav ul li a:hover {
+  background-color: #373f46;
+}
+
 /* MAIN STYLING */
+.swiper-wrapper {
+  margin-bottom: 1.8rem;
+}
+
+.swiper {
+  width: 100%;
+  height: auto;
+  background-color: #fff;
+}
+
+.swiper img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.swiper h1 {
+  background-color: rgba(0, 0, 0, 0.6);
+  color: #fff;
+  text-align: center;
+  margin: 0;
+  transform: translateY(-100%);
+  padding: 1rem 2vw;
+  position: absolute;
+  width: 100%;
+  font-weight: 700;
+  font-family: "Sedgwick Ave", cursive;
+}
+
+h1#donate {
+  background: url("../images/donate_hero.jpg"), rgba(0, 0, 0, 0.5);
+  background-position: center;
+  background-repeat: none;
+  background-size: cover;
+  background-blend-mode: overlay;
+  color: #fff;
+  margin: 0;
+  padding: 10vh 0 10vh 2vw;
+}
+
+main {
+  padding: 0 2vw;
+  background-color: #fff;
+}
+main h2 {
+  padding: 1rem 0;
+  color: #a33b83;
+}
+main h3 {
+  color: #f93f00;
+  padding-bottom: 0.5rem;
+}
+main p {
+  padding-bottom: 1rem;
+}
+main button {
+  color: #fff;
+  font-weight: 700;
+  background-color: #00839f;
+  border: none;
+  border-radius: 10px;
+  padding: 0.75rem 1.5rem;
+  font-size: 0.9rem;
+  text-transform: uppercase;
+  margin-bottom: 1rem;
+}
+main div#cards-box {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-gap: 1rem;
+  padding-bottom: 1rem;
+}
+main div#cards-box a {
+  text-decoration: none;
+  background-color: none;
+}
+main div#cards-box a article {
+  border-radius: 10px;
+}
+main div#cards-box a article img {
+  width: 100%;
+  height: auto;
+  border-radius: 10px 10px 0 0;
+  margin: 0;
+}
+main div#cards-box a article h3 {
+  text-align: center;
+  padding: 0.75rem 0;
+  margin: 0;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: #fff;
+  border-radius: 0 0 10px 10px;
+}
+main div#cards-box a:nth-child(1) article {
+  background-color: #00ADD2;
+}
+main div#cards-box a:nth-child(2) article {
+  background-color: #C0519E;
+}
+main div#cards-box a:nth-child(3) article {
+  background-color: #FF7546;
+}
+main div#cards-box a:nth-child(4) article {
+  background-color: #30373D;
+}
+main div#donate-box {
+  width: 80%;
+  margin: 0 auto;
+}
+main div#donate-box img {
+  width: 100%;
+  height: auto;
+  margin-top: 0.5rem;
+}
+main div#donate-box article h3 {
+  padding: 0.75rem 0;
+}
+main div#donate-box article button {
+  width: 100%;
+}
+
 /* FOOTER STYLING */
+div#footerWrapper {
+  background-color: #30373D;
+}
+div#footerWrapper footer {
+  padding: 1rem;
+}
+div#footerWrapper footer p {
+  color: #fff;
+  text-align: center;
+  font-size: 0.8rem;
+}
+
 @media only screen and (min-width: 35rem) {
   /* BODY STYLING */
   /* HEADER STYLING */
   /* NAVIGATION STYLING */
+  div#navWrapper nav button {
+    display: none;
+  }
+  div#navWrapper nav {
+    padding: 0 2vw;
+  }
+  div#navWrapper nav ul,
+  nav ul.open {
+    display: flex;
+    flex-direction: row;
+  }
+  div#navWrapper nav ul li,
+  nav ul.open li {
+    border-top: none;
+    border-right: 1px solid #30373D;
+  }
+  div#navWrapper nav ul li:last-child,
+  nav ul.open li:last-child {
+    border-right: none;
+  }
+  div#navWrapper nav ul li a,
+  nav ul.open li a {
+    padding: 0.75rem 1.5rem;
+  }
   /* MAIN STYLING */
+  main div#cards-box {
+    grid-template-columns: 1fr 1fr;
+  }
+  main div#donate-box {
+    display: grid;
+    grid-template-areas: "timeImg timeTxt" "bikesTxt bikesImg" "moneyImg moneyTxt";
+    grid-gap: 1rem;
+  }
+  main div#donate-box img#time-image {
+    grid-area: timeImg;
+  }
+  main div#donate-box article#time-text {
+    grid-area: timeTxt;
+  }
+  main div#donate-box img#bikes-image {
+    grid-area: bikesImg;
+  }
+  main div#donate-box article#bikes-text {
+    grid-area: bikesTxt;
+  }
+  main div#donate-box img#money-image {
+    grid-area: moneyImg;
+  }
+  main div#donate-box article#money-text {
+    grid-area: moneyTxt;
+  }
   /* FOOTER STYLING */
 }
 @media only screen and (min-width: 64rem) {
-  header, nav, main, footer {
+  header,
+  nav,
+  div.swiper,
+  div.hero,
+  main,
+  footer {
     max-width: 64rem;
     margin: 0 auto;
   }
   /* BODY STYLING */
   /* HEADER STYLING */
+  div#headerWrapper header {
+    padding: 1rem 0;
+  }
   /* NAVIGATION STYLING */
+  div#navWrapper nav {
+    padding: 0;
+  }
   /* MAIN STYLING */
+  main div#cards-box {
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+  }
+  main div#donate-box {
+    width: 100%;
+    grid-template-areas: "timeImg bikesImg moneyImg" "timeTxt bikesTxt moneyTxt";
+  }
+  main div#donate-box article h3 {
+    padding: 0 0 0.75rem 0;
+  }
   /* FOOTER STYLING */
 }

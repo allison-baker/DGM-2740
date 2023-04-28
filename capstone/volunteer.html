@@ -4,18 +4,22 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="description" content="Free Bikes 4 Kids Utah Volunteer page" />
+    <meta name="description" content="Free Bikes 4 Kidz Utah Home page" />
     <meta name="author" content="Al Baker" />
 
     <!-- STYLE SHEETS -->
     <link href="css/styles.css" rel="stylesheet" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap" rel="stylesheet" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&family=Sedgwick+Ave&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
 
     <!-- FAVICON STUFF -->
 
-    <title>FB4K Utah | Volunteer</title>
+    <title>FB4K Utah</title>
   </head>
   <body>
     <div id="headerWrapper">
@@ -26,7 +30,7 @@
 
     <div id="navWrapper">
       <nav>
-        <button id="hamburgerBtn"><span>&#9776;</span><span>X</span></button>
+        <button onclick="toggleNav()" id="hamburgerBtn"><span>&#9776;</span><span>X</span></button>
         <ul id="primaryNav">
           <li><a href="index.html">Home</a></li>
           <li><a href="donate.html">Donate</a></li>
@@ -104,5 +108,7 @@
         <p>&copy; <span id="year"></span> Free Bikes 4 Kidz Utah</p>
       </footer>
     </div>
+
+    <script src="js/scripts.js"></script>
   </body>
 </html>

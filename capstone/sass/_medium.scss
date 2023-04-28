@@ -3,7 +3,57 @@
 /* HEADER STYLING */
 
 /* NAVIGATION STYLING */
+div#navWrapper nav button {
+  display: none;
+}
+div#navWrapper nav {
+  padding: 0 2vw;
+}
+div#navWrapper nav ul,
+nav ul.open {
+  display: flex;
+  flex-direction: row;
+  li {
+    border-top: none;
+    border-right: 1px solid $gunmetal;
+  }
+  li:last-child {
+    border-right: none;
+  }
+  li a {
+    padding: 0.75rem 1.5rem;
+  }
+}
 
 /* MAIN STYLING */
+main div#cards-box {
+  grid-template-columns: 1fr 1fr;
+}
+main div#donate-box {
+  display: grid;
+  grid-template-areas:
+    "timeImg timeTxt"
+    "bikesTxt bikesImg"
+    "moneyImg moneyTxt";
+  grid-gap: 1rem;
+  img#time-image {
+    grid-area: timeImg;
+  }
+  article#time-text {
+    grid-area: timeTxt;
+  }
+  img#bikes-image {
+    grid-area: bikesImg;
+  }
+  article#bikes-text {
+    grid-area: bikesTxt;
+  }
+  img#money-image {
+    grid-area: moneyImg;
+  }
+  article#money-text {
+    grid-area: moneyTxt;
+  }
+}
 
 /* FOOTER STYLING */
