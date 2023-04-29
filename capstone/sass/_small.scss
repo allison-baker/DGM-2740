@@ -26,15 +26,18 @@ div#headerWrapper {
   background-color: $gunmetal;
   header {
     padding: 1rem 2vw;
+  }
+  header a {
     display: flex;
     flex-direction: row;
     align-items: center;
+    text-decoration: none;
   }
-  header img {
+  header a img {
     width: 75px;
     height: auto;
   }
-  header h1 {
+  header a h1 {
     font-family: $displayFont;
     color: #fff;
     letter-spacing: 0.25rem;
@@ -126,8 +129,14 @@ div#navWrapper {
   font-weight: $boldWeight;
   font-family: $displayFont;
 }
-h1#donate {
-  background: url("../images/donate_hero.jpg"), rgba(0, 0, 0, 0.5);
+div.hero h1#donate {
+  background: url("../images/donate_hero.jpg"), rgba(0, 0, 0, 0.3);
+}
+div.hero h1#volunteer {
+  background: url("../images/volunteer_hero.jpg"), rgba(0, 0, 0, 0.3);
+}
+div.hero h1#donate,
+div.hero h1#volunteer {
   background-position: center;
   background-repeat: none;
   background-size: cover;
@@ -150,6 +159,12 @@ main {
   p {
     padding-bottom: 1rem;
   }
+  p a {
+    color: $teal;
+  }
+  p a:hover {
+    color: $pink;
+  }
   button {
     color: #fff;
     font-weight: $boldWeight;
@@ -162,6 +177,8 @@ main {
     margin-bottom: 1rem;
   }
   div#cards-box {
+    width: 80%;
+    margin: 0 auto;
     display: grid;
     grid-template-columns: 1fr;
     grid-gap: 1rem;
@@ -214,6 +231,62 @@ main {
     }
     article button {
       width: 100%;
+    }
+  }
+  div#links-box {
+    width: 80%;
+    margin: 0 auto;
+    padding: 0.5rem 0 1.5rem 0;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: 1rem;
+    a {
+      text-decoration: none;
+    }
+    a article {
+      height: 20rem;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      padding: 1.5rem;
+    }
+    a article h3 {
+      color: #fff;
+      text-transform: uppercase;
+    }
+    a article p {
+      color: #fff;
+      padding: 0;
+    }
+    a:first-child article {
+      background: url("../images/community_collection.jpg"), rgba(0, 0, 0, 0.3);
+      background-position: center;
+      background-repeat: none;
+      background-size: cover;
+      background-blend-mode: overlay;
+    }
+    a:last-child article {
+      background: url("../images/volunteer_committee.jpg"), rgba(0, 0, 0, 0.3);
+      background-position: center;
+      background-repeat: none;
+      background-size: cover;
+      background-blend-mode: overlay;
+    }
+    a article:hover {
+      background-color: $gunmetal;
+      transition: 400ms ease;
+    }
+  }
+  form#volunteer-form {
+    fieldset {
+      border-color: $coral;
+      border-radius: 10px;
+    }
+    fieldset legend {
+      font-size: 0.9rem;
+      font-weight: $boldWeight;
+      color: $gunmetal;
+      padding: 0 0.5rem;
     }
   }
 }

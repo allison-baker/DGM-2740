@@ -24,7 +24,14 @@
   <body>
     <div id="headerWrapper">
       <header>
-        <h1>FB4K Utah</h1>
+        <a href="index.html">
+          <img
+            src="images/logo225.png"
+            srcset="images/logo75.png 1x, images/logo150.png 2x, images/logo225.png 3x"
+            alt="gear icon logo"
+          />
+          <h1>FB4K Utah</h1>
+        </a>
       </header>
     </div>
 
@@ -35,14 +42,16 @@
           <li><a href="index.html">Home</a></li>
           <li><a href="donate.html">Donate</a></li>
           <li class="active"><a href="volunteer.html">Volunteer</a></li>
+          <li><a href="#">Apply</a></li>
           <li><a href="about.html">About</a></li>
         </ul>
       </nav>
     </div>
 
+    <div class="hero">
+      <h1 id="volunteer">Volunteer</h1>
+    </div>
     <main>
-      <h1>Volunteer</h1>
-
       <h2>Volunteer Opportunities</h2>
       <p>
         There are many ways to volunteer with us, including becoming a bike collector in your area, joining a committee,
@@ -50,14 +59,18 @@
       </p>
 
       <div id="links-box">
-        <article>
-          <h3>Be a Community Collection Captain</h3>
-          <p>Learn More</p>
-        </article>
-        <article>
-          <h3>Join a Volunteer Committee</h3>
-          <p>Learn More</p>
-        </article>
+        <a href="#">
+          <article>
+            <h3>Be a Community Collection Captain</h3>
+            <p>Learn More</p>
+          </article>
+        </a>
+        <a href="#">
+          <article>
+            <h3>Join a Volunteer Committee</h3>
+            <p>Learn More</p>
+          </article>
+        </a>
       </div>
 
       <p>
@@ -66,11 +79,11 @@
       </p>
       <p>
         Volunteering makes for a great group or corporate team building exercise! If you have between 10-15 volunteers
-        and would like to schedule a private session, please email info@fb4kut.org and we’ll get you set up.
+        and would like to schedule a private session, please email <a href="mailto:info@fb4kut.org">info@fb4kut.org</a> and we’ll get you set up.
       </p>
 
       <h2>Warehouse Sign Up</h2>
-      <form method="get" action="thanks.html">
+      <form method="get" action="thanks.html" id="volunteer-form">
         <fieldset>
           <legend>Personal Information</legend>
 

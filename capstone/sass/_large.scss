@@ -23,6 +23,7 @@ div#navWrapper nav {
 /* MAIN STYLING */
 main div#cards-box {
   grid-template-columns: 1fr 1fr 1fr 1fr;
+  width: 100%;
 }
 main div#donate-box {
   width: 100%;
@@ -31,6 +32,13 @@ main div#donate-box {
     "timeTxt bikesTxt moneyTxt";
   article h3 {
     padding: 0 0 0.75rem 0;
+  }
+}
+main div#links-box {
+  grid-template-columns: 1fr 1fr;
+  width: 100%;
+  a article {
+    height: 15rem;
   }
 }
 

@@ -337,15 +337,18 @@ div#headerWrapper {
 }
 div#headerWrapper header {
   padding: 1rem 2vw;
+}
+div#headerWrapper header a {
   display: flex;
   flex-direction: row;
   align-items: center;
+  text-decoration: none;
 }
-div#headerWrapper header img {
+div#headerWrapper header a img {
   width: 75px;
   height: auto;
 }
-div#headerWrapper header h1 {
+div#headerWrapper header a h1 {
   font-family: "Sedgwick Ave", cursive;
   color: #fff;
   letter-spacing: 0.25rem;
@@ -436,8 +439,16 @@ div#navWrapper nav ul li a:hover {
   font-family: "Sedgwick Ave", cursive;
 }
 
-h1#donate {
-  background: url("../images/donate_hero.jpg"), rgba(0, 0, 0, 0.5);
+div.hero h1#donate {
+  background: url("../images/donate_hero.jpg"), rgba(0, 0, 0, 0.3);
+}
+
+div.hero h1#volunteer {
+  background: url("../images/volunteer_hero.jpg"), rgba(0, 0, 0, 0.3);
+}
+
+div.hero h1#donate,
+div.hero h1#volunteer {
   background-position: center;
   background-repeat: none;
   background-size: cover;
@@ -462,6 +473,12 @@ main h3 {
 main p {
   padding-bottom: 1rem;
 }
+main p a {
+  color: #00ADD2;
+}
+main p a:hover {
+  color: #C0519E;
+}
 main button {
   color: #fff;
   font-weight: 700;
@@ -474,6 +491,8 @@ main button {
   margin-bottom: 1rem;
 }
 main div#cards-box {
+  width: 80%;
+  margin: 0 auto;
   display: grid;
   grid-template-columns: 1fr;
   grid-gap: 1rem;
@@ -527,6 +546,60 @@ main div#donate-box article h3 {
 }
 main div#donate-box article button {
   width: 100%;
+}
+main div#links-box {
+  width: 80%;
+  margin: 0 auto;
+  padding: 0.5rem 0 1.5rem 0;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-gap: 1rem;
+}
+main div#links-box a {
+  text-decoration: none;
+}
+main div#links-box a article {
+  height: 20rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 1.5rem;
+}
+main div#links-box a article h3 {
+  color: #fff;
+  text-transform: uppercase;
+}
+main div#links-box a article p {
+  color: #fff;
+  padding: 0;
+}
+main div#links-box a:first-child article {
+  background: url("../images/community_collection.jpg"), rgba(0, 0, 0, 0.3);
+  background-position: center;
+  background-repeat: none;
+  background-size: cover;
+  background-blend-mode: overlay;
+}
+main div#links-box a:last-child article {
+  background: url("../images/volunteer_committee.jpg"), rgba(0, 0, 0, 0.3);
+  background-position: center;
+  background-repeat: none;
+  background-size: cover;
+  background-blend-mode: overlay;
+}
+main div#links-box a article:hover {
+  background-color: #30373D;
+  transition: 400ms ease;
+}
+main form#volunteer-form fieldset {
+  border-color: #FF7546;
+  border-radius: 10px;
+}
+main form#volunteer-form fieldset legend {
+  font-size: 0.9rem;
+  font-weight: 700;
+  color: #30373D;
+  padding: 0 0.5rem;
 }
 
 /* FOOTER STYLING */
@@ -621,6 +694,7 @@ div#footerWrapper footer p {
   /* MAIN STYLING */
   main div#cards-box {
     grid-template-columns: 1fr 1fr 1fr 1fr;
+    width: 100%;
   }
   main div#donate-box {
     width: 100%;
@@ -628,6 +702,13 @@ div#footerWrapper footer p {
   }
   main div#donate-box article h3 {
     padding: 0 0 0.75rem 0;
+  }
+  main div#links-box {
+    grid-template-columns: 1fr 1fr;
+    width: 100%;
+  }
+  main div#links-box a article {
+    height: 15rem;
   }
   /* FOOTER STYLING */
 }
