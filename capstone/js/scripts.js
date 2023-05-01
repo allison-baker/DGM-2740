@@ -17,3 +17,7 @@ const swiper = new Swiper(".swiper", {
     el: ".swiper-pagination",
   },
 });
+
+function toggleDropdown(idName) {
+  document.querySelector(idName).classList.toggle('open');
+}

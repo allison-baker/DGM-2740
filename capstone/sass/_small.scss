@@ -107,6 +107,9 @@ main {
     padding: 1rem 0;
     color: darken($pink, 10%);
   }
+  h2.no-hero {
+    padding: 1.5rem 0;
+  }
   h3 {
     color: darken($coral, 15%);
     padding-bottom: 0.5rem;
@@ -317,13 +320,19 @@ main {
     font-weight: $normalWeight;
     color: $gunmetal;
   }
-  section.dropdown-full div.dropdown span {
+  section.dropdown-full div.dropdown button {
+    background: none;
+    padding: 0;
+    margin: 0;
+  }
+  section.dropdown-full div.dropdown button span {
     color: $coral;
     font-weight: $boldWeight;
     margin: 0;
     padding: 0.5rem;
     border-radius: 0 5px 5px 0;
   }
+  section.dropdown-full div.dropdown button span:first-child { font-size: 1.2rem; }
   section.dropdown-full p {
     display: none;
   }
@@ -336,11 +345,11 @@ main {
     margin-bottom: 1rem;
     box-shadow: 1px 2px 4px rgba(0, 0, 0, 0.2);
   }
-  section.dropdown-full div.dropdown {
+  section.dropdown-full div.dropdown button {
     span:first-child { display: block; }
     span:last-child { display: none; }
   }
-  section.dropdown-full.open div.dropdown {
+  section.dropdown-full.open div.dropdown button {
     span:first-child { display: none; }
     span:last-child { display: block; }
   }

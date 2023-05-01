@@ -54,15 +54,15 @@
       </nav>
     </div>
 
-    <div class="hero">
-      <h1>FAQs</h1>
-    </div>
     <main id="faq">
-      <h2>Frequently Asked Questions</h2>
-      <section class="dropdown-full open">
-        <div class="dropdown">
+      <h2 class="no-hero">Frequently Asked Questions</h2>
+      <section class="dropdown-full" id="first">
+        <div class="dropdown" onclick="toggleDropdown('#first')">
           <h3>How do I get a bike for my child or myself?</h3>
-          <span style="font-size: 1.3rem;">+</span><span>X</span>
+          <button>
+            <span>+</span>
+            <span>X</span>
+          </button>
         </div>
         <p>
           Virtually all of our bikes are given away through a network of non-profits, community organizations, churches,
@@ -72,10 +72,13 @@
         </p>
       </section>
 
-      <section class="dropdown-full">
-        <div class="dropdown">
+      <section class="dropdown-full" id="second">
+        <div class="dropdown" onclick="toggleDropdown('#second')">
           <h3>How do I donate a bike?</h3>
-          <span style="font-size: 1.3rem;">+</span><span>X</span>
+          <button>
+            <span>+</span>
+            <span>X</span>
+          </button>
         </div>
         <p>
           Bikes can be dropped off at our Collection Events. Dates and locations can be found on our Donate a Bike page.
@@ -84,10 +87,13 @@
         </p>
       </section>
 
-      <section class="dropdown-full">
-        <div class="dropdown">
+      <section class="dropdown-full" id="third">
+        <div class="dropdown" onclick="toggleDropdown('#third')">
           <h3>What kind of bikes are you looking for?</h3>
-          <span style="font-size: 1.3rem;">+</span><span>X</span>
+          <button>
+            <span>+</span>
+            <span>X</span>
+          </button>
         </div>
         <p>
           Free Bikes 4 Kidz is looking for new or gently used bikes of any size (including tricycles and scooters)—child
@@ -98,10 +104,13 @@
         </p>
       </section>
 
-      <section class="dropdown-full">
-        <div class="dropdown">
+      <section class="dropdown-full" id="fourth">
+        <div class="dropdown" onclick="toggleDropdown('#fourth')">
           <h3>Is FB4K a 501c3 non-profit? Can I contribute financially to FB4K and help get more bikes to kids?</h3>
-          <span style="font-size: 1.3rem;">+</span><span>X</span>
+          <button>
+            <span>+</span>
+            <span>X</span>
+          </button>
         </div>
         <p>
           Yes. And yes. We are a registered non-profit so 100% of your contribution is tax deductible. (You will receive
@@ -112,10 +121,13 @@
         </p>
       </section>
 
-      <section class="dropdown-full">
-        <div class="dropdown">
+      <section class="dropdown-full" id="fifth">
+        <div class="dropdown" onclick="toggleDropdown('#fifth')">
           <h3>I would like to volunteer my time to help. What can I do?</h3>
-          <span style="font-size: 1.3rem;">+</span><span>X</span>
+          <button>
+            <span>+</span>
+            <span>X</span>
+          </button>
         </div>
         <p>
           We literally need thousands of volunteers to clean, repair, and help us give away 5000+ bikes each year. We
@@ -131,13 +143,16 @@
         </p>
       </section>
 
-      <section class="dropdown-full">
-        <div class="dropdown">
+      <section class="dropdown-full" id="sixth">
+        <div class="dropdown" onclick="toggleDropdown('#sixth')">
           <h3>
             How does my non-profit, community organization, church, or school get on FB4K’s radar so that we can be
             recipients of bikes?
           </h3>
-          <span style="font-size: 1.3rem;">+</span><span>X</span>
+          <button>
+            <span>+</span>
+            <span>X</span>
+          </button>
         </div>
         <p>
           You can Apply 4 Bikes online and tell us about your organization—what you do, where you are located, your
@@ -146,10 +161,13 @@
         </p>
       </section>
 
-      <section class="dropdown-full">
-        <div class="dropdown">
+      <section class="dropdown-full" id="seventh">
+        <div class="dropdown" onclick="toggleDropdown('#seventh')">
           <h3>I would like to start a Free Bikes 4 Kidz chapter in my city. Can you help me do that?</h3>
-          <span style="font-size: 1.3rem;">+</span><span>X</span>
+          <button>
+            <span>+</span>
+            <span>X</span>
+          </button>
         </div>
         <p>
           Great question. Yes…and no. We get asked this question all the time, and we are getting very close to making
@@ -158,13 +176,16 @@
         </p>
       </section>
 
-      <section class="dropdown-full">
-        <div class="dropdown">
+      <section class="dropdown-full" id="eighth">
+        <div class="dropdown" onclick="toggleDropdown('#eighth')">
           <h3>
             I run a bike shop here in town. I love that you are getting more kids on bikes, but I’m concerned that FB4K
             is tapping into my business, just a bit.
           </h3>
-          <span style="font-size: 1.3rem;">+</span><span>X</span>
+          <button>
+            <span>+</span>
+            <span>X</span>
+          </button>
         </div>
         <p>
           First off, we at FB4K are huge fans of our local bike shops and we do all we can to promote you. We believe we
@@ -177,10 +198,13 @@
         </p>
       </section>
 
-      <section class="dropdown-full">
-        <div class="dropdown">
+      <section class="dropdown-full" id="ninth">
+        <div class="dropdown" onclick="toggleDropdown('#ninth')">
           <h3>I work in the media and would like to help tell your story. Who should I contact?</h3>
-          <span style="font-size: 1.3rem;">+</span><span>X</span>
+          <button>
+            <span>+</span>
+            <span>X</span>
+          </button>
         </div>
         <p>
           Terry Esau (terry@FB4K.com) is our Executive Director and he would be happy to talk with you or connect you

@@ -517,6 +517,9 @@ main h2 {
   padding: 1rem 0;
   color: #a33b83;
 }
+main h2.no-hero {
+  padding: 1.5rem 0;
+}
 main h3 {
   color: #f93f00;
   padding-bottom: 0.5rem;
@@ -715,12 +718,20 @@ main section.dropdown-full div.dropdown h3 {
   font-weight: 400;
   color: #30373D;
 }
-main section.dropdown-full div.dropdown span {
+main section.dropdown-full div.dropdown button {
+  background: none;
+  padding: 0;
+  margin: 0;
+}
+main section.dropdown-full div.dropdown button span {
   color: #FF7546;
   font-weight: 700;
   margin: 0;
   padding: 0.5rem;
   border-radius: 0 5px 5px 0;
+}
+main section.dropdown-full div.dropdown button span:first-child {
+  font-size: 1.2rem;
 }
 main section.dropdown-full p {
   display: none;
@@ -734,16 +745,16 @@ main section.dropdown-full.open p {
   margin-bottom: 1rem;
   box-shadow: 1px 2px 4px rgba(0, 0, 0, 0.2);
 }
-main section.dropdown-full div.dropdown span:first-child {
+main section.dropdown-full div.dropdown button span:first-child {
   display: block;
 }
-main section.dropdown-full div.dropdown span:last-child {
+main section.dropdown-full div.dropdown button span:last-child {
   display: none;
 }
-main section.dropdown-full.open div.dropdown span:first-child {
+main section.dropdown-full.open div.dropdown button span:first-child {
   display: none;
 }
-main section.dropdown-full.open div.dropdown span:last-child {
+main section.dropdown-full.open div.dropdown button span:last-child {
   display: block;
 }
 
