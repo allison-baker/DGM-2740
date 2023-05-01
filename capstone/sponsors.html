@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Free Bikes 4 Kidz Utah Home page" />
+    <meta name="author" content="Al Baker" />
+
+    <!-- STYLE SHEETS -->
+    <link href="css/styles.css" rel="stylesheet" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&family=Sedgwick+Ave&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
+
+    <!-- FAVICON STUFF -->
+
+    <title>FB4K Utah</title>
+  </head>
+  <body>
+    <div id="headerWrapper">
+      <header>
+        <a href="index.html">
+          <img
+            src="images/logo225.png"
+            srcset="images/logo75.png 1x, images/logo150.png 2x, images/logo225.png 3x"
+            alt="gear icon logo"
+          />
+          <h1>FB4K Utah</h1>
+        </a>
+      </header>
+    </div>
+
+    <div id="navWrapper">
+      <nav>
+        <button onclick="toggleNav()" id="hamburgerBtn"><span>&#9776;</span><span>X</span></button>
+        <ul id="primaryNav">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="donate.html">Donate</a></li>
+          <li><a href="volunteer.html">Volunteer</a></li>
+          <li class="parent"><a href="#">About</a>
+            <ul>
+              <li><a href="about.html">History</a></li>
+              <li class="active"><a href="sponsors.html">Sponsors</a></li>
+              <li><a href="faq.html">FAQs</a></li>
+            </ul>
+          </li>
+        </ul>
+      </nav>
+    </div>
+
+    <div class="hero">
+      <h1>Sponsors</h1>
+    </div>
+    <main>
+      <h2>Our Sponsors and Partners</h2>
+      <p>
+        Through the generous support from our partners like Nate Wade Subaru, Guthrie Bicycle, National Interscholastic
+        Cycling Association (NICA), Robert J DeBry & Associates, Capital Broadcasting, QBP, Park Tool and many more, we
+        can turn a lot of dusty bikes into shiny smiles! We still need support in building the foundation to help every
+        kid ride into a more memorable childhood. To learn more about becoming a sponsor, please email
+        nick@fb4kutah.org.
+      </p>
+      <div id="sponsors-box"></div>
+    </main>
+    <div id="footerWrapper">
+      <footer>
+        <p>&copy; <span id="year"></span> Free Bikes 4 Kidz Utah</p>
+      </footer>
+    </div>
+
+    <script src="js/scripts.js"></script>
+  </body>
+</html>

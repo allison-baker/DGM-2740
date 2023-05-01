@@ -1,0 +1,94 @@
+/*Adjust the media query max-width value on line 5 to match your breakpoint between the small and medium screens OR between the medium and large screens*/
+
+// must be 1px less that the medium css breakpoint!!!
+@media only screen and (max-width: 34.9375rem) {
+  nav {
+    background-color: lighten($gunmetal, 10%);
+  }
+
+  /* Navigation Button */
+  nav button {
+    padding: 1rem 2vw 1rem 1rem;
+    margin: 1.2rem 0 0 0;
+    background: transparent;
+    border: none;
+    font-size: 1.5rem;
+    color: #fff;
+    position: fixed;
+    top: 0;
+    right: 0;
+  }
+
+  /* Navigation Bar */
+  #primaryNav {
+    height: 0;
+    overflow: hidden;
+    margin: 0;
+    padding: 0;
+    z-index: 998;
+  }
+  #primaryNav li.active a {
+    background-color: lighten($gunmetal, 17%);
+  }
+  #primaryNav li a {
+    display: block;
+    width: 100%;
+    padding: 0.75rem 2vw;
+    font-size: 0.9rem;
+    color: #fff;
+    text-decoration: none;
+    border-top: 1px solid $gunmetal;
+  }
+  #primaryNav li a:hover {
+    background-color: lighten($gunmetal, 3%);
+  }
+
+  /* Toggle the navigation bar to expand down  */
+  #primaryNav.open {
+    height: auto;
+  }
+  #hamburgerBtn {
+    span:first-child {
+      display: block;
+    }
+    span:last-child {
+      display: none;
+    }
+  }
+  #hamburgerBtn.open {
+    span:first-child {
+      display: none;
+    }
+    span:last-child {
+      display: block;
+    }
+  }
+
+  /* Submenus – optional .parent class indicates dropdowns */
+  #primaryNav > li:hover > a {
+    background: lighten($gunmetal, 3%);
+  }
+  #primaryNav li.parent > a:after {
+    font-size: 0.75rem;
+    content: "\25BC";
+    color: lighten($gunmetal, 25%);
+    float: right;
+  }
+  #primaryNav li.parent > a:hover {
+    background: lighten($gunmetal, 3%);
+  }
+  /*hide the sub menu items by default*/
+  #primaryNav li ul {
+    display: none;
+    background: lighten($gunmetal, 10%);
+    padding: 0;
+  }
+  #primaryNav li ul a {
+    border-top: solid 1px $gunmetal;
+    font-size: 14px;
+    padding: 10px 5%;
+  }
+  #primaryNav li:hover ul {
+    display: block;
+  }
+} /* End Mobile Styles */

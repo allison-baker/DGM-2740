@@ -3,25 +3,62 @@
 /* HEADER STYLING */
 
 /* NAVIGATION STYLING */
-div#navWrapper nav button {
-  display: none;
-}
-div#navWrapper nav {
-  padding: 0 2vw;
-}
-div#navWrapper nav ul,
-nav ul.open {
-  display: flex;
-  flex-direction: row;
-  li {
-    border-top: none;
-    border-right: 1px solid $gunmetal;
+div#navWrapper {
+  background-color: lighten($gunmetal, 10%);
+  nav button {
+    display: none;
   }
-  li:last-child {
+
+  /* Top level navigation */
+  nav ul#primaryNav {
+    display: flex;
+    flex-direction: row;
+  }
+  nav ul#primaryNav li {
+    list-style-type: none;
+  }
+  nav ul#primaryNav li a {
+    display: block;
+    padding: 0.75rem 2rem;
+    font-size: 0.9rem;
+    color: #fff;
+    text-decoration: none;
+    border-right: 1px solid $gunmetal;
+    transition: background 0.3s linear;
+  }
+  nav ul#primaryNav li:last-child a {
     border-right: none;
   }
-  li a {
-    padding: 0.75rem 1.5rem;
+  nav ul#primaryNav li.active a {
+    background-color: lighten($gunmetal, 17%);
+  }
+  nav ul#primaryNav li a:hover {
+    background-color: lighten($gunmetal, 3%);
+  }
+
+  /* Second level navigation */
+  nav ul#primaryNav li ul {
+    display: flex;
+    flex-direction: column;
+    background-color: lighten($gunmetal, 10%);
+    position: absolute;
+    left: -999rem;
+  }
+  nav ul#primaryNav li:hover ul {
+    left: auto;
+    margin: 0;
+    z-index: 99;
+  }
+  nav ul#primaryNav li ul a {
+    border-top: 1px solid $gunmetal;
+    border-right: none;
+  }
+  nav ul#primaryNav li.parent > a:after {
+    content: "\25BC";
+    font-size: 0.6rem;
+    color: lighten($gunmetal, 25%);
+    float: right;
+    margin: 0.15rem 0 0 0.5rem;
   }
 }
 

@@ -18,6 +18,9 @@ div#headerWrapper header {
 /* NAVIGATION STYLING */
 div#navWrapper nav {
   padding: 0;
+  nav ul#primaryNav li a {
+    padding: 0.5rem 1.2rem;
+  }
 }
 
 /* MAIN STYLING */

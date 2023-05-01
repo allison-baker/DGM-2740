@@ -1,3 +1,4 @@
+@charset "UTF-8";
 /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
 /* Document
    ========================================================================== */
@@ -310,6 +311,90 @@ template {
   display: none;
 }
 
+/*Adjust the media query max-width value on line 5 to match your breakpoint between the small and medium screens OR between the medium and large screens*/
+@media only screen and (max-width: 34.9375rem) {
+  nav {
+    background-color: #46515a;
+  }
+  /* Navigation Button */
+  nav button {
+    padding: 1rem 2vw 1rem 1rem;
+    margin: 1.2rem 0 0 0;
+    background: transparent;
+    border: none;
+    font-size: 1.5rem;
+    color: #fff;
+    position: fixed;
+    top: 0;
+    right: 0;
+  }
+  /* Navigation Bar */
+  #primaryNav {
+    height: 0;
+    overflow: hidden;
+    margin: 0;
+    padding: 0;
+    z-index: 998;
+  }
+  #primaryNav li.active a {
+    background-color: #56636e;
+  }
+  #primaryNav li a {
+    display: block;
+    width: 100%;
+    padding: 0.75rem 2vw;
+    font-size: 0.9rem;
+    color: #fff;
+    text-decoration: none;
+    border-top: 1px solid #30373D;
+  }
+  #primaryNav li a:hover {
+    background-color: #373f46;
+  }
+  /* Toggle the navigation bar to expand down  */
+  #primaryNav.open {
+    height: auto;
+  }
+  #hamburgerBtn span:first-child {
+    display: block;
+  }
+  #hamburgerBtn span:last-child {
+    display: none;
+  }
+  #hamburgerBtn.open span:first-child {
+    display: none;
+  }
+  #hamburgerBtn.open span:last-child {
+    display: block;
+  }
+  /* Submenus – optional .parent class indicates dropdowns */
+  #primaryNav > li:hover > a {
+    background: #373f46;
+  }
+  #primaryNav li.parent > a:after {
+    font-size: 0.75rem;
+    content: "▼";
+    color: #687784;
+    float: right;
+  }
+  #primaryNav li.parent > a:hover {
+    background: #373f46;
+  }
+  /*hide the sub menu items by default*/
+  #primaryNav li ul {
+    display: none;
+    background: #46515a;
+    padding: 0;
+  }
+  #primaryNav li ul a {
+    border-top: solid 1px #30373D;
+    font-size: 14px;
+    padding: 10px 5%;
+  }
+  #primaryNav li:hover ul {
+    display: block;
+  }
+} /* End Mobile Styles */
 /* Prevent adjustments of font size after orientation changes in IE on Windows Phone and in iOS.  */
 html {
   -webkit-text-size-adjust: 100%;
@@ -356,59 +441,7 @@ div#headerWrapper header a h1 {
 }
 
 /* NAVIGATION STYLING */
-div#navWrapper {
-  background-color: #46515a;
-}
-div#navWrapper nav button {
-  background: none;
-  border: none;
-  color: #fff;
-  font-size: 1.5rem;
-  padding: 2.2rem 2vw 1.5rem 3vw;
-  position: absolute;
-  top: 0;
-  right: 0;
-}
-div#navWrapper nav button span:first-child {
-  display: block;
-}
-div#navWrapper nav button span:last-child {
-  display: none;
-}
-div#navWrapper nav button.open span:first-child {
-  display: none;
-}
-div#navWrapper nav button.open span:last-child {
-  display: block;
-}
-div#navWrapper nav ul {
-  display: none;
-}
-div#navWrapper nav ul.open {
-  display: block;
-}
-div#navWrapper nav ul li {
-  list-style-type: none;
-  border-top: 1px solid #30373D;
-}
-div#navWrapper nav ul li:first-child {
-  border-top: none;
-}
-div#navWrapper nav ul li a {
-  display: block;
-  padding: 1rem 2vw;
-  color: #fff;
-  text-decoration: none;
-  font-size: 0.9rem;
-}
-div#navWrapper nav ul li.active a {
-  background-color: #56636e;
-  font-weight: 700;
-}
-div#navWrapper nav ul li a:hover {
-  background-color: #373f46;
-}
-
+/* In mobile menu scss file */
 /* MAIN STYLING */
 .swiper-wrapper {
   margin-bottom: 1.8rem;
@@ -447,8 +480,13 @@ div.hero h1#volunteer {
   background: url("../images/volunteer_hero.jpg"), rgba(0, 0, 0, 0.3);
 }
 
+div.hero h1#history {
+  background: url("../images/about.jpg"), rgba(0, 0, 0, 0.3);
+}
+
 div.hero h1#donate,
-div.hero h1#volunteer {
+div.hero h1#volunteer,
+div.hero h1#history {
   background-position: center;
   background-repeat: none;
   background-size: cover;
@@ -456,6 +494,10 @@ div.hero h1#volunteer {
   color: #fff;
   margin: 0;
   padding: 10vh 0 10vh 2vw;
+}
+
+main#thanks {
+  min-height: 75vh;
 }
 
 main {
@@ -489,6 +531,13 @@ main button {
   font-size: 0.9rem;
   text-transform: uppercase;
   margin-bottom: 1rem;
+}
+main button:hover {
+  background-color: #00596c;
+  transition: 300ms ease;
+}
+main address {
+  padding-bottom: 1rem;
 }
 main div#cards-box {
   width: 80%;
@@ -594,12 +643,53 @@ main div#links-box a article:hover {
 main form#volunteer-form fieldset {
   border-color: #FF7546;
   border-radius: 10px;
+  margin-bottom: 1rem;
 }
 main form#volunteer-form fieldset legend {
   font-size: 0.9rem;
   font-weight: 700;
   color: #30373D;
   padding: 0 0.5rem;
+}
+main form#volunteer-form label.top input {
+  display: block;
+  font-size: 1rem;
+  background-color: #f5f6f7;
+  padding: 0.5rem 1rem;
+  border: none;
+  border-bottom: 2px solid #00ADD2;
+  border-radius: 5px;
+  width: 100%;
+  color: #30373D;
+  margin: 0.25rem 0 0.75rem 0;
+}
+main form#volunteer-form label.top input:required {
+  border-color: #C0519E;
+  border-width: 3px;
+}
+main form#volunteer-form label.top input:required:valid {
+  border-color: #00ADD2;
+  border-width: 2px;
+}
+main form#volunteer-form label.side {
+  display: block;
+  padding: 0.5rem;
+  color: #30373D;
+}
+main form#volunteer-form input.submitBtn {
+  color: #fff;
+  font-weight: 700;
+  background-color: #00839f;
+  border: none;
+  border-radius: 10px;
+  padding: 0.75rem 1.5rem;
+  font-size: 0.9rem;
+  text-transform: uppercase;
+  margin-bottom: 1rem;
+}
+main form#volunteer-form input.submitBtn:hover {
+  background-color: #00596c;
+  transition: 300ms ease;
 }
 
 /* FOOTER STYLING */
@@ -619,29 +709,61 @@ div#footerWrapper footer p {
   /* BODY STYLING */
   /* HEADER STYLING */
   /* NAVIGATION STYLING */
+  div#navWrapper {
+    background-color: #46515a;
+    /* Top level navigation */
+    /* Second level navigation */
+  }
   div#navWrapper nav button {
     display: none;
   }
-  div#navWrapper nav {
-    padding: 0 2vw;
-  }
-  div#navWrapper nav ul,
-  nav ul.open {
+  div#navWrapper nav ul#primaryNav {
     display: flex;
     flex-direction: row;
   }
-  div#navWrapper nav ul li,
-  nav ul.open li {
-    border-top: none;
-    border-right: 1px solid #30373D;
+  div#navWrapper nav ul#primaryNav li {
+    list-style-type: none;
   }
-  div#navWrapper nav ul li:last-child,
-  nav ul.open li:last-child {
+  div#navWrapper nav ul#primaryNav li a {
+    display: block;
+    padding: 0.75rem 2rem;
+    font-size: 0.9rem;
+    color: #fff;
+    text-decoration: none;
+    border-right: 1px solid #30373D;
+    transition: background 0.3s linear;
+  }
+  div#navWrapper nav ul#primaryNav li:last-child a {
     border-right: none;
   }
-  div#navWrapper nav ul li a,
-  nav ul.open li a {
-    padding: 0.75rem 1.5rem;
+  div#navWrapper nav ul#primaryNav li.active a {
+    background-color: #56636e;
+  }
+  div#navWrapper nav ul#primaryNav li a:hover {
+    background-color: #373f46;
+  }
+  div#navWrapper nav ul#primaryNav li ul {
+    display: flex;
+    flex-direction: column;
+    background-color: #46515a;
+    position: absolute;
+    left: -999rem;
+  }
+  div#navWrapper nav ul#primaryNav li:hover ul {
+    left: auto;
+    margin: 0;
+    z-index: 99;
+  }
+  div#navWrapper nav ul#primaryNav li ul a {
+    border-top: 1px solid #30373D;
+    border-right: none;
+  }
+  div#navWrapper nav ul#primaryNav li.parent > a:after {
+    content: "▼";
+    font-size: 0.6rem;
+    color: #687784;
+    float: right;
+    margin: 0.15rem 0 0 0.5rem;
   }
   /* MAIN STYLING */
   main div#cards-box {
@@ -690,6 +812,9 @@ div#footerWrapper footer p {
   /* NAVIGATION STYLING */
   div#navWrapper nav {
     padding: 0;
+  }
+  div#navWrapper nav nav ul#primaryNav li a {
+    padding: 0.5rem 1.2rem;
   }
   /* MAIN STYLING */
   main div#cards-box {

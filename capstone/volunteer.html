@@ -42,8 +42,13 @@
           <li><a href="index.html">Home</a></li>
           <li><a href="donate.html">Donate</a></li>
           <li class="active"><a href="volunteer.html">Volunteer</a></li>
-          <li><a href="#">Apply</a></li>
-          <li><a href="about.html">About</a></li>
+          <li class="parent"><a href="#">About</a>
+            <ul>
+              <li><a href="about.html">History</a></li>
+              <li><a href="sponsors.html">Sponsors</a></li>
+              <li><a href="faq.html">FAQs</a></li>
+            </ul>
+          </li>
         </ul>
       </nav>
     </div>
@@ -87,22 +92,22 @@
         <fieldset>
           <legend>Personal Information</legend>
 
-          <label class="top">First Name<input type="text" name="fname" required /></label>
-          <label class="top">Last Name<input type="text" name="lname" required /></label>
-          <label class="top">Phone<input type="tel" name="phone" placeholder="1234567890" /></label>
-          <label class="top">Email<input type="email" name="email" placeholder="example@email.com" /></label>
+          <label class="top">First Name*<input type="text" name="fname" required /></label>
+          <label class="top">Last Name*<input type="text" name="lname" required /></label>
+          <label class="top">Phone*<input type="tel" name="phone" placeholder="1234567890" required /></label>
+          <label class="top">Email*<input type="email" name="email" placeholder="example@email.com" required /></label>
 
           <div>Preferred Method of Contact</div>
-          <label class="side"><input type="radio" name="contact" value="Phone" />Phone</label>
-          <label class="side"><input type="radio" name="contact" value="Email" />Email</label>
+          <label class="side"><input type="radio" name="contact" value="Phone" /> Phone</label>
+          <label class="side"><input type="radio" name="contact" value="Email" /> Email</label>
         </fieldset>
         <fieldset>
           <legend>Volunteering Information</legend>
 
           <div>Preferred Shift</div>
-          <label class="side"><input type="checkbox" name="shift" value="Morning" />Morning</label>
-          <label class="side"><input type="checkbox" name="shift" value="Afternoon" />Afternoon</label>
-          <label class="side"><input type="checkbox" name="shift" value="Evening" />Evening</label>
+          <label class="side"><input type="checkbox" name="shift" value="Morning" /> Morning</label>
+          <label class="side"><input type="checkbox" name="shift" value="Afternoon" /> Afternoon</label>
+          <label class="side"><input type="checkbox" name="shift" value="Evening" /> Evening</label>
 
           <label class="top">Group Name (If Applicable)<input type="text" name="group" /></label>
           <label class="top">Number of Volunteers<input type="number" name="size" /></label>

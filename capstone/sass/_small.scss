@@ -46,62 +46,7 @@ div#headerWrapper {
 }
 
 /* NAVIGATION STYLING */
-div#navWrapper {
-  background-color: lighten($gunmetal, 10%);
-  nav {
-    button {
-      background: none;
-      border: none;
-      color: #fff;
-      font-size: 1.5rem;
-      padding: 2.2rem 2vw 1.5rem 3vw;
-      position: absolute;
-      top: 0;
-      right: 0;
-      span:first-child {
-        display: block;
-      }
-      span:last-child {
-        display: none;
-      }
-    }
-    button.open {
-      span:first-child {
-        display: none;
-      }
-      span:last-child {
-        display: block;
-      }
-    }
-    ul {
-      display: none;
-    }
-    ul.open {
-      display: block;
-    }
-    ul li {
-      list-style-type: none;
-      border-top: 1px solid $gunmetal;
-    }
-    ul li:first-child {
-      border-top: none;
-    }
-    ul li a {
-      display: block;
-      padding: 1rem 2vw;
-      color: #fff;
-      text-decoration: none;
-      font-size: 0.9rem;
-    }
-    ul li.active a {
-      background-color: lighten($gunmetal, 17%);
-      font-weight: $boldWeight;
-    }
-    ul li a:hover {
-      background-color: lighten($gunmetal, 3%);
-    }
-  }
-}
+/* In mobile menu scss file */
 
 /* MAIN STYLING */
 .swiper-wrapper {
@@ -135,8 +80,12 @@ div.hero h1#donate {
 div.hero h1#volunteer {
   background: url("../images/volunteer_hero.jpg"), rgba(0, 0, 0, 0.3);
 }
+div.hero h1#history {
+  background: url("../images/about.jpg"), rgba(0, 0, 0, 0.3);
+}
 div.hero h1#donate,
-div.hero h1#volunteer {
+div.hero h1#volunteer,
+div.hero h1#history {
   background-position: center;
   background-repeat: none;
   background-size: cover;
@@ -144,6 +93,9 @@ div.hero h1#volunteer {
   color: #fff;
   margin: 0;
   padding: 10vh 0 10vh 2vw;
+}
+main#thanks {
+  min-height: 75vh;
 }
 main {
   padding: 0 2vw;
@@ -175,6 +127,13 @@ main {
     font-size: 0.9rem;
     text-transform: uppercase;
     margin-bottom: 1rem;
+  }
+  button:hover {
+    background-color: darken($teal, 20%);
+    transition: 300ms ease;
+  }
+  address {
+    padding-bottom: 1rem;
   }
   div#cards-box {
     width: 80%;
@@ -281,12 +240,53 @@ main {
     fieldset {
       border-color: $coral;
       border-radius: 10px;
+      margin-bottom: 1rem;
     }
     fieldset legend {
       font-size: 0.9rem;
       font-weight: $boldWeight;
       color: $gunmetal;
       padding: 0 0.5rem;
+    }
+    label.top input {
+      display: block;
+      font-size: 1rem;
+      background-color: lighten($gunmetal, 75%);
+      padding: 0.5rem 1rem;
+      border: none;
+      border-bottom: 2px solid $teal;
+      border-radius: 5px;
+      width: 100%;
+      color: $gunmetal;
+      margin: 0.25rem 0 0.75rem 0;
+    }
+    label.top input:required {
+      border-color: $pink;
+      border-width: 3px;
+    }
+    label.top input:required:valid {
+      border-color: $teal;
+      border-width: 2px;
+    }
+    label.side {
+      display: block;
+      padding: 0.5rem;
+      color: $gunmetal;
+    }
+    input.submitBtn {
+      color: #fff;
+      font-weight: $boldWeight;
+      background-color: darken($teal, 10%);
+      border: none;
+      border-radius: 10px;
+      padding: 0.75rem 1.5rem;
+      font-size: 0.9rem;
+      text-transform: uppercase;
+      margin-bottom: 1rem;
+    }
+    input.submitBtn:hover {
+      background-color: darken($teal, 20%);
+      transition: 300ms ease;
     }
   }
 }
