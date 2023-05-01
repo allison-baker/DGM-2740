@@ -324,7 +324,7 @@ template {
     border: none;
     font-size: 1.5rem;
     color: #fff;
-    position: fixed;
+    position: absolute;
     top: 0;
     right: 0;
   }
@@ -500,9 +500,18 @@ main#thanks {
   min-height: 75vh;
 }
 
+main#faq {
+  padding-bottom: 1rem;
+}
+
 main {
   padding: 0 2vw;
   background-color: #fff;
+  /* HOME PAGE CARDS */
+  /* DONATE PAGE CARDS */
+  /* VOLUNTEER PAGE CARDS */
+  /* VOLUNTEER PAGE FORM */
+  /* FAQ PAGE DROPDOWNS */
 }
 main h2 {
   padding: 1rem 0;
@@ -651,7 +660,7 @@ main form#volunteer-form fieldset legend {
   color: #30373D;
   padding: 0 0.5rem;
 }
-main form#volunteer-form label.top input {
+main form#volunteer-form fieldset label.top input {
   display: block;
   font-size: 1rem;
   background-color: #f5f6f7;
@@ -663,15 +672,15 @@ main form#volunteer-form label.top input {
   color: #30373D;
   margin: 0.25rem 0 0.75rem 0;
 }
-main form#volunteer-form label.top input:required {
+main form#volunteer-form fieldset label.top input:required {
   border-color: #C0519E;
   border-width: 3px;
 }
-main form#volunteer-form label.top input:required:valid {
+main form#volunteer-form fieldset label.top input:required:valid {
   border-color: #00ADD2;
   border-width: 2px;
 }
-main form#volunteer-form label.side {
+main form#volunteer-form fieldset label.side {
   display: block;
   padding: 0.5rem;
   color: #30373D;
@@ -690,6 +699,52 @@ main form#volunteer-form input.submitBtn {
 main form#volunteer-form input.submitBtn:hover {
   background-color: #00596c;
   transition: 300ms ease;
+}
+main section.dropdown-full div.dropdown {
+  background-color: #f5f6f7;
+  border-radius: 5px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 1px 2px 4px rgba(0, 0, 0, 0.2);
+  margin-bottom: 1rem;
+}
+main section.dropdown-full div.dropdown h3 {
+  padding: 0.5rem 2rem 0.5rem 0.5rem;
+  font-weight: 400;
+  color: #30373D;
+}
+main section.dropdown-full div.dropdown span {
+  color: #FF7546;
+  font-weight: 700;
+  margin: 0;
+  padding: 0.5rem;
+  border-radius: 0 5px 5px 0;
+}
+main section.dropdown-full p {
+  display: none;
+}
+main section.dropdown-full.open p {
+  display: block;
+  background-color: #f5f6f7;
+  padding: 0.5rem;
+  border-radius: 5px;
+  border-top: 2px solid #FF7546;
+  margin-bottom: 1rem;
+  box-shadow: 1px 2px 4px rgba(0, 0, 0, 0.2);
+}
+main section.dropdown-full div.dropdown span:first-child {
+  display: block;
+}
+main section.dropdown-full div.dropdown span:last-child {
+  display: none;
+}
+main section.dropdown-full.open div.dropdown span:first-child {
+  display: none;
+}
+main section.dropdown-full.open div.dropdown span:last-child {
+  display: block;
 }
 
 /* FOOTER STYLING */
@@ -791,6 +846,9 @@ div#footerWrapper footer p {
   }
   main div#donate-box article#money-text {
     grid-area: moneyTxt;
+  }
+  main form#volunteer-form fieldset label.top input, main form#volunteer-form input.submitBtn {
+    max-width: 25rem;
   }
   /* FOOTER STYLING */
 }

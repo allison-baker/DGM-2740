@@ -97,6 +97,9 @@ div.hero h1#history {
 main#thanks {
   min-height: 75vh;
 }
+main#faq {
+  padding-bottom: 1rem;
+}
 main {
   padding: 0 2vw;
   background-color: #fff;
@@ -135,6 +138,8 @@ main {
   address {
     padding-bottom: 1rem;
   }
+
+  /* HOME PAGE CARDS */
   div#cards-box {
     width: 80%;
     margin: 0 auto;
@@ -177,6 +182,8 @@ main {
   div#cards-box a:nth-child(4) article {
     background-color: $gunmetal;
   }
+
+  /* DONATE PAGE CARDS */
   div#donate-box {
     width: 80%;
     margin: 0 auto;
@@ -192,6 +199,8 @@ main {
       width: 100%;
     }
   }
+
+  /* VOLUNTEER PAGE CARDS */
   div#links-box {
     width: 80%;
     margin: 0 auto;
@@ -236,6 +245,8 @@ main {
       transition: 400ms ease;
     }
   }
+
+  /* VOLUNTEER PAGE FORM */
   form#volunteer-form {
     fieldset {
       border-color: $coral;
@@ -248,7 +259,7 @@ main {
       color: $gunmetal;
       padding: 0 0.5rem;
     }
-    label.top input {
+    fieldset label.top input {
       display: block;
       font-size: 1rem;
       background-color: lighten($gunmetal, 75%);
@@ -260,15 +271,15 @@ main {
       color: $gunmetal;
       margin: 0.25rem 0 0.75rem 0;
     }
-    label.top input:required {
+    fieldset label.top input:required {
       border-color: $pink;
       border-width: 3px;
     }
-    label.top input:required:valid {
+    fieldset label.top input:required:valid {
       border-color: $teal;
       border-width: 2px;
     }
-    label.side {
+    fieldset label.side {
       display: block;
       padding: 0.5rem;
       color: $gunmetal;
@@ -288,6 +299,50 @@ main {
       background-color: darken($teal, 20%);
       transition: 300ms ease;
     }
+  }
+
+  /* FAQ PAGE DROPDOWNS */
+  section.dropdown-full div.dropdown {
+    background-color: lighten($gunmetal, 75%);
+    border-radius: 5px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 1px 2px 4px rgba(0, 0, 0, 0.2);
+    margin-bottom: 1rem;
+  }
+  section.dropdown-full div.dropdown h3 {
+    padding: 0.5rem 2rem 0.5rem 0.5rem;
+    font-weight: $normalWeight;
+    color: $gunmetal;
+  }
+  section.dropdown-full div.dropdown span {
+    color: $coral;
+    font-weight: $boldWeight;
+    margin: 0;
+    padding: 0.5rem;
+    border-radius: 0 5px 5px 0;
+  }
+  section.dropdown-full p {
+    display: none;
+  }
+  section.dropdown-full.open p {
+    display: block;
+    background-color: lighten($gunmetal, 75%);
+    padding: 0.5rem;
+    border-radius: 5px;
+    border-top: 2px solid $coral;
+    margin-bottom: 1rem;
+    box-shadow: 1px 2px 4px rgba(0, 0, 0, 0.2);
+  }
+  section.dropdown-full div.dropdown {
+    span:first-child { display: block; }
+    span:last-child { display: none; }
+  }
+  section.dropdown-full.open div.dropdown {
+    span:first-child { display: none; }
+    span:last-child { display: block; }
   }
 }
 

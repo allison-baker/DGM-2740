@@ -92,5 +92,10 @@ main div#donate-box {
     grid-area: moneyTxt;
   }
 }
+main form#volunteer-form {
+  fieldset label.top input, input.submitBtn {
+    max-width: 25rem;
+  }
+}
 
 /* FOOTER STYLING */
