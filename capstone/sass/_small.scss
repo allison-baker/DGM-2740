@@ -304,6 +304,28 @@ main {
     }
   }
 
+  /* GALLERY PAGE IMAGES */
+  div#gallery-box {
+    padding: 1rem 0;
+    figure {
+      width: 100%;
+      height: 0;
+      position: relative;
+      margin: 0;
+    }
+    figure.vertical {
+      padding-bottom: 127%;
+    }
+    figure.horizontal {
+      padding-bottom: 82%;
+    }
+    figure img {
+      width: 100%;
+      height: auto;
+      position: absolute;
+    }
+  }
+
   /* FAQ PAGE DROPDOWNS */
   section.dropdown-full div.dropdown {
     background-color: lighten($gunmetal, 75%);

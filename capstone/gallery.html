@@ -64,7 +64,118 @@
         Free Bikes 4 Kidz Utah has worked to provide bikes to hundreds of kids in the state of Utah, and we continue our
         mission so that all kids can know the joy and freedom of owning their own bicycle.
       </p>
-      <div id="gallery-box"></div>
+      <div id="gallery-box">
+        <figure class="horizontal">
+          <img
+            alt="girl on a beach with bicycles"
+            class="lazy"
+            data-src="images/gallery1.jpg"
+            data-srcset="images/gallery1.jpg 400w, images/gallery1_800.jpg 800w, images/gallery1_1200.jpg 1200w"
+            data-sizes="100w"
+            width="1200"
+            height="960"
+          />
+        </figure>
+        <figure class="horizontal">
+          <img
+            alt="young boy on a bike"
+            class="lazy"
+            data-src="images/gallery2.jpg"
+            data-srcset="images/gallery2.jpg 400w, images/gallery2_800.jpg 800w, images/gallery2_1200.jpg 1200w"
+            data-sizes="100w"
+            width="1200"
+            height="960"
+          />
+        </figure>
+        <figure class="horizontal">
+          <img
+            alt="people biking on a park sidewalk"
+            class="lazy"
+            data-src="images/gallery3.jpg"
+            data-srcset="images/gallery3.jpg 400w, images/gallery3_800.jpg 800w, images/gallery3_1200.jpg 1200w"
+            data-sizes="100w"
+            width="1200"
+            height="960"
+          />
+        </figure>
+        <figure class="vertical">
+          <img
+            alt="one teenager on a bike jumping over another teenager"
+            class="lazy"
+            data-src="images/gallery4.jpg"
+            data-srcset="images/gallery4.jpg 400w, images/gallery4_800.jpg 800w, images/gallery4_1200.jpg 1200w"
+            data-sizes="100w"
+            width="1200"
+            height="1500"
+          />
+        </figure>
+        <figure class="horizontal">
+          <img
+            alt="black and white photo of a young boy riding a bike"
+            class="lazy"
+            data-src="images/gallery5.jpg"
+            data-srcset="images/gallery5.jpg 400w, images/gallery5_800.jpg 800w, images/gallery5_1200.jpg 1200w"
+            data-sizes="100w"
+            width="1200"
+            height="960"
+          />
+        </figure>
+        <figure class="vertical">
+          <img
+            alt="two boys on a bike riding through a field"
+            class="lazy"
+            data-src="images/gallery6.jpg"
+            data-srcset="images/gallery6.jpg 400w, images/gallery6_800.jpg 800w, images/gallery6_1200.jpg 1200w"
+            data-sizes="100w"
+            width="1200"
+            height="1500"
+          />
+        </figure>
+        <figure class="horizontal">
+          <img
+            alt="two childrens bikes lying in a field"
+            class="lazy"
+            data-src="images/gallery7.jpg"
+            data-srcset="images/gallery7.jpg 400w, images/gallery7_800.jpg 800w, images/gallery7_1200.jpg 1200w"
+            data-sizes="100w"
+            width="1200"
+            height="960"
+          />
+        </figure>
+        <figure class="horizontal">
+          <img
+            alt="a woman and two children on a tandem bike"
+            class="lazy"
+            data-src="images/gallery8.jpg"
+            data-srcset="images/gallery8.jpg 400w, images/gallery8_800.jpg 800w, images/gallery8_1200.jpg 1200w"
+            data-sizes="100w"
+            width="1200"
+            height="960"
+          />
+        </figure>
+        <figure class="vertical">
+          <img
+            alt="two girls riding on a bike through a field"
+            class="lazy"
+            data-src="images/gallery9.jpg"
+            data-srcset="images/gallery9.jpg 400w, images/gallery9_800.jpg 800w, images/gallery9_1200.jpg 1200w"
+            data-sizes="100w"
+            width="1200"
+            height="1500"
+          />
+        </figure>
+        <figure class="horizontal">
+          <img
+            alt="two boys riding bikes on a beach"
+            class="lazy"
+            data-src="images/gallery10.jpg"
+            data-srcset="images/gallery10.jpg 400w, images/gallery10_800.jpg 800w, images/gallery10_1200.jpg 1200w"
+            data-sizes="100w"
+            width="1200"
+            height="960"
+          />
+        </figure>
+      </div>
     </main>
     <div id="footerWrapper">
       <footer>
@@ -72,6 +183,14 @@
       </footer>
     </div>
 
+    <script src="https://cdn.jsdelivr.net/npm/vanilla-lazyload@17.8.3/dist/lazyload.min.js"></script>
+    <script>
+      var lazyLoadInstance = new LazyLoad({
+        elements_selector: ".lazy",
+        threshold: 0,
+        // custom settings
+      });
+    </script>
     <script src="js/scripts.js"></script>
   </body>
 </html>
