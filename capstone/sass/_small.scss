@@ -94,8 +94,8 @@ div.hero h1#history {
   margin: 0;
   padding: 10vh 0 10vh 2vw;
 }
-main#thanks {
-  min-height: 75vh;
+main#thanks, main#faq {
+  min-height: 80vh;
 }
 main#faq {
   padding-bottom: 1rem;
@@ -105,37 +105,37 @@ main {
   background-color: #fff;
   h2 {
     padding: 1rem 0;
-    color: darken($pink, 10%);
+    color: $pink;
   }
   h2.no-hero {
     padding: 1.5rem 0;
   }
   h3 {
-    color: darken($coral, 15%);
+    color: $coral;
     padding-bottom: 0.5rem;
   }
   p {
     padding-bottom: 1rem;
   }
-  p a {
+  p a, address a {
     color: $teal;
   }
-  p a:hover {
+  p a:hover, address a:hover {
     color: $pink;
   }
   button {
     color: #fff;
     font-weight: $boldWeight;
-    background-color: darken($teal, 10%);
-    border: none;
+    background-color: $teal;
     border-radius: 10px;
     padding: 0.75rem 1.5rem;
     font-size: 0.9rem;
     text-transform: uppercase;
-    margin-bottom: 1rem;
+    margin: 1rem 0;
+    border: none;
   }
   button:hover {
-    background-color: darken($teal, 20%);
+    background-color: darken($teal, 10%);
     transition: 300ms ease;
   }
   address {
@@ -174,13 +174,13 @@ main {
     border-radius: 0 0 10px 10px;
   }
   div#cards-box a:nth-child(1) article {
-    background-color: darken($teal, 10%);
+    background-color: $teal;
   }
   div#cards-box a:nth-child(2) article {
     background-color: $pink;
   }
   div#cards-box a:nth-child(3) article {
-    background-color: darken($coral, 10%);
+    background-color: $coral;
   }
   div#cards-box a:nth-child(4) article {
     background-color: $gunmetal;
@@ -200,6 +200,7 @@ main {
     }
     article button {
       width: 100%;
+      margin-bottom: 1rem;
     }
   }
 
@@ -290,7 +291,7 @@ main {
     input.submitBtn {
       color: #fff;
       font-weight: $boldWeight;
-      background-color: darken($teal, 10%);
+      background-color: $teal;
       border: none;
       border-radius: 10px;
       padding: 0.75rem 1.5rem;
@@ -299,7 +300,7 @@ main {
       margin-bottom: 1rem;
     }
     input.submitBtn:hover {
-      background-color: darken($teal, 20%);
+      background-color: darken($teal, 10%);
       transition: 300ms ease;
     }
   }
@@ -346,6 +347,7 @@ main {
     background: none;
     padding: 0;
     margin: 0;
+    border: none;
   }
   section.dropdown-full div.dropdown button span {
     color: $coral;

@@ -496,8 +496,8 @@ div.hero h1#history {
   padding: 10vh 0 10vh 2vw;
 }
 
-main#thanks {
-  min-height: 75vh;
+main#thanks, main#faq {
+  min-height: 80vh;
 }
 
 main#faq {
@@ -516,37 +516,37 @@ main {
 }
 main h2 {
   padding: 1rem 0;
-  color: #a33b83;
+  color: #B84294;
 }
 main h2.no-hero {
   padding: 1.5rem 0;
 }
 main h3 {
-  color: #f93f00;
+  color: #D63600;
   padding-bottom: 0.5rem;
 }
 main p {
   padding-bottom: 1rem;
 }
-main p a {
-  color: #00ADD2;
+main p a, main address a {
+  color: #007994;
 }
-main p a:hover {
-  color: #C0519E;
+main p a:hover, main address a:hover {
+  color: #B84294;
 }
 main button {
   color: #fff;
   font-weight: 700;
-  background-color: #00839f;
-  border: none;
+  background-color: #007994;
   border-radius: 10px;
   padding: 0.75rem 1.5rem;
   font-size: 0.9rem;
   text-transform: uppercase;
-  margin-bottom: 1rem;
+  margin: 1rem 0;
+  border: none;
 }
 main button:hover {
-  background-color: #00596c;
+  background-color: #004f61;
   transition: 300ms ease;
 }
 main address {
@@ -583,13 +583,13 @@ main div#cards-box a article h3 {
   border-radius: 0 0 10px 10px;
 }
 main div#cards-box a:nth-child(1) article {
-  background-color: #00839f;
+  background-color: #007994;
 }
 main div#cards-box a:nth-child(2) article {
-  background-color: #C0519E;
+  background-color: #B84294;
 }
 main div#cards-box a:nth-child(3) article {
-  background-color: #ff4f13;
+  background-color: #D63600;
 }
 main div#cards-box a:nth-child(4) article {
   background-color: #30373D;
@@ -608,6 +608,7 @@ main div#donate-box article h3 {
 }
 main div#donate-box article button {
   width: 100%;
+  margin-bottom: 1rem;
 }
 main div#links-box {
   width: 80%;
@@ -654,7 +655,7 @@ main div#links-box a article:hover {
   transition: 400ms ease;
 }
 main form#volunteer-form fieldset {
-  border-color: #FF7546;
+  border-color: #D63600;
   border-radius: 10px;
   margin-bottom: 1rem;
 }
@@ -670,18 +671,18 @@ main form#volunteer-form fieldset label.top input {
   background-color: #f5f6f7;
   padding: 0.5rem 1rem;
   border: none;
-  border-bottom: 2px solid #00ADD2;
+  border-bottom: 2px solid #007994;
   border-radius: 5px;
   width: 100%;
   color: #30373D;
   margin: 0.25rem 0 0.75rem 0;
 }
 main form#volunteer-form fieldset label.top input:required {
-  border-color: #C0519E;
+  border-color: #B84294;
   border-width: 3px;
 }
 main form#volunteer-form fieldset label.top input:required:valid {
-  border-color: #00ADD2;
+  border-color: #007994;
   border-width: 2px;
 }
 main form#volunteer-form fieldset label.side {
@@ -692,7 +693,7 @@ main form#volunteer-form fieldset label.side {
 main form#volunteer-form input.submitBtn {
   color: #fff;
   font-weight: 700;
-  background-color: #00839f;
+  background-color: #007994;
   border: none;
   border-radius: 10px;
   padding: 0.75rem 1.5rem;
@@ -701,7 +702,7 @@ main form#volunteer-form input.submitBtn {
   margin-bottom: 1rem;
 }
 main form#volunteer-form input.submitBtn:hover {
-  background-color: #00596c;
+  background-color: #004f61;
   transition: 300ms ease;
 }
 main div#gallery-box {
@@ -743,9 +744,10 @@ main section.dropdown-full div.dropdown button {
   background: none;
   padding: 0;
   margin: 0;
+  border: none;
 }
 main section.dropdown-full div.dropdown button span {
-  color: #FF7546;
+  color: #D63600;
   font-weight: 700;
   margin: 0;
   padding: 0.5rem;
@@ -762,7 +764,7 @@ main section.dropdown-full.open p {
   background-color: #f5f6f7;
   padding: 0.5rem;
   border-radius: 5px;
-  border-top: 2px solid #FF7546;
+  border-top: 2px solid #D63600;
   margin-bottom: 1rem;
   box-shadow: 1px 2px 4px rgba(0, 0, 0, 0.2);
 }
