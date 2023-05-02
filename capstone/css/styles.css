@@ -488,7 +488,7 @@ div.hero h1#donate,
 div.hero h1#volunteer,
 div.hero h1#history {
   background-position: center;
-  background-repeat: none;
+  background-repeat: no-repeat;
   background-size: cover;
   background-blend-mode: overlay;
   color: #fff;
@@ -562,7 +562,7 @@ main div#cards-box {
 }
 main div#cards-box a {
   text-decoration: none;
-  background-color: none;
+  background-color: transparent;
 }
 main div#cards-box a article {
   border-radius: 10px;
@@ -583,13 +583,13 @@ main div#cards-box a article h3 {
   border-radius: 0 0 10px 10px;
 }
 main div#cards-box a:nth-child(1) article {
-  background-color: #00ADD2;
+  background-color: #00839f;
 }
 main div#cards-box a:nth-child(2) article {
   background-color: #C0519E;
 }
 main div#cards-box a:nth-child(3) article {
-  background-color: #FF7546;
+  background-color: #ff4f13;
 }
 main div#cards-box a:nth-child(4) article {
   background-color: #30373D;
@@ -638,14 +638,14 @@ main div#links-box a article p {
 main div#links-box a:first-child article {
   background: url("../images/community_collection.jpg"), rgba(0, 0, 0, 0.3);
   background-position: center;
-  background-repeat: none;
+  background-repeat: no-repeat;
   background-size: cover;
   background-blend-mode: overlay;
 }
 main div#links-box a:last-child article {
   background: url("../images/volunteer_committee.jpg"), rgba(0, 0, 0, 0.3);
   background-position: center;
-  background-repeat: none;
+  background-repeat: no-repeat;
   background-size: cover;
   background-blend-mode: overlay;
 }
